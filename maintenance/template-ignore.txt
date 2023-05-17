@@ -1,0 +1,16 @@
+# Material used only by the training staff.
+.git
+maintenance
+review
+
+# Files that are purely solutions from the traino.
+*solution*
+
+# Temporary files.
+*.o
+__pycache__
+*~
+.pytest_cache
+
+# In case this directory still exists.
+basic-jqr
