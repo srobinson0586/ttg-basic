@@ -1,0 +1,40 @@
+# Topics.md
+
+- Basics
+    - Syntax
+    - Functions
+    - Labels, local labels
+    - Exporting labels with `GLOBAL`
+    - Special symbols like `$`
+- Control flow
+    - signed vs unsigned jmp
+    - iterating through array
+- Registers
+    - Different sizes (`al`, `ah`, `ax`, `eax`, `rax`)
+    - Sign Extend vs Zero Extend, what's default
+- Arithmetic operations
+- Calling functions
+    - Linux x86 and x86_64 calling convention
+        - Perhaps briefly mention difference to windows
+    - Returning information
+        - Through input ptrs, `rax`
+    - Systems calls (`write`, `open`, `close`) for `lab3_5`
+    - Stack alignment in Windows (useful, not required)
+        - Briefly mention how some windows internal functions will **crash** on `movabs` and similar instructions if the stack isn't aligned
+        - *Not relevant for the competency* but a brief aside for Windows-leaning individuals could be good to stoke curiosity
+- Pointers
+    - Specifying *type* (size)
+    - Reading from
+    - Writing to
+    - Working with strings specifically
+- Linking
+    - How snippets coded in Assembly can be called from C programs
+    - How linker finds the correct place to call
+    - Using external functions like `strncpy` in `lab3_4`
+        - Its a simple `call` but could be useful to talk about the `extern` symbol
+- Tools 
+    - `gdb`
+    - `valgrind`
+    - `strance`
+    - Looking up assembly instructions details
+        - geoff-chapelle, instruction manual, know what stackoverflow articles apply to you, etc
