@@ -1,0 +1,40 @@
+# Topics.md
+
+- Basics
+    - control flow
+        - Switch statements
+    - variables, types
+    - Basic Operators (+,-,/,^, *)
+- Functions
+    - Arguments vs Params
+    - Scope
+    - Returning data
+    - Calling functions
+    - Pass by value / reference
+    - Prototypes vs Definitions
+- Pointers
+    - C strings (accessing, writing, useful functions like strncmp,strncpy,strtok)
+    - 2-D arrays
+    - Memory allocation/deallocation
+- Files
+    - Probably beneficial to know how Linux FS works (basic), filestreams
+    - Creating / Closing
+    - Seeking to different bytes, etc
+    - Reading
+    - Getting metadata (size)
+- Compilation
+    - Differences from Interpreted languages
+    - Makefiles
+    - `gcc` vs `gpp` vs others
+        - Compilation warnings / flags
+    - `#include`s
+- Documenting code
+    - Best practices
+    - *Useful* comments
+- Troubleshooting Tips
+    - `gdb` (gef) use
+    - Print statements
+- Misc
+    - Endianness
+    - sanitizing user input
+    - utilizing `man` pages
