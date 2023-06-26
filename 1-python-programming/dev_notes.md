@@ -1,0 +1,44 @@
+# Python Sections (REMOVE BEFORE MERGE)
+> Basically stealing from [this website](https://www.tutorialspoint.com/python3/index.htm)
+- 1.0 Tools
+  - 1.0.1 Reading Documentation
+  - 1.0.2 Cheat Sheet
+  - 1.0.3 The Python Debugger
+  - 1.0.4 Python Style
+  - 1.0.5 IDEs
+- Overview
+- Environment Setup
+    - Idea for application:
+      - "Type `python3` into your terminal.  What is the output?"
+- Basic Syntax
+    - `input()` and `print()`
+    - Docstrings/Comments
+- Variables
+- Data Types
+    - Type hints
+    - Talk about what duck typing is
+- Operators
+- Decision Making / Conditionals
+- Loops
+- Numbers
+- Strings
+- Typecasting
+- Lists, Tuples, and Sets
+    - `.join()`
+- Dictionaries
+- Functions
+- Modules
+- Files I/O
+- Exceptions
+- Classes/Objects
+    - Built-ins
+- Basic Algorithms
+- Graph theory
+- What is JSON?
+- `pytest`
+- `struct` module
+- Advanced / Supplemental
+  - List comprehension
+  - Generators
+  - Lambda functions
+    - Pickle
