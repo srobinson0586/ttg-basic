@@ -37,4 +37,4 @@
     - `valgrind`
     - `strance`
     - Looking up assembly instructions details
-        - geoff-chapelle, instruction manual, know what stackoverflow articles apply to you, etc
+        - geoff-chapelle, instruction manual, know what stackoverflow articles apply to you, etc.
