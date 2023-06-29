@@ -1,4 +1,5 @@
-# Python Sections (REMOVE BEFORE MERGE)
+# Dev Notes (REMOVE BEFORE MERGE)
+# Python Sections
 > Basically stealing from [this website](https://www.tutorialspoint.com/python3/index.htm)
 - 1.0 Tools
   - 1.0.1 Reading Documentation
@@ -42,3 +43,5 @@
   - Generators
   - Lambda functions
     - Pickle
+# Networking sections
+- Put in section about python `struct` module
