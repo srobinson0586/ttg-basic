@@ -365,7 +365,7 @@ Options and arguments (and corresponding environment variables):
 
 You can also program your script in such a way that it should accept various options. [Command Line Arguments](https://www.tutorialspoint.com/python3/python_command_line_arguments.htm) is an advanced topic. Let us understand it.
 
-# Summary
+# Recap
 After reading this, you should have a basic understanding of:
 - Print statements using `print()`
 - Getting input from the user using `input()`
