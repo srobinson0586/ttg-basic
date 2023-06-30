@@ -1,5 +1,5 @@
 1.00_overview
-1.01_tools
+1.01_environment
 1.02_basic_syntax
 1.03_variable_types
 1.04_operators (:= :P)
