@@ -3,7 +3,10 @@
 dev_add_files.py - Creates boilerplate for JQR sections
 
 The two functions you'll probably use are `make_section()` and 
-`make_next_section()`
+`make_next_section()`.  make_next_section() just creates the next sequential
+section that hasn't been created yet (e.g. if you've created 1.00 through 1.03,
+the next section that will created will be 1.04). You can also use
+make_section() to make a 1-off section that is not sequential.
 
 Example: execute the below line to create section 1.07 - Debugging
 
@@ -15,6 +18,9 @@ from inspect import cleandoc
 
 def make_section(foldername: str, language: str):
     folder = Path(foldername)
+    if folder.exists():
+        print('Folder exists, exiting...')
+        return
     folder.mkdir()
     section_name = ' '.join(x.title() for x in folder.name.split('_')[1:])
     write_readme(folder, language, section_name)
@@ -99,4 +105,5 @@ def make_next_section(language: str):
         make_section(next_section, language)
     
 if __name__ == '__main__':
-    make_next_section('Python')
+    # make_next_section('Python')
+    make_section("1.07_debugging", "Python")
