@@ -1,8 +1,20 @@
+#!/bin/python
+"""
+dev_add_files.py - Creates boilerplate for JQR sections
+
+The two functions you'll probably use are `make_section()` and 
+`make_next_section()`
+
+Example: execute the below line to create section 1.07 - Debugging
+
+make_section("1.07_debugging", "Python")
+"""
 import os
 from pathlib import Path
 from inspect import cleandoc
 
-def make_section(folder: Path, language: str):
+def make_section(foldername: str, language: str):
+    folder = Path(foldername)
     folder.mkdir()
     section_name = ' '.join(x.title() for x in folder.name.split('_')[1:])
     write_readme(folder, language, section_name)
@@ -83,7 +95,7 @@ def make_next_section(language: str):
     folder_paths = [Path(x.split()[0]) for x in file_path.read_text().splitlines()]
     sections_to_create = [folder for folder in folder_paths if not folder.exists()]
     if len(sections_to_create):
-        next_section = sections_to_create[0]
+        next_section = str(sections_to_create[0])
         make_section(next_section, language)
     
 if __name__ == '__main__':
