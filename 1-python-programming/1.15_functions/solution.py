@@ -5,20 +5,20 @@ def setup_increment_counter():
     Create a global integer variable named `counter` and set its initial value to 0
     This variable will be used in increment_counter()
     '''
-    # TODO: Implement
-    pass
+    global counter
+    counter = 0
 
 # Challenge 1.2: Function with Global Variable
 def increment_counter():
     '''
     This function increments the value of `counter` by 1 each time it is called. Return the current value of `counter` after incrementing it.
     '''
-    # TODO: Implement
-    pass
+    global counter
+    counter += 1
+    return counter
 
 # Challenge 2: Function with Default Argument
-# TODO: Add the function parameters per the function description below
-def greet_person(....):
+def greet_person(name, greeting="Hello"):
     '''
     This function takes two arguments:
         - `name` (a string)
@@ -27,8 +27,7 @@ def greet_person(....):
     Example: 
         greet_person('TRAINO') --> "Hello TRAINO"
     '''
-    #TODO: Implement
-    pass
+    return f"{greeting} {name}"
 
 # Challenge 3: Recursive Function
 def calculate_factorial(n):
@@ -38,8 +37,10 @@ def calculate_factorial(n):
     Example:
         calculate_factorial(5)  # Output should be 120 (5! = 5 * 4 * 3 * 2 * 1 = 120)
     '''
-    # TODO: Implement
-    pass
+    if n == 0:
+        return 1
+    else:
+        return n * calculate_factorial(n - 1)
 
 # Challenge 4: Function with Variable-Length Arguments
 def sum_numbers(*args):
@@ -50,5 +51,4 @@ def sum_numbers(*args):
     Example 2:
         sum_numbers(10, 20, 30, 40)  # Output should be 100
     '''
-    # TODO: Implement
-    pass
+    return sum(args)
