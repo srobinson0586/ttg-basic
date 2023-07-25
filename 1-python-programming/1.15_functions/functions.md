@@ -103,11 +103,10 @@ Second call to the same function
 
 ### Pass by Reference vs Value
 
-All parameters(arguments) in the Python language are passed by reference. It means if you change what a parameter refers to within a function, the change also reflects back in the calling function. For example:
+All parameters(arguments) in the Python language are passed by reference. This means that if you change what a parameter refers to within a function, the change also reflects back in the calling function. For example:
 ```py
 # Function definition is here
 def changeme( mylist ):
-   "This changes a passed list into this function"
    print ("Values inside the function before change: ", mylist)
    
    mylist[2]=50
@@ -131,7 +130,7 @@ Below is an example of how **NOT** to update variables within functions. The par
 # Function definition is here
 def changeme( mylist ):
    "This changes a passed list into this function"
-   mylist = [1,2,3,4] # This would assi new reference in mylist
+   mylist = [1,2,3,4] # This would assign new reference in mylist
    print ("Values inside the function: ", mylist)
 
 # Now you can call changeme function
@@ -240,10 +239,9 @@ Age :  50
 
 ### Default Arguments
 
-A default argument is an argument that assumes a default value if a value is not provided in the function call for that argument. The following example gives an idea on default arguments, it prints default age if it is not passed:
+A default argument is an argument that assumes a default value if a value is not provided in the function call for that argument. The default value is specified with an (`=`) after the parameter name in the function declaration. The following example gives an idea on default arguments, it assigns a default age of 35 if it is not specified in function call arguments:
 ```py
 def printinfo( name, age = 35 ):
-   "This prints a passed info into this function"
    print ("Name: ", name)
    print ("Age ", age)
    return
@@ -277,7 +275,6 @@ An asterisk (`*`) is placed before the variable name that holds the values of al
 ```py
 # Function definition is here
 def printinfo( arg1, *vartuple ):
-   "This prints a variable passed arguments"
    print("Output is: ", arg1)
    
    for var in vartuple:
@@ -291,10 +288,8 @@ printinfo( 70, 60, 50 )
 
 When the above code is executed, it produces the following result:
 ```
-Output is:
-10
-Output is:
-70
+Output is:  10
+Output is:  70
 60
 50
 ```
@@ -340,7 +335,7 @@ Feel free to play around with the above lambda function, and define your own, in
 
 All variables in a program may not be accessible at all locations in that program. This depends on where you have declared a variable.
 
-The scope of a variable determines the portion of the program where you can access a particular identifier. There are two basic scopes of variables in Python"
+The scope of a variable determines the portion of the program where you can access a particular identifier. There are two basic scopes of variables in Python:
 
 -   Global variables
 -   Local variables
@@ -355,8 +350,8 @@ total = 0   # This is global variable.
 
 # Function definition is here
 def sum( arg1, arg2 ):
-   # Add both the parameters and return them."
-   total = arg1 + arg2; # Here total is local variable.
+   # Add both the parameters and return them.
+   total = arg1 + arg2; # Here total is a local variable.
    print ("sum()'s local total is: ", total)
    return total
 
@@ -371,7 +366,7 @@ sum()'s local total is:  30
 The `global` total is still:  0
 ```
 
-### Using global variables
+### Using `global` variables
 
 As long as the interpreter executes the variable definition *before attempting to use it in a function*, a function that is defined before a global variable can still contain a global itself. For example, below you see a function defined, then later on the global is defined. However, since the program runs the variable definition *first*, the function still works:
 ```py
@@ -474,3 +469,9 @@ This produces the output:
 The global in print_my_global is:  NCWDG{TRYING_TO_MAKE_THIS_GLOBAL}
 Back in main, the global is:  NCWDG{TRYING_TO_MAKE_THIS_GLOBAL}
 ```
+
+## References
+
+- [RealPython- Docstrings](https://realpython.com/documenting-python-code/#documenting-your-python-code-base-using-docstrings)
+- [RealPython- Pass by Reference](https://realpython.com/python-pass-by-reference/)
+- [Tutorialspoint- Function](https://www.tutorialspoint.com/python3/python_functions.htm)

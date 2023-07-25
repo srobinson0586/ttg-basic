@@ -3,9 +3,11 @@
 [Back to README](README.md)
 
 
-In dictionaries, each key is separated from its value by a colon (:), the items are separated by commas, and the whole thing is enclosed in curly braces. An empty dictionary without any items is written with just two curly braces, like this: `{}`.
+In dictionaries, each key is separated from its value by a colon (`:`), the items are separated by commas, and the whole thing is enclosed in curly braces. An empty dictionary without any items is written with just two curly braces, like this: `{}`.
 
-*Keys are unique* within a dictionary while values may not be. The *values of a dictionary can be of any type*, but the *keys must be of an immutable data type* such as strings, numbers, or tuples.
+- *Keys are unique* within a dictionary while values may not be
+- The *values of a dictionary can be of any type*
+- The *keys must be of an immutable data type* such as strings, numbers, or tuples.
 
 ### Accessing Values in a Dictionary
 
@@ -42,40 +44,48 @@ KeyError: 'Alice'
 
 You can update a dictionary by adding a new entry or a key-value pair, modifying an existing entry, or deleting an existing entry as shown in a simple example given below:
 ```py
-dict = {'Name': 'Zara', 'Age': 7, 'Class': 'First'}
-dict['Age'] = 8; # update existing entry
-dict['School'] = "NCWDG Dev Pipeline" # Add new entry
+my_dict = {'Name': 'Zara', 'Age': 7, 'Class': 'First'}
+my_dict['Age'] = 8; # update existing entry
+my_dict['School'] = "NCWDG Dev Pipeline" # Add new entry
 
-print ("dict['Age']: ", dict['Age'])
-print ("dict['School']: ", dict['School'])
+print ("my_dict['Age']: ", my_dict['Age'])
+print ("my_dict['School']: ", my_dict['School'])
+
+del my_dict['Name']
+print("After deleting 'Name' element: ", my_dict)
+
+my_dict.update( {'New_elem': 1337} )
+print("After using update():", my_dict)
 ```
 
 When the above code is executed, it produces the following result:
 ```
 dict['Age']:  8
 dict['School']:  NCWDG Dev Pipeline
+After deleting 'Name' element:  {'Age': 8, 'Class': 'First', 'School': 'NCWDG Dev Pipeline'}
+After using update(): {'Age': 8, 'Class': 'First', 'School': 'NCWDG Dev Pipeline', 'New_elem': 1337}
 ```
 
 ### Deleting Dictionary Elements
 
-You can either remove individual dictionary elements or clear the entire contents of a dictionary. You can also delete entire dictionary in a single operation. To explicitly remove an entire dictionary, just use the **del** statement. Following is a simple example:
+You can either remove individual dictionary elements or clear the entire contents of a dictionary. You can also delete the entire dictionary in a single operation. To explicitly remove an entire dictionary, just use the **del** statement. Below is a simple example:
 ```py
-dict = {'Name': 'Zara', 'Age': 7, 'Class': 'First'}
+my_dict = {'Name': 'Zara', 'Age': 7, 'Class': 'First'}
 
-del dict['Name'] # remove entry with key 'Name'
-dict.clear()     # remove all entries in dict
-del dict         # delete entire dictionary
+del my_dict['Name'] # remove entry with key 'Name'
+my_dict.clear()     # remove all entries in my_dict
+del my_dict         # delete entire my_dictionary
 
-print ("dict['Age']: ", dict['Age'])
-print ("dict['School']: ", dict['School'])
+print ("my_dict['Age']: ", my_dict['Age'])
+print ("my_dict['School']: ", my_dict['School'])
 ```
 
 This produces the following result. An exception is raised because after **del dict**, the dictionary does not exist anymore.
 ```
-dict['Age']:
+my_dict['Age']:
 Traceback (most recent call last):
    File "test.py", line 8, in <module>
-      print "dict['Age']: ", dict['Age'];
+      print "my_dict['Age']: ", my_dict['Age'];
 TypeError: 'type' object is unsubscriptable
 ```
 
@@ -156,7 +166,7 @@ if 'a' in d.values():
 
 ### JSON
 
-Python dictionaries are very similar to JavaScript Object Notation (JSON) is an open standard file format and data interchange format that uses human-readable text to store and transmit data objects consisting of attribute–value pairs and arrays. The following is an example:
+Python dictionaries are very similar to JavaScript Object Notation (JSON) which is an open standard file format and data interchange format that uses human-readable text to store and transmit data objects consisting of attribute–value pairs and arrays. The following is an example:
 ```json
 {
     "API_KEY": "RU5TIFRvdmFyLU1hcnF1ZXogd2F6IGhlcmUgPjopIA==",

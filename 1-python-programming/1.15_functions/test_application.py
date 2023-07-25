@@ -55,3 +55,6 @@ def test_functions():
         exit()
 
     print("[+] ALL TESTS PASSED!")
+
+# for use without pytest
+test_functions()

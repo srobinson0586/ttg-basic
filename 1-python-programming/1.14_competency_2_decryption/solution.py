@@ -1,3 +1,4 @@
+
 def decrypt_vigenere_cipher(ciphertext, vigenere_key):
     """
     Decrypts a Vigenere cipher encrypted ciphertext using the given Vigenere key.
@@ -5,7 +6,8 @@ def decrypt_vigenere_cipher(ciphertext, vigenere_key):
     The function performs the decryption by applying the Vigenere cipher algorithm in reverse.
     Each character of the ciphertext is shifted back by the corresponding character from the Vigenere key.
     Non-alphabetic characters are left unchanged.
-    Lettercase is taken into account (upper/lower), in order to keep the result in the same lettercase. e.g. cipher='A', key='b' == 
+    Lettercase is taken into account (upper/lower), in order to keep the result in the same lettercase. e.g. cipher='a', key='B' == 'z'
+    The key will only ever contain alphabetic characters.
 
     Parameters:
         - ciphertext: str; The encrypted string (ciphertext) to be decrypted using the Vigenere cipher.
@@ -17,10 +19,10 @@ def decrypt_vigenere_cipher(ciphertext, vigenere_key):
 
     Example:
     >>> ciphertext = 'almghxw4087:1a;>[asd'
-    >>> vigenere_key = 'L337_C0D3'
+    >>> vigenere_key = 'LEETCODE'
     >>> decrypted_text = decrypt_vigenere_cipher(ciphertext, vigenere_key)
     >>> print(decrypted_text)
-    'pfgwjvt4087:1c;>[uhx'
+    'phinfjt4087:1m;>[wok'
     """
     plaintext = ""
     key_length = len(vigenere_key)
@@ -82,8 +84,7 @@ def decrypt_one_time_pad(ciphertext, one_time_pad_key):
     >>> one_time_pad_key = '1048xcmd;a31@^*@$+}"{'
     >>> decrypted_string = decrypt_one_time_pad(ciphertext, one_time_pad_key)
     >>> print(decrypted_string)
-    BQ]T↨◄2►R
-    ^H               (unprintable characters)
+    'BQ]T\x17\x112\x10R\x0c^H'              (unprintable characters)
     """
     decrypted_string = ""
     
@@ -96,8 +97,10 @@ def combine_ciphers():
     """
     Combines the decryption of Vigenere Cipher, Substitution Cipher, and One-Time Pad.
 
-    Decrypts Vigenere Cipher ciphertext, then uses the decrypted result as the key
-    to decrypt Substitution Cipher ciphertext, and finally, uses the decrypted Substitution Cipher as the key to decrypt the One-Time Pad ciphertext.
+    This function First decrypts a given `vigenere_ciphertext` using the `decrypt_vigenere_cipher` function and `vigenere_key` to get a Vigenere plaintext.
+    Then that Vigenere plaintext is then used as the *ciphertext* in a Substitution Cipher, that is decoded with a given `substitution_key` and the `decrypt_substitution_cipher` function to get a Substitution plaintext.
+    Finally, that Substitution plaintext is used as the key to decrypt the encoded `otp_encoded` string using `decrypt_one_time_pad`.
+    Ensure that you have implemented the previous three functions correctly before working on this function.
 
     Returns:
         str: The decrypted string obtained after the combination of ciphers.
@@ -123,8 +126,7 @@ def combine_ciphers():
     
     return otp_decoded
 
-print("Hidden Message: ", combine_ciphers())
-exit()
+# exit()
 
 ################################################################################
 # Helper functions that I used to create the challenge, NOT part of the solution

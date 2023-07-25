@@ -4,21 +4,20 @@
 
 ## Lists
 
-The most basic data structure in Python is the **sequence**. Each element of a sequence is assigned a number - its position or index. The first index is zero, the second index is one, and so forth.
+The most basic *data structure* in Python is the **sequence**. Each element of a sequence is assigned a number - its position or index. The first index is zero, the second index is one, and so forth.
 
 Python has six built-in types of sequences, but the most common ones are lists and tuples.
 
 There are certain things you can do with all the sequence types. These operations include *indexing, slicing, adding, multiplying*, and *checking for membership*. In addition, Python has built-in functions for finding the length of a sequence and for finding its largest and smallest elements.
 
-The list is the most versatile datatype available in Python, which can be written as a list of comma-separated values (items) between square brackets. Important thing about a list is that the items in a list need not be of the same type.
+The list is the most versatile datatype available in Python, which can be written as a list of comma-separated values (items) between square brackets. An important thing about a list is that the items in a list need not be of the same type.
 
-Creating a list is as simple as putting different comma-separated values between square brackets. For example −
+Creating a list is as simple as putting different comma-separated values between square brackets. For example:
 
 ```py
 list1 = ['physics', 'chemistry', 1997, 2000];
 list2 = [1, 2, 3, 4, 5 ];
 list3 = ["a", "b", "c", "d"];
-
 ```
 
 Similar to string indices, list indices start at 0, and lists can be sliced, concatenated and so on.
@@ -27,8 +26,6 @@ Similar to string indices, list indices start at 0, and lists can be sliced, con
 
 To access values in lists, use the square brackets for slicing along with the index or indices to obtain the value available at that index. For example:
 ```py
-#!/usr/bin/python3
-
 list1 = ['physics', 'chemistry', 1997, 2000]
 list2 = [1, 2, 3, 4, 5, 6, 7 ]
 
@@ -42,7 +39,7 @@ list1[0]:  physics
 list2[1:5]:  [2, 3, 4, 5]
 ```
 
-When you use negative indeces, the index is interpreted as starting from the end to the beggining.
+When you use negative indeces, the index is interpreted as starting from the end and moving towards the beginning.
 ```py
 >>> a = [1, 2, 3, 4, 5, 6, 7]
 >>> a[-2]
@@ -58,20 +55,26 @@ When you use negative indeces, the index is interpreted as starting from the end
 You can update single or multiple elements of lists by giving the slice on the left-hand side of the assignment operator, and you can add to elements in a list with the `append()` method. For example:
 
 ```py
-#!/usr/bin/python3
+my_list = ['physics', 'chemistry', 1997, 2000]
+print ("Value available at index 2 : ", my_list[2])
 
-list = ['physics', 'chemistry', 1997, 2000]
-print ("Value available at index 2 : ", list[2])
+my_list[2] = 2001  # here we tell the python interpreter to update the [2] slice of my_list
+print ("New value available at index 2 : ", my_list[2])
 
-list[2] = 2001
-print ("New value available at index 2 : ", list[2])
+my_list[1:3] = [1337, 'Cyb3r 0p5'] # update slice [1:3] with the new list value
+print("New list is:", my_list)
+
+my_list.append(0xdeadbeef) # append adds to the end of the list
+print("New list is:", my_list)
 ```
 
-When the above code is executed, it produces the following result −
+When the above code is executed, it produces the following result:
 
 ```
 Value available at index 2 :  1997
 New value available at index 2 :  2001
+New list is: ['physics', 1337, 'Cyb3r 0p5', 2000]
+New list is: ['physics', 1337, 'Cyb3r 0p5', 2000, 3735928559]
 ```
 
 
@@ -80,30 +83,29 @@ New value available at index 2 :  2001
 To remove a list element, you can use the **`del`** statement if you know exactly which element(s) you are deleting. You can use the `remove()` method if you do not know exactly which items to delete. For example −
 
 ```py
-#!/usr/bin/python3
+my_list = ['physics', 'chemistry', 1997, 2000, 2000]
+print (my_list)
 
-list = ['physics', 'chemistry', 1997, 2000]
-print (list)
+del my_list[2]
+print ("After deleting value at index 2 : ", my_list)
 
-del list[2]
-print ("After deleting value at index 2 : ", list)
-
+my_list.remove(2000)                                 
+print("After the remove() operation :", my_list)     
 ```
 
 When the above code is executed, it produces the following result −
 ```
-['physics', 'chemistry', 1997, 2000]
-After deleting value at index 2 :  ['physics', 'chemistry', 2000]
-
+['physics', 'chemistry', 1997, 2000, 2000]
+After deleting value at index 2 :  ['physics', 'chemistry', 2000, 2000]
+After the remove() operation : ['physics', 'chemistry', 1997, 2000]
 ```
 
-**Note** − remove() method is discussed in subsequent section.
 
 ### Basic List Operations
 
 Lists respond to the `+` and `*` operators much like strings; they mean concatenation and repetition here too, except that the result is a new list, not a string.
 
-In fact, lists respond to all of the general sequence operations we used on strings in the prior chapter.
+In fact, lists respond to all of the general basic operations that can be used on strings.
 
 
 |Python Expression                         |Results                     |Description  |
@@ -202,7 +204,7 @@ List comprehension syntax is:
 
 ## Tuples
 
-A tuple is a sequence of **immutable** Python objects. Tuples are sequences, just like lists. *The main difference between the tuples and the lists is that the tuples cannot be changed (immutable) unlike lists*. Tuples use parentheses, whereas lists use square brackets.
+A tuple is a sequence of **immutable** Python objects. Tuples are sequences, just like lists. *The main difference between the tuples and the lists is that the tuples cannot be changed (immutable) unlike lists*. Tuples use parentheses `()`, whereas lists use square brackets `[]`.
 
 Creating a tuple is as simple as putting different comma-separated values. Optionally, you can put these comma-separated values between parentheses also. For example:
 
@@ -228,8 +230,6 @@ Like string indices, tuple indices start at 0, and they can be sliced, concatena
 
 To access values in tuples, use the square brackets for *slicing* along with the index or indices to obtain the value available at that index. For example:
 ```py
-#!/usr/bin/python3
-
 tup1 = ('physics', 'chemistry', 1997, 2000)
 tup2 = (1, 2, 3, 4, 5, 6, 7 )
 
@@ -248,12 +248,10 @@ tup2[1:5]:  (2, 3, 4, 5)
 Tuples are immutable, which means you cannot update or change the values of tuple elements. You are able to take portions of the existing tuples to create new tuples as the following example demonstrates:
 
 ```py
-#!/usr/bin/python3
-
 tup1 = (12, 34.56)
 tup2 = ('abc', 'xyz')
 
-# Following action is not valid for tuples
+# Following is not valid for tuples
 # tup1[0] = 100;
 
 # So let's create a new tuple as follows
@@ -273,8 +271,6 @@ Removing individual tuple elements is not possible. There is, of course, nothing
 
 To explicitly remove an entire tuple, just use the **del** statement. For example:
 ```py
-#!/usr/bin/python3
-
 tup = ('physics', 'chemistry', 1997, 2000);
 
 print (tup)
@@ -298,9 +294,7 @@ NameError: name 'tup' is not defined
 
 ### Basic Tuples Operations
 
-Tuples respond to the `+` and `*` operators much like strings; they mean concatenation and repetition here too, except that the result is a new tuple, not a string.
-
-In fact, tuples respond to all of the general sequence operations we used on strings in the previous chapter. Indexing, Slicing, Matrixes, and basic operations all work the same as they do on lists shown above.
+Tuples respond to the `+` and `*` operators much like lists; they mean concatenation and repetition here too, except that the result is a new tuple, not a list. Indexing, Slicing, Matrixes, and basic operations all work the same as they do on lists as shown above.
 
 If you would like specifics, run `help(tuple)`.
 
@@ -329,7 +323,7 @@ A set is a collections, or sequence, much like lists and tuples except that sets
 - Are **unindexed**
     - Cannot be referred to by index or key
 
-Sets are written with curly brackets and do not allow duplicate values for items:
+Sets are written with curly brackets `{}` and do not allow duplicate values for items:
 ```py
 >>> thisset = {"apple", "banana", "cherry", "apple"}
 >>> print(thisset)
@@ -364,7 +358,7 @@ TypeError: 'set' object is not subscriptable
 >>> thisset = {"apple", "banana", "cherry"}
 >>> for x in thisset:
 ...   print(x, end=',') # instead of a newline each time, put a comma
-...
+
 cherry,banana,apple,
 >>> print("banana" in thisset)
 True

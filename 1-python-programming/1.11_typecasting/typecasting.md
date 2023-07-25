@@ -25,14 +25,14 @@ num_str = str(num_int)
 print(num_str)  # Output: "42"
 ```
 
-4. `list()`, `tuple()`, and `set()`: These functions are used to convert values to list, tuple, and set types, respectively. Here's an example of converting a string to a list:
+4. `list()`, `tuple()`, and `set()`: These functions are used to convert values to list, tuple, and set types, respectively. They are covered more in depth in [1.12_lists_tuples_and_sets](../1.12_lists_tuples_and_sets/lists_tuples_and_sets.md). Here's an example of converting a string to a list:
 ```python
 fruits_str = "apple,banana,orange"
 fruits_list = fruits_str.split(",")
 print(fruits_list)  # Output: ['apple', 'banana', 'orange']
 ```
 
-5. `bytes()`: Constructs an immutable array of bytes from: an iterable yielding integers in range(256), a text string encoded using the specified encoding, any object implementing the buffer API, an integer. You only really need to worry about the encoded text string conversion (for now), an example is shown below:
+5. `bytes()`: Constructs an immutable array of bytes from: an iterable yielding integers in range(256), a text string encoded using the specified encoding, any object implementing the buffer API, or an integer. You only really need to worry about the encoded text string conversion (for now), an example is shown below:
 ```python
 >>> my_bytes = 'This will be byte stuff'
 >>> print(my_bytes)
@@ -64,7 +64,7 @@ Traceback (most recent call last):
 ValueError: invalid literal for int() with base 10: 'bad string'
 ```
 
-Therefore, it's essential to handle exceptions appropriately, more on exceptions in [1.28_exceptions](../1.28_exceptions/README.md).
+Therefore, it's essential to handle exceptions appropriately, which is covered more in depth in [1.28_exceptions](../1.28_exceptions/README.md).
 
 Additionally, Python provides implicit type conversion in certain situations. For example, if you perform arithmetic operations involving different data types, Python automatically performs type conversion to obtain the result.
 

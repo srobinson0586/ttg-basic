@@ -13,33 +13,22 @@ This competency will help the student utilize all the skills and topics that the
 
 ## Decryption with Vigenere, Substitution, and One-Time Pad
 
-Your task is to implement three functions that perform decryption/decoding using different ciphers. The provided functions are `decode_vigenere_cipher`, `decode_substitution_cipher`, and `decode_one_time_pad`. Additionally, you need to implement the `combine_ciphers` function that combines the decryption process of all three methods.
+Your task is to implement three functions that perform decryption/decoding using different ciphers. The provided template functions are `decrypt_vigenere_cipher`, `decrypt_substitution_cipher`, and `decrypt_one_time_pad`. You may refer to their DocuStrings for more details on requirements, but here is the brief for each:
 
-TODO: CHANGE "VIGENERE" TO SUM ELSE
+**`decrypt_vigenere_cipher`**
+> Decrypts a Vigenere cipher encrypted ciphertext using the given Vigenere key. The function performs the decryption by applying the Vigenere cipher algorithm in reverse. Each character of the ciphertext is shifted back by the corresponding character from the Vigenere key. Non-alphabetic characters are left unchanged. Lettercase is taken into account (upper/lower), in order to keep the result in the same lettercase. e.g. `cipher='a'`, `key='B'` == `'z'`
 
-1. Implement the `decode_vigenere_cipher` function:
-- This function takes two parameters: `ciphertext` (a string) and `vigenere_key` (a string).
-- The function performs the decryption by applying the Vigenere cipher algorithm in reverse.
-- Each character of the ciphertext is shifted back by the corresponding character from the Vigenere key.
-- Non-alphabetic characters are left unchanged.
-- It should return the decrypted plaintext obtained after applying the Vigenere cipher algorithm in reverse.
+**`decrypt_substitution_cipher`**
+> Decrypts an encrypted string using a substitution cipher and the given substitution key.
 
-2. Implement the `decode_substitution_cipher` function:
-- This function takes two parameters: `ciphertext` (a string) and `substitution_key` (a dictionary).
-- The `substitution_key` dictionary represents the substitution key where each key-value pair corresponds to the original character and its substitution character, respectively.
-- Return the decrypted string obtained after replacing characters according to the substitution key.
+**`decrypt_vigenere_cipher`**
+> Decrypts an encrypted string using a one-time pad and the given one-time pad key. You can assume `len(that one_time_pad_key) >= len(ciphertext)`
 
-3. Implement the `decode_one_time_pad` function:
-- This function takes two parameters: `ciphertext` (a string) and `one_time_pad_key` (a string).
-- Each character in the `ciphertext` is XORd with its corresponding character in `one_time_pad_key`. The key is rolled over, used repeatedly until every character in `ciphertext` has been XORd.
-- Return the decrypted string obtained by performing XOR decryption with the one-time pad key.
+Additionally, you need to implement the `combine_ciphers` function that combines the decryption process of all three methods.
 
-4. Implement the `combine_ciphers` function:
-- This function decodes a given `vigenere_ciphertext` using the `decode_vigenere_cipher` function and `vigenere_key` to get a Vigenere plaintext.
-- That Vigenere plaintext is then used as the *ciphertext* in a Substitution Cipher, that is decoded with a given `substitution_key` and the `decode_substitution_cipher` function to get a Substitution plaintext.
-- Finally, that Substitution plaintext is used as the key to decrypt the encoded `otp_encoded` string using `decode_one_time_pad`.
-- Ensure that you have implemented the previous three functions correctly before working on this function.
-- Return the decrypted string obtained after the combination of ciphers.
+**`combine_ciphers`**
+> This function First decrypts a given `vigenere_ciphertext` using the `decrypt_vigenere_cipher` function and `vigenere_key` to get a Vigenere plaintext. Then that Vigenere plaintext is then used as the *ciphertext* in a Substitution Cipher, that is decoded with a given `substitution_key` and the `decrypt_substitution_cipher` function to get a Substitution plaintext. Finally, that Substitution plaintext is used as the key to decrypt the encoded `otp_encoded` string using `decrypt_one_time_pad`. Ensure that you have implemented the previous three functions correctly before working on this function. Return the decrypted string obtained after the combination of ciphers.
+
 
 ## Resources
 

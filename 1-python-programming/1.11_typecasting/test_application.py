@@ -32,3 +32,6 @@ def test_variable_types():
         exit()
 
     print("[+] ALL TESTS PASSED!")
+
+# for use out of pytest
+test_variable_types()
