@@ -22,7 +22,7 @@ def count_values(dictionary):
     pass
 
 # TODO 4: Remove Keys
-# Implement a function that takes a dictionary and a list of keys as input.
+# Implement a function that takes a dictionary and a *list* 'keys' as input.
 # The function should remove the key-value pairs from the dictionary for the keys present in the given list.
-def remove_keys(dictionary: dict, keys: list):
+def remove_keys(dictionary, keys):
     pass

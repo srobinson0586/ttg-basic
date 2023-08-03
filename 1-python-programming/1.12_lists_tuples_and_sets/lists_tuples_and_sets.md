@@ -27,19 +27,70 @@ Similar to string indices, list indices start at 0, and lists can be sliced, con
 To access values in lists, use the square brackets for slicing along with the index or indices to obtain the value available at that index. For example:
 ```py
 list1 = ['physics', 'chemistry', 1997, 2000]
-list2 = [1, 2, 3, 4, 5, 6, 7 ]
+list2 = [1, 2, 3, 4, 5, 6, 7]
 
-print ("list1[0]: ", list1[0])
-print ("list2[1:5]: ", list2[1:5])
+print ("list1[0]:", list1[0])
+print ("list2[1:5]:", list2[1:5])
 ```
 
 When the above code is executed, it produces the following result:
 ```
-list1[0]:  physics
-list2[1:5]:  [2, 3, 4, 5]
+list1[0]: physics
+list2[1:5]: [2, 3, 4, 5]
 ```
 
-When you use negative indeces, the index is interpreted as starting from the end and moving towards the beginning.
+### List Slicing
+
+Since lists are sequences, indexing and slicing work the same way for lists as they do for strings. In Python, list slicing is a technique used to extract a portion of a list. It allows you to create a new list containing elements from the original list based on specified `start`, `stop`, and `step` values. The general syntax for list slicing is:
+```
+new_list = original_list[start:stop:step]
+```
+
+Where:
+- `start`: The index of the element where the slice starts (inclusive). If omitted, it starts from the beginning of the list (index 0).
+- `stop`: The index of the element where the slice ends (exclusive). If omitted, it goes till the end of the list.
+- `step`: The number of steps to take between elements in the slice. If omitted, it defaults to 1, which means consecutive elements are included in the slice.
+Here are some examples to illustrate list slicing:
+```py
+# (in the interpreter)
+>>> my_list = ['C++', 'Java', 'Python', 'NCWDG', 'TG-5', 0xdeadbeef]
+>>> print(my_list[0]) # Indexing (first element at index 0)
+C++
+>>> print(my_list[2]) # Indexing 
+Python
+>>> print(my_list[2:]) # Forward slicing - doesn't specify stop/step
+['Python', 'NCWDG', 'TG-5', 3735928559]
+>>> print(my_list[:2]) # Backward slicing - doesn't specify start/step, only stop
+['C++', 'Java']
+
+# Negative indexing starts counting from the right
+>>> print(my_list[-2])
+TG-5
+>>> print(my_list[-2:5]) # Start @ 2nd-to-last, Stop before the 6th element
+['TG-5']
+>>> print(my_list[-2:])  # Start @ 2nd-to-last, No stop/step
+['TG-5', 3735928559]
+
+# Steps dictate by how much the iterator moves at a time
+>>> print(my_list[2::1]) # Step 1 at a time (default)
+['Python', 'NCWDG', 'TG-5', 3735928559]
+>>> print(my_list[2::2]) # Step 2 at a time
+['Python', 'TG-5']
+
+# You can create new lists with slicing
+>>> cool_list = my_list[3:] # Don't take the first 3 elements of my_list
+>>> print(cool_list)
+['NCWDG', 'TG-5', 3735928559]
+
+# You can easily reverse lists with a -1 step
+>>> reverse_list = my_list[::-1] # New list from the reverse of the my_list 
+>>> print(reverse_list)
+[3735928559, 'TG-5', 'NCWDG', 'Python', 'Java', 'C++']
+```
+
+Keep in mind that list slicing creates a new list with the specified elements, and it does not modify the original list. If you modify the new list, it won't affect the original list and vice versa.
+
+Just to expound on it, when you use negative indeces, the index is interpreted as starting from the end and moving towards the beginning.
 ```py
 >>> a = [1, 2, 3, 4, 5, 6, 7]
 >>> a[-2]
@@ -56,10 +107,10 @@ You can update single or multiple elements of lists by giving the slice on the l
 
 ```py
 my_list = ['physics', 'chemistry', 1997, 2000]
-print ("Value available at index 2 : ", my_list[2])
+print ("Value available at index 2:", my_list[2])
 
 my_list[2] = 2001  # here we tell the python interpreter to update the [2] slice of my_list
-print ("New value available at index 2 : ", my_list[2])
+print ("New value available at index 2:", my_list[2])
 
 my_list[1:3] = [1337, 'Cyb3r 0p5'] # update slice [1:3] with the new list value
 print("New list is:", my_list)
@@ -71,8 +122,8 @@ print("New list is:", my_list)
 When the above code is executed, it produces the following result:
 
 ```
-Value available at index 2 :  1997
-New value available at index 2 :  2001
+Value available at index 2: 1997
+New value available at index 2: 2001
 New list is: ['physics', 1337, 'Cyb3r 0p5', 2000]
 New list is: ['physics', 1337, 'Cyb3r 0p5', 2000, 3735928559]
 ```
@@ -80,25 +131,35 @@ New list is: ['physics', 1337, 'Cyb3r 0p5', 2000, 3735928559]
 
 ### Delete List Elements
 
-To remove a list element, you can use the **`del`** statement if you know exactly which element(s) you are deleting. You can use the `remove()` method if you do not know exactly which items to delete. For example −
+To remove a list element, you can use the **`del`** statement, or the `list.pop()` method if you know exactly which element(s) you are deleting. You can use the `remove()` method if you do not know exactly which items to delete. For example −
 
 ```py
 my_list = ['physics', 'chemistry', 1997, 2000, 2000]
 print (my_list)
 
 del my_list[2]
-print ("After deleting value at index 2 : ", my_list)
+print ("After deleting value at index 2:", my_list)
 
 my_list.remove(2000)                                 
-print("After the remove() operation :", my_list)     
+print("After the remove() operation:", my_list)
+
+my_phys = my_list.pop(0)
+print(my_phys)
+print("After the pop() operation:", my_list)
 ```
 
 When the above code is executed, it produces the following result −
 ```
 ['physics', 'chemistry', 1997, 2000, 2000]
-After deleting value at index 2 :  ['physics', 'chemistry', 2000, 2000]
-After the remove() operation : ['physics', 'chemistry', 1997, 2000]
+After deleting value at index 2: ['physics', 'chemistry', 2000, 2000]
+After the remove() operation: ['physics', 'chemistry', 1997, 2000]
+physics
+After the pop() operation: ['chemistry', 2000]
 ```
+
+As seen above, `pop()` is a *method* of the `list` class so it is called with the `.` operator on the `my_list` variable. `del` is a python keyword, so you don't need to use the `.` operator, and you pass the target object to delete as opposed to its index in `my_list`. 
+
+Keep in mind that you don't *have to use* the return value from `list.pop()`, but the function will always return a value. So keep in mind the extra overhead for `pop()` and only use it if you need the returned value.
 
 
 ### Basic List Operations
@@ -115,24 +176,6 @@ In fact, lists respond to all of the general basic operations that can be used o
 | `['Hi!'] * 4`                            |['Hi!', 'Hi!', 'Hi!', 'Hi!']|Repetition   |
 | `3 in [1, 2, 3]`                         | True                       |Membership   |
 | `for x in [1,2,3] : print (x,end = ' ')` | 1 2 3                      |Iteration    |
-
-
-### Indexing, Slicing and Matrixes
-
-Since lists are sequences, indexing and slicing work the same way for lists as they do for strings.
-
-Assuming the following input:
-
-```py
-L = ['C++', 'Java', 'Python']
-```
-
-|Python Expression   |Results           |Description                   |
-|--------------------|------------------|------------------------------|
-| `L[2]`             |'Python'          |Offsets start at zero         |
-| `L[-2]`            |'Java'            |Negative: count from the right|
-| `L[1:]`            |['Java', 'Python']|Slicing fetches sections      |
-
 
 ### Built-in List Functions and Methods
 
@@ -201,6 +244,7 @@ List comprehension syntax is:
     - The statements you would like done to the *item* before it ends up as a list item in the new list
     - Above, it was: `x * 74`
 
+If you are still having trouble understanding List Comprehension, I recommend checking out this [Python Tutorial on List Comprehension](https://youtu.be/3dt4OGnU5sM).
 
 ## Tuples
 
@@ -275,14 +319,14 @@ tup = ('physics', 'chemistry', 1997, 2000);
 
 print (tup)
 del tup;
-print ("After deleting tup : ")
+print ("After deleting tup:")
 print (tup)
 ```
 
 This produces the following result:
 ```
 ('physics', 'chemistry', 1997, 2000)
-After deleting tup :
+After deleting tup:
 Traceback (most recent call last):
    File "test.py", line 9, in <module>
       print tup;
@@ -297,6 +341,37 @@ NameError: name 'tup' is not defined
 Tuples respond to the `+` and `*` operators much like lists; they mean concatenation and repetition here too, except that the result is a new tuple, not a list. Indexing, Slicing, Matrixes, and basic operations all work the same as they do on lists as shown above.
 
 If you would like specifics, run `help(tuple)`.
+
+### Tuple Unpacking
+
+Basically the most important use case for a tuple is when you want to be able to group together a bunch of variables without creating an entire Class for them. This is often the case for return values from functions (covered in [1.15_functions](../1.15_functions/functions.md)).
+```py
+>>> def get_coordinates( ship ): 
+...     if ship == 'CVN-69':
+...             return (132.3, 201)
+...     elif ship == 'CVN-73':
+...             return (124.4, 021.3)
+...     elif ship == 'CVN-70':
+...             return (19, 234.2)
+...
+>>> vinson_x, vinson_y = get_coordinates('CVN-70')  # tuple unpacking
+>>> vinson_x
+19
+>>> vinson_y
+234.2
+>>> eisenhower_x, _ = get_coordinates('CVN-69')     # if you don't want one of them, use an _
+>>> eisenhower_x
+132.3
+>>> washington_x = get_coordinates('CVN-73')        # insufficient l-values, gets set as a tuple
+>>> washington_x
+(124.4, 21.3)
+```
+
+As seen above, usually tuple unpacking is done by specifying an amount of variables equal to the size of the expected return tuple.
+
+If you don't want to use one of them, you can specify an empty slot with `_` as seen in example 2. 
+
+If you don't use the same amount of variables as the function's return size, one of the variables will be set to a tuple as seen in example 3 above.
 
 ### Built-in Tuple Functions
 
@@ -387,6 +462,7 @@ You can add items, to a set using its `add()` method. You can use the `update()`
 Notice how `thisset` didn't duplicate any values that were present both in itself and `mylist`. This ability to maintain *unique* items can be useful in situations like maintaining password lists for bruteforcing.
 
 ## References
+- [Python- List Comprehensions](https://youtu.be/3dt4OGnU5sM).
 - [Tutorialspoint- Lists](https://www.tutorialspoint.com/python3/python_lists.htm)
 - [Tutorialspoint- Tuples](https://www.tutorialspoint.com/python3/python_tuples.htm)
 - [W3 Schools- Sets](https://www.w3schools.com/python/python_sets.asp)
