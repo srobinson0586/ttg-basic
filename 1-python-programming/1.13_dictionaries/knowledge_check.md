@@ -1,6 +1,5 @@
 # Python Dictionaries - Knowledge Check
 
-[Back to README](README.md)
 
 1. Which symbol is used to separate a key and its value in a dictionary?
 ```
@@ -61,3 +60,5 @@ ANSWER:
 ```
 
 ```
+
+[Back to README](README.md)

@@ -30,11 +30,11 @@ def greet_person(....):
     #TODO: Implement
     pass
 
-# Challenge 3: Recursive Function
+# Challenge 3: Factorial Function
+
 def calculate_factorial(n):
     '''
     Takes a non-negative integer `n` as an argument and returns the factorial of `n`
-    Use the recursive approach to solve this problem.
     Example:
         calculate_factorial(5)  # Output should be 120 (5! = 5 * 4 * 3 * 2 * 1 = 120)
     '''

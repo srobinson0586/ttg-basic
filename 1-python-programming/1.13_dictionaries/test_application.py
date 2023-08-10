@@ -57,4 +57,5 @@ def test_dictionaries():
 
     print("[+] ALL TESTS PASSED!\n")
 
-# test_dictionaries()
+# for use without pytest
+#test_functions()

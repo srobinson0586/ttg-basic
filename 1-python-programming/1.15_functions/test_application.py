@@ -57,4 +57,4 @@ def test_functions():
     print("[+] ALL TESTS PASSED!")
 
 # for use without pytest
-test_functions()
+#test_functions()

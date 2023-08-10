@@ -1,6 +1,5 @@
 # Python Lists Tuples And Sets
 
-[Back to README](README.md)
 
 ## Lists
 
@@ -11,6 +10,8 @@ Python has six built-in types of sequences, but the most common ones are lists a
 There are certain things you can do with all the sequence types. These operations include *indexing, slicing, adding, multiplying*, and *checking for membership*. In addition, Python has built-in functions for finding the length of a sequence and for finding its largest and smallest elements.
 
 The list is the most versatile datatype available in Python, which can be written as a list of comma-separated values (items) between square brackets. An important thing about a list is that the items in a list need not be of the same type.
+
+For more information, check out [Python Docs- Lists](https://docs.python.org/3/library/stdtypes.html#lists). 
 
 Creating a list is as simple as putting different comma-separated values between square brackets. For example:
 
@@ -248,7 +249,9 @@ If you are still having trouble understanding List Comprehension, I recommend ch
 
 ## Tuples
 
-A tuple is a sequence of **immutable** Python objects. Tuples are sequences, just like lists. *The main difference between the tuples and the lists is that the tuples cannot be changed (immutable) unlike lists*. Tuples use parentheses `()`, whereas lists use square brackets `[]`.
+A tuple is a sequence of **immutable** Python objects. Tuples can be used much like lists. *The main difference between the tuples and the lists is that the tuples cannot be changed (immutable) unlike lists*. Tuples use parentheses `()`, whereas lists use square brackets `[]`.
+
+For more information, check out [Python Docs- Tuples](https://docs.python.org/3/library/stdtypes.html#tuples).
 
 Creating a tuple is as simple as putting different comma-separated values. Optionally, you can put these comma-separated values between parentheses also. For example:
 
@@ -398,6 +401,8 @@ A set is a collections, or sequence, much like lists and tuples except that sets
 - Are **unindexed**
     - Cannot be referred to by index or key
 
+For more, reference the [Python Docs- Sets](https://docs.python.org/3/library/stdtypes.html#set-types-set-frozenset) page.
+
 Sets are written with curly brackets `{}` and do not allow duplicate values for items:
 ```py
 >>> thisset = {"apple", "banana", "cherry", "apple"}
@@ -461,9 +466,16 @@ You can add items, to a set using its `add()` method. You can use the `update()`
 
 Notice how `thisset` didn't duplicate any values that were present both in itself and `mylist`. This ability to maintain *unique* items can be useful in situations like maintaining password lists for bruteforcing.
 
-## References
+## Resources
 - [Python- List Comprehensions](https://youtu.be/3dt4OGnU5sM).
+- [W3 Schools- List Comprehension](https://www.w3schools.com/python/python_lists_comprehension.asp)
+- [Python Docs- Lists](https://docs.python.org/3/library/stdtypes.html#lists)
+- [Python Docs- Sets](https://docs.python.org/3/library/stdtypes.html#set-types-set-frozenset)
+- [Python Docs- Tuples](https://docs.python.org/3/library/stdtypes.html#tuples)
+
+## Sources
 - [Tutorialspoint- Lists](https://www.tutorialspoint.com/python3/python_lists.htm)
 - [Tutorialspoint- Tuples](https://www.tutorialspoint.com/python3/python_tuples.htm)
 - [W3 Schools- Sets](https://www.w3schools.com/python/python_sets.asp)
-- [W3 Schools- List Comprehension](https://www.w3schools.com/python/python_lists_comprehension.asp)
+
+[Back to README](README.md)

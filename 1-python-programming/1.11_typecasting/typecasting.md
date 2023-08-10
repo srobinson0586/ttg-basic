@@ -1,6 +1,5 @@
 # Python Typecasting
 
-[Back to README](README.md)
 
 Typecasting, also known as type conversion, is the process of changing the data type of a value in Python. It allows you to convert variables from one type to another, depending on your requirements. 
 
@@ -160,5 +159,9 @@ Therefore, it's essential to handle exceptions appropriately, which is covered m
 
 ## References
 
-- [Tutorialspoint Variable Types](https://www.tutorialspoint.com/python3/python_variable_types.htm)
 - [Python Classes & Instances Tutorial](https://www.youtube.com/watch?v=ZDa-Z5JzLYM)
+
+## Sources
+- [Tutorialspoint Variable Types](https://www.tutorialspoint.com/python3/python_variable_types.htm)
+
+[Back to README](README.md)

@@ -1,6 +1,5 @@
 # Python Typecasting - Knowledge Check
 
-[Back to README](README.md)
 
 1. Will the following work? Why or why not?
 ```python
@@ -16,3 +15,5 @@ ANSWER:
 ```
 ANSWER: 
 ```
+
+[Back to README](README.md)

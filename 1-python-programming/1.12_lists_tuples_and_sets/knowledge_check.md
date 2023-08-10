@@ -1,6 +1,5 @@
 # Python Lists Tuples And Sets - Knowledge Check
 
-[Back to README](README.md)
 
 ## Lists
 
@@ -74,3 +73,5 @@ ANSWER:
 ```
 
 ```
+
+[Back to README](README.md)

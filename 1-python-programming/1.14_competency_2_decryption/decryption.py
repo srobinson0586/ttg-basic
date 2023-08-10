@@ -7,6 +7,7 @@ def decrypt_vigenere_cipher(ciphertext, vigenere_key):
     Each character of the ciphertext is shifted back by the corresponding character from the Vigenere key.
     Non-alphabetic characters are left unchanged.
     Lettercase is taken into account (upper/lower), in order to keep the result in the same lettercase. e.g. cipher='a', key='B' == 'z'
+    The key will only ever contain alphabetic characters.
 
     Parameters:
         - ciphertext: str; The encrypted string (ciphertext) to be decrypted using the Vigenere cipher.
@@ -18,10 +19,10 @@ def decrypt_vigenere_cipher(ciphertext, vigenere_key):
 
     Example:
     >>> ciphertext = 'almghxw4087:1a;>[asd'
-    >>> vigenere_key = 'L337_C0D3'
+    >>> vigenere_key = 'LEETCODE'
     >>> decrypted_text = decrypt_vigenere_cipher(ciphertext, vigenere_key)
     >>> print(decrypted_text)
-    'pfgwjvt4087:1c;>[uhx'
+    'phinfjt4087:1m;>[wok'
     """
     # TODO: Implement
     pass
@@ -64,8 +65,7 @@ def decrypt_one_time_pad(ciphertext, one_time_pad_key):
     >>> one_time_pad_key = '1048xcmd;a31@^*@$+}"{'
     >>> decrypted_string = decrypt_one_time_pad(ciphertext, one_time_pad_key)
     >>> print(decrypted_string)
-    BQ]T↨◄2►R
-    ^H               (unprintable characters)
+    'BQ]T\x17\x112\x10R\x0c^H'              (unprintable characters)
     """
     # TODO: Implement
     pass

@@ -1,8 +1,7 @@
 # Python Functions
 
-[Back to README](README.md)
 
-A function is a block of organized, reusable code that is used to perform a single, related action. Functions provide better modularity for your application and a high degree of code reusing.
+A function is a block of organized, reusable code that is used to perform a single, related action. Functions provide better modularity for your application and a high degree of code reuse.
 
 As you already know, Python gives you many built-in functions like `print()`, etc. but you can also create your own functions. These functions are called *user-defined functions.*
 
@@ -301,7 +300,6 @@ These functions are called anonymous because they are not declared in the standa
 -   Lambda functions can take any number of arguments but return just one value in the form of an expression. *They cannot contain multiple expressions*.
 -   An anonymous function cannot be a direct call to print because `lambda` requires an expression.
 -   Lambda functions have their own local namespace and cannot access variables other than those in their parameter list and those in the global namespace.
--   Although it appears that lambdas are a one-line version of a function, they are not equivalent to inline statements in C or C++, whose purpose is to stack allocation by passing function, during invocation for performance reasons.
 
 ### Syntax
 
@@ -328,12 +326,12 @@ Value of total :  40
 sum is of type :  <class 'function'>
 ```
 
-Feel free to play around with the above lambda function, and define your own, in the interactive python interpreter! Keep in mind that lambda functions aren't extremely common.
+Feel free to play around with the above lambda function, or define your own, in the interactive python interpreter! Keep in mind that lambda functions aren't extremely common.
 
 
 ## Scope of Variables
 
-All variables in a program may not be accessible at all locations in that program. This depends on where you have declared a variable.
+Some variables in a program may not be accessible at all locations in that program. This depends on where you have declared a variable.
 
 The scope of a variable determines the portion of the program where you can access a particular identifier. There are two basic scopes of variables in Python:
 
@@ -474,4 +472,9 @@ Back in main, the global is:  NCWDG{TRYING_TO_MAKE_THIS_GLOBAL}
 
 - [RealPython- Docstrings](https://realpython.com/documenting-python-code/#documenting-your-python-code-base-using-docstrings)
 - [RealPython- Pass by Reference](https://realpython.com/python-pass-by-reference/)
+
+## Sources
+
 - [Tutorialspoint- Function](https://www.tutorialspoint.com/python3/python_functions.htm)
+
+[Back to README](README.md)

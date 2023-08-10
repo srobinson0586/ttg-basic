@@ -40,4 +40,4 @@ def test_lists_tuples_and_sets():
     print("[+] ALL TESTS PASSED!\n")
 
 # for use without pytest
-test_lists_tuples_and_sets()
+#test_functions()

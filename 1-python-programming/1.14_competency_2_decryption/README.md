@@ -21,13 +21,13 @@ Your task is to implement three functions that perform decryption/decoding using
 **`decrypt_substitution_cipher`**
 > Decrypts an encrypted string using a substitution cipher and the given substitution key.
 
-**`decrypt_vigenere_cipher`**
-> Decrypts an encrypted string using a one-time pad and the given one-time pad key. You can assume `len(that one_time_pad_key) >= len(ciphertext)`
+**`decrypt_one_time_pad`**
+> Decrypts an encrypted string using a one-time pad and the given one-time pad key. You can assume `len(one_time_pad_key) >= len(ciphertext)`
 
 Additionally, you need to implement the `combine_ciphers` function that combines the decryption process of all three methods.
 
 **`combine_ciphers`**
-> This function First decrypts a given `vigenere_ciphertext` using the `decrypt_vigenere_cipher` function and `vigenere_key` to get a Vigenere plaintext. Then that Vigenere plaintext is then used as the *ciphertext* in a Substitution Cipher, that is decoded with a given `substitution_key` and the `decrypt_substitution_cipher` function to get a Substitution plaintext. Finally, that Substitution plaintext is used as the key to decrypt the encoded `otp_encoded` string using `decrypt_one_time_pad`. Ensure that you have implemented the previous three functions correctly before working on this function. Return the decrypted string obtained after the combination of ciphers.
+> This function first decrypts a given `vigenere_ciphertext` using the `decrypt_vigenere_cipher` function and `vigenere_key` to get a Vigenere plaintext. Then that Vigenere plaintext is used as the *ciphertext* in a Substitution Cipher, which is decoded by `decrypt_substitution_cipher` using a given `substitution_key`. Finally, that Substitution plaintext is used as the key to decrypt the encoded `otp_encoded` string using `decrypt_one_time_pad`. Ensure that you have implemented the previous three functions correctly before working on this function. Return the decrypted string obtained after the combination of ciphers.
 
 
 ## Resources
@@ -36,3 +36,5 @@ Additionally, you need to implement the `combine_ciphers` function that combines
     - Keep in mind that this competency requires you do the opposite (decryption) of what the video shows.
 - [String Methods](https://www.w3schools.com/python/python_ref_string.asp)
 - [Typecasting](../1.11_typecasting/typecasting.md)
+
+[Back to README](README.md)

@@ -1,7 +1,5 @@
 # Python Functions - Knowledge Check
 
-[Back to README](README.md)
-
 
 1. What is a function in Python?
 ```
@@ -122,3 +120,5 @@ ANSWER:
 ```
 
 ```
+
+[Back to README](README.md)
