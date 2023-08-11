@@ -14,9 +14,11 @@ def test_variable_types():
     assert not getattr(application, 'gone', None), '"gone" variable exists'
     assert getattr(application, 'solution', 0) == int(number), '"solution" variable incorrect'
     things = getattr(application, 'things', None)
-    assert type(things) is list, '"things" variable not list'
+    assert type(things) is list, '"things" variable not a list'
     assert (len(things) == 3), 'Things: incorrect length'
     assert type(things[0]) is int, 'Things: first element is not an integer'
     assert type(things[1]) is str, 'Things: second element is not a string'
     assert type(things[2]) is list, 'Things: third element is not a list'
+    assert len(things[2]) == 0, 'Things: third element not empty'
+
         
