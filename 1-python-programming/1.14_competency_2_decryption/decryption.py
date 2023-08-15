@@ -51,7 +51,7 @@ def decrypt_substitution_cipher(ciphertext, substitution_key):
 def decrypt_one_time_pad(ciphertext, one_time_pad_key):
     """
     Decrypts an encrypted string using a one-time pad and the given one-time pad key.
-    You can assume len(that one_time_pad_key) >= len(ciphertext)
+    You can assume that len(one_time_pad_key) >= len(ciphertext)
 
     Parameters:
         - ciphertext: str; The encrypted string to be decrypted.
