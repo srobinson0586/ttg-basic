@@ -114,14 +114,14 @@ Strings in Python are identified as a contiguous set of characters represented i
 
 The plus (`+`) sign is the string concatenation operator and the asterisk (`*`) is the repetition operator. For example:
 ```python
-str = 'Hello World!'
+string = 'Hello World!'
 
-print(str)          # Prints complete string
-print(str[0])       # Prints first character of the string
-print(str[2:5])     # Prints characters starting from 3rd to 5th
-print(str[2:])      # Prints string starting from 3rd character
-print(str * 2)      # Prints string two times
-print(str + "TEST") # Prints concatenated string
+print(string)          # Prints complete string
+print(string[0])       # Prints first character of the string
+print(string[2:5])     # Prints characters starting from 3rd to 5th
+print(string[2:])      # Prints string starting from 3rd character
+print(string * 2)      # Prints string two times
+print(string + "TEST") # Prints concatenated string
 ```
 
 This will produce the following result:
@@ -177,11 +177,11 @@ The main difference between lists and tuples are: Lists are enclosed in brackets
 big_tuple = ('NCWDG', 786 , 2.23, 'john', 70.2 )
 tiny_tuple = (123, 'john')
 
-print(big_tuple)           # Prints complete tuple
-print(big_tuple[0])        # Prints first element of the tuple
-print(big_tuple[1:3])      # Prints elements starting from 2nd till 3rd 
-print(big_tuple[2:])       # Prints elements starting from 3rd element
-print(tiny_tuple * 2)      # Prints tuple two times
+print(big_tuple)                # Prints complete tuple
+print(big_tuple[0])             # Prints first element of the tuple
+print(big_tuple[1:3])           # Prints elements starting from 2nd till 3rd 
+print(big_tuple[2:])            # Prints elements starting from 3rd element
+print(tiny_tuple * 2)           # Prints tuple two times
 print(big_tuple + tiny_tuple)   # Prints concatenated tuple
 ```
 
@@ -218,8 +218,8 @@ my_dict[2]     = "This is two"
 
 tiny_dict = {'name': 'john','code':6734, 'dept': 'sales'}
 
-print(my_dict['one'])       # Prints value for 'one' key
-print(my_dict[2])           # Prints value for 2 key
+print(my_dict['one'])     # Prints value for 'one' key
+print(my_dict[2])         # Prints value for 2 key
 print(tiny_dict)          # Prints complete dictionary
 print(tiny_dict.keys())   # Prints all the keys
 print(tiny_dict.values()) # Prints all the values
