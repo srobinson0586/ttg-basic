@@ -11,7 +11,7 @@ enc_dict2 = {b'Yg==': 4, b'ZA==': 5}
 enc_keys_to_filter = [b'YQ==', b'Yw==', b'ZQ==']
 enc_keys_to_rm = [b'Yg==', b'ZA==']
 
-def dictionaries():
+def test_dictionaries():
     # Challenge 1: Merge Dictionaries
     dict1 = {}
     for a,b in enc_dict1.items():
@@ -25,7 +25,6 @@ def dictionaries():
         merged_dict.update({(base64.b64decode(a)).decode() : b})
     first = application.merge_dictionaries(dict1, dict2)
     assert merged_dict == first, 'merge_dictionaries(); Incorrect return value'
-    print('[+] merge_dictionaries Test PASSED')
 
     # Challenge 2: Filter Dictionary
     keys_to_filter = [(base64.b64decode(a)).decode() for a in enc_keys_to_filter]
@@ -35,27 +34,12 @@ def dictionaries():
             filtered_dict.update({a : b})
     second = application.filter_dictionary(merged_dict, keys_to_filter)
     assert second == filtered_dict, 'filter_dictionary(); Incorrect return value'
-    print('[+] filter_dictionary Test PASSED')
 
     # Challenge 3: Count Values
     third = application.count_values(merged_dict)
     assert third == value_counts, 'count_values(); Incorrect return value'
-    print('[+] count_values Test PASSED')
 
     # Challenge 4: Remove Keys
     keys_to_remove = [(base64.b64decode(a)).decode() for a in enc_keys_to_rm]
     application.remove_keys(merged_dict, keys_to_remove)
     assert merged_dict == filtered_dict, 'remove_keys(); Incorrect return value'
-    print('[+] remove_keys Test PASSED')
-
-def test_dictionaries():
-    try:
-        dictionaries()
-    except AssertionError as e:
-        print(f"[-] Test FAILED: '{e}'")
-        exit()
-
-    print("[+] ALL TESTS PASSED!\n")
-
-# for use without pytest
-#test_functions()
