@@ -13,7 +13,7 @@ This competency will help the student utilize all the skills and topics that the
 
 ## Decryption with Vigenere, Substitution, and One-Time Pad
 
-Your task is to implement three functions that perform decryption/decoding using different ciphers. The provided template functions are `decrypt_vigenere_cipher`, `decrypt_substitution_cipher`, and `decrypt_one_time_pad`. You may refer to their DocuStrings for more details on requirements, but here is the brief for each:
+Your task is to implement three functions that perform decryption/decoding using different ciphers. The provided template functions are `decrypt_vigenere_cipher`, `decrypt_substitution_cipher`, and `decrypt_one_time_pad`. You may refer to their docstrings for more details on requirements, but here is the brief for each:
 
 **`decrypt_vigenere_cipher`**
 > Decrypts a Vigenere cipher encrypted ciphertext using the given Vigenere key. The function performs the decryption by applying the Vigenere cipher algorithm in reverse. Each character of the ciphertext is shifted back by the corresponding character from the Vigenere key. Non-alphabetic characters are left unchanged. Lettercase is taken into account (upper/lower), in order to keep the result in the same lettercase. e.g. `cipher='a'`, `key='B'` == `'z'`
