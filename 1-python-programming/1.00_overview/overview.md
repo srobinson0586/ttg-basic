@@ -17,11 +17,11 @@ There are 7 total competency modules. Each of them attempts to challenge the stu
 | [1.03 Variable Types](../1.03_variable_types/README.md)  | Basic python Data Types |
 | [1.04 Operators](../1.04_operators/README.md)  | Overview of python Arithmetic, Comparison, Assignment, Bitwise, Membership, Identity, and Logical operator types | 
 | [1.05 Conditionals](../1.05_conditionals/README.md) | Intro to python `if`, `elif`, and `else` statements |
-| 1.06_loops  | TODO |
-| 1.07_debugging  | TODO |
-| **1.08_competency_1_fizzbuzz**  | TODO |
-| 1.09_numbers  | TODO |
-| 1.10_strings  | TODO |
+| [1.06_loops](../1.06_loops/README.md)  | Intro to `while` loops, `for` loops, and loop control statements |
+| [1.07_debugging](../1.07_debugging/README.md)  | Overview of print statement debugging and the Python Debugger |
+| **[1.08_competency_1_fizzbuzz](../1.08_competency_1_fizzbuzz/README.md)**  | The student will implement the `fizzbuzz` function to demonstrate knowledge of basic programming concepts like arithmetic operations, conditional statements, and loops  |
+| [1.09_numbers](../1.09_numbers/README.md)  | Covers Python's numerical types, truthiness of numbers, and introduces the `math` module |
+| [1.10_strings](../1.10_strings/README.md)  | Information about strings including access, modification, truthiness, string functions, and string types |
 | [1.11 Typecasting](../1.11_typecasting/README.md)  | Overview on getting variables of different types to work together | 
 | [1.12 Lists Tuples and Sets](../1.12_lists_tuples_and_sets/README.md)  | Intro to the popular sequence objects and best use cases |
 | [1.13 Dictionaries](../1.13_dictionaries/README.md)  | A quick run down on python dictionaries and their most important features |
