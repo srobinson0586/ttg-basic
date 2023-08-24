@@ -90,7 +90,7 @@ var2 = 10
 You can also delete the reference to any object by using the `del` statement. The syntax of the `del` statement is:
 
 ```python
-del var1[,var2[,var3[....,varN]]]]
+del var1[,var2[,var3[....,varN]]]
 ```
 
 
