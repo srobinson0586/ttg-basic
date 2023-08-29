@@ -106,10 +106,4 @@ def make_next_section(language: str):
     
 if __name__ == '__main__':
     # make_next_section('Python')
-    sections = ["1.11_typecasting"
-                ,"1.12_lists_tuples_and_sets"
-                ,"1.13_dictionaries"
-                ,"1.14_competency_2_decryption"
-                ,"1.15_functions"]
-    for section in sections:
-        make_section(section, "Python")
+    make_section("1.05_conditionals", "Python")
