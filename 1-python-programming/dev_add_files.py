@@ -1,4 +1,4 @@
-#!/bin/python
+!/bin/python
 """
 dev_add_files.py - Creates boilerplate for JQR sections
 
@@ -106,4 +106,4 @@ def make_next_section(language: str):
     
 if __name__ == '__main__':
     # make_next_section('Python')
-    make_section("1.05_conditionals", "Python")
+    make_section("1.07_debugging", "Python")

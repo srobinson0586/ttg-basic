@@ -25,13 +25,13 @@ There are 7 total competency modules. Each of them attempts to challenge the stu
 | [1.11 Typecasting](../1.11_typecasting/README.md)  | Overview on getting variables of different types to work together | 
 | [1.12 Lists Tuples and Sets](../1.12_lists_tuples_and_sets/README.md)  | Intro to the popular sequence objects and best use cases |
 | [1.13 Dictionaries](../1.13_dictionaries/README.md)  | A quick run down on python dictionaries and their most important features |
-| **[1.14 Competency 2: Decryption](../1.14_competency_2_decryption/README.md)**  | Tasks the student with implementing a Vigenere cipher, a Substitution Cipher, and an XOR One Time Pad cipher to get a flag |
+| **`1.14 Competency 2: Decryption`**  | Tasks the student with implementing a Vigenere cipher, a Substitution Cipher, and an XOR One Time Pad cipher to get a flag |
 | [1.15 Functions](../1.15_functions/README.md)  | Overview on function creation, variable scope, function arguments, and function return values |
-| 1.16_modules  | TODO |
-| 1.17_unit_tests  | TODO |
-| 1.18_file_io  | TODO |
-| **1.19_competency_3_wordle**  | TODO |
-| 1.20_data_structures  | TODO |
+| [1.16_modules](../1.16_modules/README.md)  | How to use reusable code and function definitions that can be imported into other programs |
+| [1.17_unit_tests](../1.17_unit_tests/README.md)  Testing individual units or components of a software application in isolation to ensure they behave as expected. |
+| [1.18_file_io](../1.18_file_io/README.md)  | Basics on reading, writing, and modifying data stored in files |
+| **`1.19_competency_3_wordle`**  | Recreate the sensational game WORDLE using python |
+| [1.20_data_structures](../1.20_data_structures/README.md)  | Fundamentals of Stacks, Linked Lists, Graphs, Arrays, and Binary Search Trees |
 | 1.21_algorithms  | TODO |
 | **1.22_competency_4_sorting**  | TODO |
 | 1.23_classes_and_objects  | TODO |
