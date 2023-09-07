@@ -72,13 +72,17 @@ It can be incredibly useful to debug small code snippets, and has some differenc
 
 It is **HIGHLY** recommended that you run the small code snippets shown throughout the JQR yourself, not simply take us at our word. You can play around with the variables in the shell to truly understand the concepts.
 
+> If the Python REPL shell isn't intuitive enough for you, try out the [python `IPython` module](https://pypi.org/project/ipython/)! It has syntax highlighting, tab completion, and many other features (check out the link).
+> You can install it with `pip install ipython`. To run it from the terminal, do `python -m IPython`. To run it from within a script, you can use this one-liner: `import IPython; IPython.embed()`, and you will be able to execute python in the context of your script! This is useful for analyzing values of variables and any actions performed on them.
 
 ## Resources
+
 - [Tutorialspoint- Python3 vs Python2](https://www.tutorialspoint.com/python3/python3_whatisnew.htm)
 - [VS Code Docs](https://code.visualstudio.com/docs)
 - [VS Code Linux Setup](https://code.visualstudio.com/docs/setup/linux)
 - [Python Download- Windows](https://www.python.org/downloads/windows/)
 - [Python 101- The REPL](https://www.youtube.com/watch?v=ucllf6bDgnw)
 - [Realpython Article](https://realpython.com/python-repl/)
-
+- [`IPython`](https://pypi.org/project/ipython/)
+- 
 [Back to README](README.md)

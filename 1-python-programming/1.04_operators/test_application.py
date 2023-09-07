@@ -11,7 +11,7 @@ enc_str_2 = b'dGhpcyBiZSBzdHJpbmcgdHdv'
 enc_str = b'dGhpcyBiZSBzdHJpbmcgb25ldGhpcyBiZSBzdHJpbmcgdHdvbw=='
 enc_str_3 = b'U2FtZUxlbmd0aA=='
 
-def my_operators():
+def test_operators():
     a = int.from_bytes(b64decode(enc_a))
     b = int.from_bytes(b64decode(enc_b))
     c = int.from_bytes(b64decode(enc_c))
@@ -25,11 +25,3 @@ def my_operators():
     assert application.concatenate_strings(str_1, str_2) == b64decode(enc_str_3).decode(), 'concatenate_strings; Incorrect return value'
     assert application.concatenate_strings(str_1, '') == b64decode(enc_str_1).decode(), 'concatenate_strings; Incorrect return value with same length strings'
     print('[+] concatenate_strings Test PASSED')
-    
-def test_operators():
-    try:
-        my_operators()
-    except AssertionError as e:
-        print(f"[-] Test FAILED: '{e}'")
-        exit()
-    print("[+] ALL TESTS PASSED!")

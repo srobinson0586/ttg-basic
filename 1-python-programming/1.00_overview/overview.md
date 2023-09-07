@@ -25,7 +25,7 @@ There are 7 total competency modules. Each of them attempts to challenge the stu
 | [1.11 Typecasting](../1.11_typecasting/README.md)  | Overview on getting variables of different types to work together | 
 | [1.12 Lists Tuples and Sets](../1.12_lists_tuples_and_sets/README.md)  | Intro to the popular sequence objects and best use cases |
 | [1.13 Dictionaries](../1.13_dictionaries/README.md)  | A quick run down on python dictionaries and their most important features |
-| **`1.14 Competency 2: Decryption`**  | Tasks the student with implementing a Vigenere cipher, a Substitution Cipher, and an XOR One Time Pad cipher to get a flag |
+| **[1.14 Competency 2: Decryption](../1.14_competency_2_decryption/README.md)**  | Implement a Vigenere cipher, a Substitution Cipher, and an XOR One Time Pad cipher to get a flag |
 | [1.15 Functions](../1.15_functions/README.md)  | Overview on function creation, variable scope, function arguments, and function return values |
 | [1.16_modules](../1.16_modules/README.md)  | How to use reusable code and function definitions that can be imported into other programs |
 | [1.17_unit_tests](../1.17_unit_tests/README.md)  Testing individual units or components of a software application in isolation to ensure they behave as expected. |
@@ -33,16 +33,15 @@ There are 7 total competency modules. Each of them attempts to challenge the stu
 | **`1.19_competency_3_wordle`**  | Recreate the sensational game WORDLE using python |
 | [1.20_data_structures](../1.20_data_structures/README.md)  | Fundamentals of Stacks, Linked Lists, Graphs, Arrays, and Binary Search Trees |
 | 1.21_algorithms  | TODO |
-| **1.22_competency_4_sorting**  | TODO |
+| **1.22 Competency 4: Sorting**  | TODO |
 | 1.23_classes_and_objects  | TODO |
-| **1.24_competency_5_ship**  | TODO |
+| **1.24 Competency 5: Ship**  | TODO |
 | 1.25_recursion  | TODO |
-| 1.26_json  | TODO |
-| **1.27_competency_6a_json_parser**  | TODO |
-| 1.28_exceptions  | TODO |
-| **1.29_competency_6b_dijkstras**  | TODO |
-| 1.30_pytest  | TODO |
-| **1.31_competency_7_test_eval**  | TODO |
+| [1.26_json](../1.26_json/README.md)  | In depth explanation of JSON and the `json` Python package |
+| **[1.27 Competency 6: Network Analysis](../1.27_competency_6_network_analysis/README.md)**  | Parse a JSON file without the `json` package. Implement Dijkstra's shortest path algorithm. Use both to find the shortest path to a target IP address. |
+| [1.28_exceptions](../1.28_exceptions/README.md)  | In depth explanation of built-in/custom Python Exceptions and `try`/`catch`/`except`/`finally` blocks |
+| [1.29_pytest](../1.29_pytest/README.md)  | Quick intro to `pytest` and how to create test cases |
+| **[1.30 Competency 7: Test Eval](../1.30_competency_7_test_eval/README.md)**  | Find bugs in a Python package by writing test cases and documenting them |
 
 If you don't have a Linux Operating System (OS) either as a host, or inside a Virtual Machine (VM), please inform the TRAINO. The Python section of the JQR can be completed in a Windows environment for the most part, but you will need Linux for further sections.
 

@@ -25,11 +25,10 @@
 1.24_competency_5_ship
 1.25_recursion (iteration vs. recursion)
 1.26_json (loads vs. load, dump vs. dumps, json format)
-1.27_competency_6a_json_parser
+1.27_competency_6_network_analysis
 1.28_exceptions (raise, custom exceptions, re-cover assert)
-1.29_competency_6b_dijkstras
-1.30_pytest (assert yet again)
-1.31_competency_7_test_eval
+1.29_pytest (assert yet again)
+1.30_competency_7_test_eval
 supplementals
 supplementals/1.32_regex
 supplementals/1.33_ternary_operator
