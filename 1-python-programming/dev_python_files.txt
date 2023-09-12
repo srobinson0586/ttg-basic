@@ -37,3 +37,4 @@ supplementals/1.35_generators
 supplementals/1.36_lambda_functions
 supplementals/1.37_pickle
 supplementals/1.38_pathlib
+supplementals/1.39_property_tags
