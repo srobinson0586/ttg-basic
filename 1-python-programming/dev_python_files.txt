@@ -30,11 +30,14 @@
 1.29_pytest (assert yet again)
 1.30_competency_7_test_eval
 supplementals
-supplementals/1.32_regex
-supplementals/1.33_ternary_operator
-supplementals/1.34_list_comprehension
-supplementals/1.35_generators
-supplementals/1.36_lambda_functions
-supplementals/1.37_pickle
-supplementals/1.38_pathlib
-supplementals/1.39_property_tags
+supplementals/1.31_advanced_features (ternary operator, lambda, generators, list comprehension, property tags for getters/setters)
+supplementals/1.32_standard_library (regex, pickle, pathlib, struct)
+UNUSED-supplementals/1.31_regex
+UNUSED-supplementals/1.32_ternary_operator
+UNUSED-supplementals/1.33_list_comprehension
+UNUSED-supplementals/1.34_generators
+UNUSED-supplementals/1.35_lambda_functions
+UNUSED-supplementals/1.36_pickle
+UNUSED-supplementals/1.37_pathlib
+UNUSED-supplementals/1.38_property_tags
+UNUSED-supplementals/1.39_struct
