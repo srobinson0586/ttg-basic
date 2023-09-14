@@ -155,7 +155,7 @@ BLUF: [Watch this video for the best explanation](https://www.youtube.com/watch?
 
 A linked list is a linear data structure which is used to store an indeterminate amount of information. 
 
-Your data is stored in the linked list as a `node_` The Node structure contains your data, and a pointer to the next node in the series. When you initialize each Node, `next` will be NULL until another element is added in series. 
+Your data is stored in the linked list as a `node` The Node structure contains your data, and a pointer to the next node in the series. When you initialize each Node, `next` will be NULL until another element is added in series. 
 
 Example: You want to create a linked list of the following data values. In this implementation, the Node data field is of type `string`.
 
