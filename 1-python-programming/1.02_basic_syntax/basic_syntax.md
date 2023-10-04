@@ -94,7 +94,7 @@ Often times when you are creating identifiers, you want to be very descriptive a
 - `snake_case`
    - All words are lowercase and separated by an underscore
 
-[Python convention](https://peps.python.org/pep-0008/#function-and-variable-names) dictates that function and variable names should use `snake_case` while Classes (covered in [1.23_classes_and_objects](../1.23_classes_and_objects/classes_and_objects.md)) should be `PascalCase`.
+[Python convention](https://peps.python.org/pep-0008/#function-and-variable-names) dictates that function and variable names should use `snake_case` while Classes (covered in [1.20_classes_and_objects](../1.20_classes_and_objects/classes_and_objects.md)) should be `PascalCase`.
 
 Using our max value example from earlier, we would name the variable something like `max_val`. Naming conventions are *extremely important* to be followed, as the code still works fine. But if you want to look like you know what you're doing, you should follow them.
     

@@ -315,7 +315,7 @@ we end up with some output that is probably not what we would want to see before
 <__main__.Snack object at 0x7f959a2dd300>
 <__main__.Snack object at 0x7f959a2dd4e0>
 Traceback (most recent call last):
-  File "1.23_classes_and_objects/test.py", line 14, in <module>
+  File "1.20_classes_and_objects/test.py", line 14, in <module>
     total_price = snack1 + snack2
 TypeError: unsupported operand type(s) for +: 'Snack' and 'Snack'
 ```

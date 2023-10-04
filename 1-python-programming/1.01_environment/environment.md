@@ -14,7 +14,7 @@ You can easily install VS Code on Windows from the Microsoft Store. For Linux, p
 
 Once you've installed VS Code, feel free to personalize it by setting your own Key Bindings, changing the Color Theme, and fonts! Just click FILE &rarr; PREFERENCES at the top left.
 
-## Installing Python
+## Installing Python / Pytest
 
 For Windows, python can be installed from the Microsoft Store. However that version may be out of date. It is recommended to download the latest *stable* release from the [Python Website](https://www.python.org/downloads/windows/). 
 
@@ -32,7 +32,16 @@ Installation on Linux requires more command line work. If you aren't familiar wi
     $ sudo apt install python3
     ```
     Enter your system password when prompted and wait for the installation to complete.
-
+4. Now, we need to install `pip`, the Python package manager (like `apt` for python)
+    ```bash
+    sudo apt install python3-pip
+    ```
+5. Lastly, we need to install the [`pytest` package](https://pypi.org/project/pytest/) which we use extensively throughout these modules and cover in detail in module [1.29_pytest](../1.29_pytest/README.md). 
+    ```bash
+    pip3 install pytest
+    ```
+> Its important to not use `sudo` when installing python packages with `pip`. BLUF: You will have to use `sudo` everytime you try using a package that you installed with `sudo pip install`.
+> More information on this nightmare can be found in this [stackoverflow thread](https://stackoverflow.com/questions/29310688/sudo-pip-install-vs-pip-install-user) (important read).
 
 ### Step 2: Installing the Python Extension in VSCode
 1. Open up VSCode, then click on the Extensions icon in the left sidebar (represented by four squares).
