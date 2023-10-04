@@ -1,5 +1,6 @@
 # Python Lists Tuples And Sets
 
+[Back to README](README.md)
 
 ## Lists
 
@@ -266,9 +267,13 @@ The empty tuple is written as two parentheses containing nothing:
 tup1 = ();
 ```
 
-To write a tuple containing a single value you have to include a comma, even though there is only one value −
+### Singletons
+
+A singleton can mean several different things in python. In the context of Tuples, a singleton is a tuple containing a single value.
+To create a singleton you have to include a comma, even though there is only one value:
 ```py
 tup1 = (50,)
+print( len(tup1) )    # Output: 1
 ```
 
 Like string indices, tuple indices start at 0, and they can be sliced, concatenated, and so on.
