@@ -29,8 +29,9 @@
 1.28_exceptions (raise, custom exceptions, re-cover assert)
 1.29_pytest (assert yet again)
 1.30_competency_7_test_eval
+1.31_regular_expressions
 supplementals
-supplementals/1.31_advanced_features (ternary operator, lambda, generators, list comprehension, property tags for getters/setters)
+supplementals/1.31_advanced_features (lambda, generators, list comprehension, property tags for getters/setters)
 supplementals/1.32_standard_library (regex, pickle, pathlib, struct)
 UNUSED-supplementals/1.31_regex
 UNUSED-supplementals/1.32_ternary_operator

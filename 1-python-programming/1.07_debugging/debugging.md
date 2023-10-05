@@ -185,15 +185,15 @@ To debug a Python script, follow these instructions:
 
 1. Open the Python file you are debugging and set a breakpoint at the line number where you want the debugger to stop the program at.
 
-![Image](resources/vscode_debug1.png)
+![Image](.img/vscode_debug1.png)
 
 2. In the top right corner of the VSCode window, click the drop-down menu next to the 'Play' button and select `Debug Python File`.
 
-![Image](resources/vscode_debug2.png)
+![Image](.img/vscode_debug2.png)
 
 3. Use the buttons at the top of the VSCode window to resume code execution in the manner that you need (continue, step over, step into, etc.). You also view terminal output at the bottom of the window, and information about variables and function calls on the left-side panes.
 
-![Image](resources/vscode_debug3.png)
+![Image](.img/vscode_debug3.png)
 
 The above is just a basic intro to debugging Python with VSCode. More information on VSCode debugging for Python can be found [here](https://code.visualstudio.com/docs/python/debugging).
 

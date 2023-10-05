@@ -126,7 +126,7 @@ Algorithm complexities, also known as **time** and **space** complexities, are m
 
 The image below illustrates how the number of operations or space required (y-axis) of a function scales with the number of inputs (x-axis) for an algorithm.
 
-![image](resources/Big-O.png)
+![Big-O Complexity Chart](.img/Big-O.png)
 
 For a relatively small number of inputs, the time/space needed for an algorithm to run is less significant, but can quickly increase for some complexity classes as the total number of inputs grows.
 
