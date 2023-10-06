@@ -4,7 +4,7 @@ In general, statements are executed sequentially; the first statement in a funct
 
 A loop statement allows us to execute a statement or group of statements multiple times. The following diagram illustrates a loop statement:
 
-![Loop Architecture](resources/loop_architecture.jpg)
+![Loop Diagram](.img/loop.png)
 
 Python provides the following types of loops to handle looping requirements.
 

@@ -194,7 +194,9 @@ Each step of these insertions will be visualized.
 ```
 
 Danger of implementation: Make sure to keep track of memory addresses when implementing, using, and modifying linked lists. Proper usage requires that you do not overwrite and lose memory addresses unless you do so intentionally. 
-[Graph with Edges and Vertices](image.png)
+
+![Graph with Edges and Vertices](.img/graph.png)
+
 BLUF: [More on Linked Lists](https://www.youtube.com/watch?v=R9PTBwOzceo)
 
 [Back to README](README.md)

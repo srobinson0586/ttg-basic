@@ -3,7 +3,7 @@
 
 Typecasting, also known as type conversion, is the process of changing the data type of a value in Python. It allows you to convert variables from one type to another, depending on your requirements. 
 
-Classes and Data Types are joined at the hip in Python and there will be many references to Classes in this module. Unfortunately, they aren't covered until [1.23_classes_and_objects](../1.23_classes_and_objects/README.md) so if you want to read ahead, feel free to do so. You could also check out this [Python Classes & Instances Tutorial](https://www.youtube.com/watch?v=ZDa-Z5JzLYM).
+Classes and Data Types are joined at the hip in Python and there will be many references to Classes in this module. Unfortunately, they aren't covered until [1.20_classes_and_objects](../1.20_classes_and_objects/README.md) so if you want to read ahead, feel free to do so. You could also check out this [Python Classes & Instances Tutorial](https://www.youtube.com/watch?v=ZDa-Z5JzLYM).
 
 Remember to explore the official Python documentation and experiment with different examples to deepen your understanding of typecasting. 
 

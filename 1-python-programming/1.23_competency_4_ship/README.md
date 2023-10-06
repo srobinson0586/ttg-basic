@@ -1,10 +1,10 @@
-# Python Competency 5 Ship - README
+# Python Competency 4 Ship - README
 
 ## Objectives
 
 This competency will help students apply the knowledge they have learned from previous competencies and recent modules. After completing this competency, students will be comfortable with:
 
-- [Classes and Objects](../1.23_classes_and_objects/README.md)
+- [Classes and Objects](../1.20_classes_and_objects/README.md)
 
 
 ## Implementation of `Ship` and `Fleet`
@@ -15,7 +15,7 @@ The `Ship` class is a template for representing US Navy ships. Each instance of 
 
 The `Fleet` class is a template to represent a fleet of ships. An instance of `Fleet` serves as an interface to manage multiple ships.
 
-As you read and complete the TODOs, refer back to the section on [Classes and Objects](../1.23_classes_and_objects/classes_objects.md) to understand how the attributes and methods of a class work. The *ship.py* file has a `main()` function that you can freely overwrite if you want to create your own tests to check your implementation as you work.
+As you read and complete the TODOs, refer back to the section on [Classes and Objects](../1.20_classes_and_objects/classes_objects.md) to understand how the attributes and methods of a class work. The *ship.py* file has a `main()` function that you can freely overwrite if you want to create your own tests to check your implementation as you work.
 
 ## Completion
 

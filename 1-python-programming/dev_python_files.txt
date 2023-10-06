@@ -18,19 +18,20 @@
 1.17_unit_tests (assert)
 1.18_file_io (open, close, "a+", context management)
 1.19_competency_3_wordle
-1.20_data_structures (linked list, tree)
-1.21_algorithms (intro to sorting)
-1.22_competency_4_sorting
-1.23_classes_and_objects (self)
-1.24_competency_5_ship
-1.25_recursion (iteration vs. recursion)
+1.20_classes_and_objects 
+1.21_data_structures
+1.22_design_patterns
+1.23_competency_4_ship
+1.24_algorithms
+1.25_competency_5_sorting
 1.26_json (loads vs. load, dump vs. dumps, json format)
 1.27_competency_6_network_analysis
 1.28_exceptions (raise, custom exceptions, re-cover assert)
 1.29_pytest (assert yet again)
 1.30_competency_7_test_eval
+1.31_regular_expressions
 supplementals
-supplementals/1.31_advanced_features (ternary operator, lambda, generators, list comprehension, property tags for getters/setters)
+supplementals/1.31_advanced_features (lambda, generators, list comprehension, property tags for getters/setters)
 supplementals/1.32_standard_library (regex, pickle, pathlib, struct)
 UNUSED-supplementals/1.31_regex
 UNUSED-supplementals/1.32_ternary_operator
