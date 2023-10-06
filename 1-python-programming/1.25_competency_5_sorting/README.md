@@ -1,5 +1,7 @@
 # Python Competency 4 Sorting - README
 
+[Back to OVERVIEW](../README.md)
+
 ## Objectives
 
 This competency will help students apply the knowledge they have learned from previous competencies and recent modules. After completing this competency, students will be comfortable with:
@@ -45,3 +47,5 @@ Many implementations of these algorithms exist, but the following links are good
 - [Insertion sort](https://www.tutorialspoint.com/data_structures_algorithms/insertion_sort_algorithm.htm)
 - [Selection sort](https://www.tutorialspoint.com/data_structures_algorithms/selection_sort_algorithm.htm)
 - [Merge sort](https://www.tutorialspoint.com/data_structures_algorithms/merge_sort_algorithm.htm)
+
+[Back to OVERVIEW](../README.md)

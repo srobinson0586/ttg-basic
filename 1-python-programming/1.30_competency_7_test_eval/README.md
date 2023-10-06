@@ -1,5 +1,7 @@
 # Demonstrate skill in writing and evaluating software tests
 
+[Back to OVERVIEW](../README.md)
+
 ## Purpose
 
 This competency will get you familiar with writing tests for existing software that you didn't write yourself. Testing target software for bugs is a very important responsibility of a CNO Developer. Obviously the target software isn't usually interpreted, but this will help get you into that h4ck3r mindset.
@@ -32,3 +34,5 @@ correct attribute information).
 2. Write more `test_*` functions in [`test_expression.py`](./test_expression.py) to test all the functionality described in the spec.
    1. Run `$ pytest` in this directory to have `pytest` run all your test functions.
 3. Succinctly document in [`bugs.txt`](./bugs.txt) all the bugs you found. There are 10 distinct bugs with the program. You will be publicly praised if you uncover unintended bugs in the program!
+
+[Back to OVERVIEW](../README.md)
