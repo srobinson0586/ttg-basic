@@ -57,7 +57,8 @@ class Ship:
         output when print() is called on a Ship. """
         ### TODO: Return a string that displays all information about the
         ### ship in a nice format.
-        rtn = ""        return rtn
+        rtn = ""        
+        return rtn
 
 
     def get_maneuverability(self):

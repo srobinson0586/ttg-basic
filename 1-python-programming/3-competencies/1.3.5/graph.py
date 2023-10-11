@@ -1,6 +1,20 @@
 from infinity import Infinity
 
 inf = Infinity()
+
+class Graph:
+    """ A class representing weighted, undirected graphs. """
+    def _init_(self):
+        """ Initialize a set of nodes (strings) and a dictionary of edges.
+        The keys of edges are ordered pairs (tuples) of nodes. The
+        values are the lengths of the edges connecting those 2 nodes.
+        If an edge does not exist, the algorithm will treat it as an edge
+        of infinite length. """
+        self.nodes = set()
+        self.edges = dict()
+    def add_node(self, node):
+        """ Add node to the graph's set of nodes. """
+        self.nodes.add(node)
     def add_edge(self, a, b, length):
         """ Add an edge between nodes `a` and `b` with length `length`. """
     def get_edge_length(self, a, b):

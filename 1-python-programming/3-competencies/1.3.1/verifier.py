@@ -144,19 +144,21 @@ if success:
     f3.add([1, 2, 3, 4, 5, 7, 6], True)
     f3.add([7], True)
     f3.add([1, 2, 3, 4, 5, 6], False)
-
+    bool_section.add(f3)
+    
     f4 = test.TestFunc(intro.greater_than_both)
     f4.add((1, 2, 3), False)
     f4.add((4, 3, 5), False)
     f4.add((1, 2, 0), False)
     f4.add((5, 3, 2), True)
+    bool_section.add(f4)
 
     f5 = test.TestFunc(intro.close_and_far)
     f5.add((1, 5, 2), True)    ### a close, b far
     f5.add((5, 1, 2), True)    ### a far, b close
     f5.add((3, 5, 1), False)   ### no close
     f5.add((2, 4, 3), False)   ### no far
-    bool_section.add(f3)
+    bool_section.add(f5)
 
     success = bool_section.run()
 
