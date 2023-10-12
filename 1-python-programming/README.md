@@ -28,19 +28,20 @@ There are 7 total competency modules. Each of them attempts to challenge the stu
 | [1.16 Modules](1.16_modules/README.md)  | How to use reusable code and function definitions that can be imported into other programs |
 | [1.17 Unit Tests](1.17_unit_tests/README.md) | Testing individual units or components of a software application in isolation to ensure they behave as expected. |
 | [1.18 File IO](1.18_file_io/README.md)  | Basics on reading, writing, and modifying data stored in files |
-| **[1.19 Competency 3: Wordle](1.19_competency_3_wordle/README.md)**  | Recreate the sensational game Wordle using python |
-| [1.20 Classes and Objects](1.20_classes_and_objects/README.md)  | Fundamentals on objects and classes. Covers object-oriented programming fundamentals like encapsulation, polymorphism, and inheritance. |
-| [1.21 Data Structures](1.21_data_structures/README.md)  | Coverage of basic data structures like arrays, stacks, binary search trees, graphs, and linked lists. |
-| [1.22 Design Patterns](1.22_design_patterns/README.md) | Introduction to the Factory, Singleton, Adapter, and Bridge design patterns. |
-| **[1.23 Competency 4: Ship](1.23_competency_4_ship/README.md)**  | Implement a Ship class to represent any type of ship, then use the Ship class to represent a fleet.  |
-| [1.24 Algorithms](1.24_algorithms/README.md) | Basics of algorithms, including their characteristics, iterative and recursive algorithms, time and space complexities, and algorithms for searching and sorting. |
-| **[1.25 Competency 5: Sorting](1.25_competency_5_sorting/README.md)**  | Implement bubble sort, selection sort, insertion sort, and merge sort. |
-| [1.26 JSON](1.26_json/README.md)  | In depth explanation of JSON and the `json` Python package |
-| **[1.27 Competency 6: Network Analysis](1.27_competency_6_network_analysis/README.md)**  | Parse a JSON file without the `json` package. Implement Dijkstra's shortest path algorithm. Use both to find the shortest path to a target IP address. |
-| [1.28 Exceptions](1.28_exceptions/README.md)  | In depth explanation of built-in/custom Python Exceptions and `try`/`catch`/`except`/`finally` blocks |
-| [1.29 Pytest](1.29_pytest/README.md)  | Quick intro to `pytest` and how to create test cases |
-| **[1.30 Competency 7: Test Eval](1.30_competency_7_test_eval/README.md)**  | Find bugs in a Python package by writing test cases and documenting them |
-| [1.31 Regular Expressions](1.31_regular_expressions/README.md)  |  Introduction to Regular Expressions and their use in Python |
+| **[1.19 Competency 3: Core Crucible](1.19_competency_3_core_crucible/README.md)** | Test your skills in boolean logic, arithmetic, file io, recursion, string manipulation, looping, and more. |
+| **[1.20 Competency 4: Wordle](1.20_competency_4_wordle/README.md)**  | Recreate the sensational game Wordle using python |
+| [1.21 Classes and Objects](1.21_classes_and_objects/README.md)  | Fundamentals on objects and classes. Covers object-oriented programming fundamentals like encapsulation, polymorphism, and inheritance. |
+| [1.22 Data Structures](1.22_data_structures/README.md)  | Coverage of basic data structures like arrays, stacks, binary search trees, graphs, and linked lists. |
+| [1.23 Design Patterns](1.23_design_patterns/README.md) | Introduction to the Factory, Singleton, Adapter, and Bridge design patterns. |
+| **[1.24 Competency 5: Ship](1.24_competency_5_ship/README.md)**  | Implement a Ship class to represent any type of ship, then use the Ship class to represent a fleet.  |
+| [1.25 Algorithms](1.25_algorithms/README.md) | Basics of algorithms, including their characteristics, iterative and recursive algorithms, time and space complexities, and algorithms for searching and sorting. |
+| **[1.26 Competency 6: Sorting](1.26_competency_6_sorting/README.md)**  | Implement bubble sort, selection sort, insertion sort, and merge sort. |
+| [1.27 JSON](1.27_json/README.md)  | In depth explanation of JSON and the `json` Python package |
+| **[1.28 Competency 7: Network Analysis](1.28_competency_7_network_analysis/README.md)**  | Parse a JSON file without the `json` package. Implement Dijkstra's shortest path algorithm. Use both to find the shortest path to a target IP address. |
+| [1.29 Exceptions](1.29_exceptions/README.md)  | In depth explanation of built-in/custom Python Exceptions and `try`/`catch`/`except`/`finally` blocks |
+| [1.30 Pytest](1.30_pytest/README.md)  | Quick intro to `pytest` and how to create test cases |
+| **[1.31 Competency 8: Test Eval](1.31_competency_8_test_eval/README.md)**  | Find bugs in a Python package by writing test cases and documenting them |
+| [1.32 Regular Expressions](1.32_regular_expressions/README.md)  |  Introduction to Regular Expressions and their use in Python |
 
 
 If you don't have a Linux Operating System (OS) either as a host, or inside a Virtual Machine (VM), please inform the TRAINO. The Python section of the JQR can be completed in a Windows environment for the most part, but you will need Linux for further sections.

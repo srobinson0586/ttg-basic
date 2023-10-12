@@ -41,7 +41,7 @@ KeyError: 'Alice'
 
 You can update a dictionary by adding a new entry or a key-value pair, modifying an existing entry, or deleting an existing entry as shown in a simple example given below:
 ```py
-my_dict = {'Name': 'Zara', 'Age': 7, 'Class': 'First'}
+my_dict = {'Name': 'Lara', 'Age': 7, 'Class': 'First'}
 my_dict['Age'] = 8  # update existing entry
 my_dict['School'] = "NCWDG Dev Pipeline" # Add new entry
 
@@ -67,7 +67,7 @@ After using update(): {'Age': 8, 'Class': 'First', 'School': 'NCWDG Dev Pipeline
 
 You can either remove individual dictionary elements or clear the entire contents of a dictionary. You can also delete the entire dictionary in a single operation. To explicitly remove an entire dictionary, just use the `del` statement. Below is a simple example:
 ```py
-my_dict = {'Name': 'Zara', 'Age': 7, 'Class': 'First'}
+my_dict = {'Name': 'Lara', 'Age': 7, 'Class': 'First'}
 
 del my_dict['Name'] # remove entry with key 'Name'
 print("my_dict:", my_dict)
@@ -97,14 +97,14 @@ There are two important points to remember about dictionary keys:
 
 1. **More than one entry per key is not allowed**. This means no duplicate key is allowed. When duplicate keys are encountered during assignment, the last assignment wins:
 ```py
-dict = {'Name': 'Zara', 'Age': 7, 'Name': 'Manni'}
+dict = {'Name': 'Lara', 'Age': 7, 'Name': 'Manni'}
 print ("dict['Name']: ", dict['Name'])
 # dict['Name']:  Manni
 ```
 
 2. **Keys must be immutable**. This means you can use strings, numbers or tuples as dictionary keys but something like `['key']` is not allowed:
 ```py
-dict = {['Name']: 'Zara', 'Age': 7}
+dict = {['Name']: 'Lara', 'Age': 7}
 print ("dict['Name']: ", dict['Name'])
 ```
 
@@ -112,7 +112,7 @@ When the above code is executed, it produces the following result:
 ```
 Traceback (most recent call last):
    File "test.py", line 3, in <module>
-      dict = {['Name']: 'Zara', 'Age': 7}
+      dict = {['Name']: 'Lara', 'Age': 7}
 TypeError: list objects are unhashable
 ```
 
@@ -184,7 +184,7 @@ As you can see, JSON is quite similar to python dictionaries. **However**, remem
 
 More on the difference between JSON and Python Dictionaries can be read on this [Medium Article](https://medium.com/analytics-vidhya/python-dictionary-and-json-a-comprehensive-guide-ceed58a3e2ed).
 
-There is a python module (modules covered in [1.16_modules](../1.16_modules/README.md)) called `json` that can be used to more easily work with JSON. It is covered more in depth in [1.26_json](../1.26_json/README.md), but here is a small demo:
+There is a python module (modules covered in [1.16_modules](../1.16_modules/README.md)) called `json` that can be used to more easily work with JSON. It is covered more in depth in [1.27_json](../1.27_json/README.md), but here is a small demo:
 ```py
 import json
 my_json = json.loads('{"API_KEY":"RU5TIFRvdmFyLU1hcnF1ZXogd2F6IGhlcmUgPjopIA==","SEC_LVL":3,"Name":{"First": "Sailor","Last":"Timmy"}}')

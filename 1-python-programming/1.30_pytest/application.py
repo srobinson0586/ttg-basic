@@ -9,7 +9,7 @@
 # - TypeError
 # - ValueError
 # - A custom NCWDGError
-#     - See 1.28_exceptions module for help with custom Exceptions
+#     - See 1.29_exceptions module for help with custom Exceptions
 # - FileNotFoundError
 # - NameError
 

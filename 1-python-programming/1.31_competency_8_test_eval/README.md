@@ -1,4 +1,4 @@
-# Demonstrate skill in writing and evaluating software tests
+# Python Competency 8 - Test Eval
 
 [Back to OVERVIEW](../README.md)
 

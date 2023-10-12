@@ -262,7 +262,7 @@ Hello, I am Alice, Eater of Mountains and Drinker of Seas
 ```
 
 ### Dunder Methods
-We briefly introduced you to *dunder methods* in [1.02_basic_syntax](../1.02_basic_syntax/), but here is a quick review.
+We briefly introduced you to *dunder methods* in [1.02_basic_syntax](../1.02_basic_syntax), but here is a quick review.
 
 In Python, dunder (short for "double underscore") methods, also known as magic methods or special methods, are methods that have a specific meaning and behavior when defined within a class. These methods are identified by their double underscore prefix and suffix, such as `__init__`, `__str__`, `__add__`, etc. Dunder methods allow you to customize the behavior of your objects and classes, enabling you to define how they interact with built-in functions and operators.
 
@@ -315,7 +315,7 @@ we end up with some output that is probably not what we would want to see before
 <__main__.Snack object at 0x7f959a2dd300>
 <__main__.Snack object at 0x7f959a2dd4e0>
 Traceback (most recent call last):
-  File "1.20_classes_and_objects/test.py", line 14, in <module>
+  File "1.21_classes_and_objects/test.py", line 14, in <module>
     total_price = snack1 + snack2
 TypeError: unsupported operand type(s) for +: 'Snack' and 'Snack'
 ```

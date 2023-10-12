@@ -36,11 +36,11 @@ Installation on Linux requires more command line work. If you aren't familiar wi
     ```bash
     sudo apt install python3-pip
     ```
-5. Lastly, we need to install the [`pytest` package](https://pypi.org/project/pytest/) which we use extensively throughout these modules and cover in detail in module [1.29_pytest](../1.29_pytest/README.md). 
+5. Lastly, we need to install the [`pytest` package](https://pypi.org/project/pytest/) which we use extensively throughout these modules and cover in detail in module [1.30_pytest](../1.30_pytest/README.md). 
     ```bash
     pip3 install pytest
     ```
-> Its important to not use `sudo` when installing python packages with `pip`. BLUF: You will have to use `sudo` everytime you try using a package that you installed with `sudo pip install`.
+> Its important to not use `sudo` when installing python packages with `pip`. BLUF: You will have to use `sudo` every time you try using a package that you installed with `sudo pip install`.
 > More information on this nightmare can be found in this [stackoverflow thread](https://stackoverflow.com/questions/29310688/sudo-pip-install-vs-pip-install-user) (important read).
 
 ### Step 2: Installing the Python Extension in VSCode

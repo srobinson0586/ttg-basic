@@ -2,9 +2,5 @@
     "workbench.editorAssociations": {   
         "README.md": "vscode.markdown.preview.editor",
     },
-    "cSpell.words": [
-        "Banas",
-        "hasattr",
-        "singl"
-    ]
+    "markdown.validate.enabled": true,
 }

@@ -2,7 +2,7 @@ CC = gcc
 CFLAGS = -g -Wall -Wextra
 
 run: main
-	valgrind ./main
+	valgrind --leak-check=full --show-leak-kinds=all ./main
 
 main: main.c exercise.o
 	$(CC) $(CFLAGS) $^ -o $@

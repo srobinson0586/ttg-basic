@@ -1,4 +1,4 @@
-# Python Competency 6 - Network Analysis
+# Python Competency 7 - Network Analysis
 
 [Back to OVERVIEW](../README.md)
 

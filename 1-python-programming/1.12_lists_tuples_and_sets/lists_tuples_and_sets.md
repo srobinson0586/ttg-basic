@@ -55,39 +55,39 @@ Where:
 Here are some examples to illustrate list slicing:
 ```py
 # (in the interpreter)
->>> my_list = ['C++', 'Java', 'Python', 'NCWDG', 'TG-5', 0xdeadbeef]
+>>> my_list = ['C++', 'Java', 'Python', 'NCWDG', 'TG-66', 0xdeadbeef]
 >>> print(my_list[0]) # Indexing (first element at index 0)
 C++
 >>> print(my_list[2]) # Indexing 
 Python
 >>> print(my_list[2:]) # Forward slicing - doesn't specify stop/step
-['Python', 'NCWDG', 'TG-5', 3735928559]
+['Python', 'NCWDG', 'TG-66', 3735928559]
 >>> print(my_list[:2]) # Backward slicing - doesn't specify start/step, only stop
 ['C++', 'Java']
 
 # Negative indexing starts counting from the right
 >>> print(my_list[-2])
-TG-5
+TG-66
 >>> print(my_list[-2:5]) # Start @ 2nd-to-last, Stop before the 6th element
-['TG-5']
+['TG-66']
 >>> print(my_list[-2:])  # Start @ 2nd-to-last, No stop/step
-['TG-5', 3735928559]
+['TG-66', 3735928559]
 
 # Steps dictate by how much the iterator moves at a time
 >>> print(my_list[2::1]) # Step 1 at a time (default)
-['Python', 'NCWDG', 'TG-5', 3735928559]
+['Python', 'NCWDG', 'TG-66', 3735928559]
 >>> print(my_list[2::2]) # Step 2 at a time
-['Python', 'TG-5']
+['Python', 'TG-66']
 
 # You can create new lists with slicing
 >>> cool_list = my_list[3:] # Don't take the first 3 elements of my_list
 >>> print(cool_list)
-['NCWDG', 'TG-5', 3735928559]
+['NCWDG', 'TG-66', 3735928559]
 
 # You can easily reverse lists with a -1 step
 >>> reverse_list = my_list[::-1] # New list from the reverse of the my_list 
 >>> print(reverse_list)
-[3735928559, 'TG-5', 'NCWDG', 'Python', 'Java', 'C++']
+[3735928559, 'TG-66', 'NCWDG', 'Python', 'Java', 'C++']
 ```
 
 Keep in mind that list slicing creates a new list with the specified elements, and it does not modify the original list. If you modify the new list, it won't affect the original list and vice versa.

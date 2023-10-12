@@ -1,4 +1,4 @@
-# Python Competency 4 Sorting - README
+# Python Competency 6 Sorting - README
 
 [Back to OVERVIEW](../README.md)
 
