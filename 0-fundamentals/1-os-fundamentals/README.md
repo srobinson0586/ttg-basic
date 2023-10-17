@@ -1,0 +1,1 @@
+https://github.com/N7-Training/jqr-core/issues/61
