@@ -59,7 +59,7 @@ As you complete sections of the JQR, please reach out to a qualified developer t
 |  2.1.2  | Explain functionality of gcc command line options                   |          |      |
 |  2.1.3  | Explain functionality and parts of a Makefile                       |          |      |
 |  2.1.4  | Explain functionality of gdb commands                               |          |      |
-|  2.1.6  | Explain memory checking with Valgrind                               |          |      |
+|  2.1.5  | Explain memory checking with Valgrind                               |          |      |
 | Application
 |  2.2.1  | Write a Makefile to compile a project                               |          |      |
 |  2.2.2  | Explain fundamental C concepts                                      |          |      |
@@ -69,7 +69,7 @@ As you complete sections of the JQR, please reach out to a qualified developer t
 |  2.2.6  | Explain and demonstrate understanding of type-casting               |          |      |
 |  2.2.7  | Explain and demonstrate understanding of format specifiers          |          |      |
 |  2.2.8  | Demonstrate understanding of function prototypes in C               |          |      |
-|  2.2.9 | Explain the difference between Pass by Value & Pass by Reference     |          |      |
+|  2.2.9  | Explain the difference between Pass by Value & Pass by Reference    |          |      |
 |  2.2.10 | Demonstrate understanding of parsing input from stdin in C          |          |      |
 |  2.2.11 | Explain pointer arithmetic in C                                     |          |      |
 |  2.2.12 | Explain and demonstrate usage of arrays and structs                 |          |      |
@@ -85,6 +85,9 @@ As you complete sections of the JQR, please reach out to a qualified developer t
 |  2.2.22 | Demonstrate understanding of complex, nested structs                |          |      |
 |  2.2.23 | Describe and demonstrate understanding of bitwise operators         |          |      |
 |  2.2.24 | Demonstrate using main() parameters                                 |          |      |
+|  2.2.25 | Identify coding standard violations in C source code                |          |      |
+|  2.2.26 | Explain concepts in secure coding                                   |          |      |
+|  2.2.27 | Demonstrate the ability to use Regular Expressions in C             |          |      |
 | Competencies
 |  2.3.1  | Implement simple functions in C                                     |          |      |
 |  2.3.2  | Implement a simple shell in C                                       |          |      |
@@ -121,7 +124,7 @@ As you complete sections of the JQR, please reach out to a qualified developer t
 | Tools
 |  4.1.1  | Demonstrate netcat usage                                            |          |      |
 |  4.1.2  | Demonstrate packet filtering using Wireshark                        |          |      |
-|  4.1.3  | Demonstrate knowledge of network infrastructure                     |          |      |
+|  4.1.3  | Demonstrate Knowledge of Telecom Networks and their Infrastructure  |          |      |
 | Application
 |  4.2.1  | Diagram the key steps of TCP socket communication                   |          |      |
 |  4.2.2  | Explain and demonstrate sockets and socket creation                 |          |      |
@@ -138,6 +141,7 @@ As you complete sections of the JQR, please reach out to a qualified developer t
 |  4.2.13 | Describe networking fundamentals                                    |          |      |
 |  4.2.14 | Describe protocol fundamentals                                      |          |      |
 |  4.2.15 | Demonstrate understanding of send and recv                          |          |      |
+|  4.2.16 | Describe and Demonstrate Serialization                              |          |      |
 | Competencies
 |  4.3.1  | Craft and send a raw TCP packet using the RFCs and Python struct    |          |      |
 |  4.3.2  | Implement an echo server and client in C                            |          |      |
