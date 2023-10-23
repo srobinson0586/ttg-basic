@@ -182,7 +182,34 @@ Happy birthday Buddy!
 Buddy barks!
 ```
 
-> Note: The convention shown above for implementing getter and setter methods is a generalized convention that you are likely to see used in other object-oriented languages. There is a more "Pythonic" way to implement getter and setter methods using `@property` tags. This is covered in [1.39_property_tags](../1.39_property_tags).
+> Note: The convention shown above for implementing getter and setter methods is a generalized convention that you are likely to see used in other object-oriented languages. 
+
+### Copying Python Objects
+
+Assignment statements in Python do not copy objects, they create bindings between a target and an object. For collections that are mutable or contain mutable items, a copy is sometimes needed so one can change one copy without changing the other. This module provides generic shallow and deep copy operations (explained below).
+
+Interface summary:  
+```py
+copy.copy(x)
+```
+Return a shallow copy of x.
+```py
+copy.deepcopy(x[, memo])
+```
+Return a deep copy of x.
+
+
+The difference between shallow and deep copying is only relevant for compound objects (objects that contain other objects, like lists or class instances).  A shallow copy constructs a new compound object and then (to the extent possible) inserts references into it to the objects found in the original.  A deep copy constructs a new compound object and then, recursively, inserts copies into it of the objects found in the original.  Two problems often exist with deep copy operations that don’t exist with shallow copy operations.
+
+Recursive objects (compound objects that, directly or indirectly, contain a reference to themselves) may cause a recursive loop.
+Because deep copy copies everything it may copy too much, such as data which is intended to be shared between copies.
+The `deepcopy()` function avoids these problems by:
+1. keeping a `memo` dictionary of objects already copied during the current copying pass
+2. letting user-defined classes override the copying operation or the set of components copied.
+
+Shallow copies of dictionaries can be made using `dict.copy()`, and of lists by assigning a slice of the entire list, for example, `copied_list = original_list[:]`.
+
+[Read More](https://docs.python.org/3/library/copy.html)
 
 ### Inheritance
 
@@ -369,6 +396,7 @@ Similar to algorithms, object-oriented programming is not something that you can
 ## Resources
 
 - [Classes - PyDocs](https://docs.python.org/3/tutorial/classes.html)
+- [`copy` - PyDocs](https://docs.python.org/3/library/copy.html)
 - [Python Classes - W3Schools](https://www.w3schools.com/python/python_classes.asp)
 - [Object Oriented Programming in 7 Minutes | Mosh](https://www.youtube.com/watch?v=pTB0EiLXUC8)
 - [Object Oriented Programming with Python - Full Course for Beginners - FreeCodeCamp.org](https://www.youtube.com/watch?v=Ej_02ICOIgs)

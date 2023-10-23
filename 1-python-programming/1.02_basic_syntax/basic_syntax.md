@@ -54,7 +54,6 @@ There is another way to execute a Python script in Unix systems, by using a sheb
 #!/usr/bin/python3
 print("Hello, this is scripted Python!")
 ```
-
 However, if you now attempted to run it with `./test.py`, you would likely get a permission denied error. This is because you haven't made the file **executable**. In order to give it execute permission, use the linux `chmod` command first.
 ```bash
 $ chmod +x test.py     # This is to make the file executable
