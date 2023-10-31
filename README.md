@@ -145,24 +145,19 @@ As you complete sections of the JQR, please reach out to a qualified developer t
 | Competencies
 |  4.3.1  | Craft and send a raw TCP packet using the RFCs and Python struct    |          |      |
 |  4.3.2  | Implement an echo server and client in C                            |          |      |
-|  4.3.3  | Implement a robust echo client and server in Python                 |          |      |
+|  4.3.3  | Implement a robust TLS echo client and server in Python                 |          |      |
 
-# 5: Reverse Engineering
+# 5: Data Structures and Algorithms
 | Section | Knowledge                                                           | Initials | Date |
 |---------|---------------------------------------------------------------------|----------|------|
-| Tools
-|  5.1.1  | Explain the basic features of Ghidra                                |          |      |
-|  5.1.2  | Explain the different segments of program memory                    |          |      |
-|  5.1.3  | Explain virtual memory, page faults, and copy-on-write              |          |      |
-| Application
-|  5.2.1  | Explain static and dynamic RE methods                               |          |      |
-|  5.2.2  | Explain executable file formats, an ABI, and cross-compiling        |          |      |
-|  5.2.3  | Explain various parts of ELF Files                                  |          |      |
-|  5.2.4  | Explain the ELF header format                                       |          |      |
-|  5.2.5  | Demonstrate reversing a binary                                      |          |      |
-|  5.2.6  | Explain and demonstrate buffer overflows                            |          |      |
-|  5.2.7  | Explain shellcode and related protection mechanisms                 |          |      |
-|  5.2.8  | Explain exploit protection mechanisms                               |          |      |
-|  5.2.9  | Reverse Engineer a Binary to Achieve Desired Code Execution Path    |          |      |
-| Competencies
-|  5.3.1  | Reverse a binary and exploit a buffer overflow vulnerability        |          |      |
+| Data Structures 
+|  5.1.1  | Describe Linked Lists and Implement a Circularly Linked List in C   |          |      |
+|  5.1.2  | Describe Hash Tables and Implement a Hash Table in C                |          |      |
+|  5.1.3  | Describe Stacks and Implement a Stack in C                          |          |      |
+|  5.1.4  | Describe Queues and Implement a Priority Queue in C                 |          |      |
+|  5.1.5  | Describe Trees and Implement a Binary Search Tree in C              |          |      |
+|  5.1.6  | Describe Graphs                                                     |          |      |
+| Algorithms
+|  5.2.1  | Explain ideas relating to algorithm run-time                        |          |      |
+|  5.2.2  | Explain specific sorting algorithms                                 |          |      |
+|  5.2.3  | Explain graph search algorithms                                     |          |      |
