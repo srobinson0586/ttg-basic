@@ -3,32 +3,32 @@
 [Back to README](README.md)
 
 1. Write code to create an empty string.
-```
-ANSWER:
+    ```
+    ANSWER:
+    ```
 
-```
 2. What does it mean for a string to be immutable?
-```
-ANSWER:
-
-```
+    ```
+    ANSWER:
+    ```
 3. Assume the variable `x` currently stores the string "Hello". How would you update `x` to store "HelloHelloHello" without having to type out the entire new string?
-```
-ANSWER:
+    ```
+    ANSWER:
+    ```
 
-```
 4. Assume the variable `x` stores an empty string. What is the truthiness of `x`?
-```
-ANSWER:
+    ```
+    ANSWER:
+    ```
 
-```
 5. Fill in the blank: A byte string is a textual representation of a _____ object.
-```
-ANSWER:
+    ```
+    ANSWER:
+    ```
 
-```
 6. Which string function would work well to validate a string input that is expected to represent an integer?
-```
-ANSWER:
+    ```
+    ANSWER:
+    ```
 
-```
+[Back to README](README.md)

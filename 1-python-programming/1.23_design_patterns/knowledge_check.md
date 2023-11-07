@@ -3,31 +3,23 @@
 [Back to README](README.md)
 
 1. In your own words, explain the **Factory** design pattern.
-
-ANSWER:
-```
-
-```
+    ```
+    ANSWER:
+    ```
 
 2. In your own words, explain the **Singleton** design pattern.
-
-ANSWER:
-```
-
-```
+    ```
+    ANSWER:
+    ```
 
 3. In your own words, explain the **Adapter** design pattern.
-
-ANSWER:
-```
-
-```
+    ```
+    ANSWER:
+    ```
 
 4. In your own words, explain the **Bridge** design pattern.
-
-ANSWER:
-```
-
-```
+    ```
+    ANSWER:
+    ```
 
 [Back to README](README.md)
