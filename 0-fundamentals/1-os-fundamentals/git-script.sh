@@ -1,3 +1,4 @@
+#!/bin/bash
 # Clean up all the effects of this script if the user passes "--clean".
 if [ $1 = "--clean" ]
 then

@@ -15,6 +15,13 @@
 // Finally, create a mutex and use it to protect the counter
 // variable. Does this fix the issue?
 
+// References:
+// You may reference instruction videos from Jacob Sorber on how to create threads and implement 
+// their various functionalities, like mutex locks during atomic operations:
+// https://www.youtube.com/watch?v=uA8X5zNOGw8&t=1s [create and join threads]
+// https://www.youtube.com/watch?v=9axu8CUvOKY [locks, atomic operations]
+
+
 #define NUM_THREADS 100
 #define NUM_ITERS   10000000
 
@@ -27,7 +34,8 @@ void* thread_func(void* param) {
     // This will prevent gcc from complaining that `param` is an unused arg.
     (void) param;
 
-    // TODO: Increment `counter` NUM_ITERS times, using a for loop.    return 0;
+    // TODO: Increment `counter` NUM_ITERS times, using a for loop.    
+    return NULL; // TODO: Change if needed
 }
 
 int main() {

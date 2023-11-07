@@ -7,6 +7,7 @@
 //
 // This program creates NUM_THREADS threads, each with a status
 // contained in thread_status_array.
+
 // Each thread needs to change its status from Pending to Active,
 // wait 1 second, and then change it to Finished.
 // To simulate a resource-constrained system, we want to allow a
@@ -32,7 +33,8 @@ enum thread_status thread_status_array[NUM_THREADS];
 // The argument `param` is the thread index, cast to a (void*).
 // Include semaphore operations to limit the number of Active
 // threads to MAX_ACTIVE.
-void* thread_func(void* param) {    return NULL;
+void* thread_func(void* param) {
+    return NULL;
 }
 
 int main() {

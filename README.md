@@ -13,14 +13,12 @@ As you complete sections of the JQR, please reach out to a qualified developer t
 | Section | Knowledge                                                           | Initials | Date |
 |---------|---------------------------------------------------------------------|----------|------|
 | Tools
-| 0.1.1  | Compare Linux and Windows and explain fundamental Linux concepts     |          |      |
+| 0.1.1  | General Operating System Concepts                                    |          |      |
 | 0.1.2  | Explain Linux shell commands                                         |          |      |
-| 0.1.3  | Explain and diagram git commands                                     |          |      |
-| 0.1.4  | General operating systems concepts                                   |          |      |
-| 0.1.5  | Describe terms relating to operating system virtualization           |          |      |
-| Applications
-| 0.2.1  | Demonstrate usage of Linux commands                                  |          |      |
-| 0.2.2  | Demonstrate usage of git                                             |          |      |
+| 0.1.3  | Explain Executable File Formats and the concept of an ABI            |          |      |
+| 0.1.4  | Describe terms relating to operating system virtualization           |          |      |
+| 0.1.5  | Explain and diagram git commands                                     |          |      |
+| 0.1.6  | Demonstrate usage of git                                             |          |      |
 
 # 1: Python Programming
 
