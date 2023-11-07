@@ -6,14 +6,6 @@ This guide will walk you through the step-by-step process of installing Python a
 **The JQR teaches python following Python 3 specifications**. There are 2 versions of Python, Python2 and Python3. There are slight differences between them, and Python 2 is considered deprecated. Therefore, everything in the JQR is to be taken in the context of a Python3 application. For more on the difference between the two, this [Tutorialspoint Article](https://www.tutorialspoint.com/python3/python3_whatisnew.htm) provides a brief overview.
 
 
-## Installing Visual Studio Code
-
-First, you need to install VS Code, a beginner developer's best friend. According to the [official website](https://code.visualstudio.com/docs), "Visual Studio Code is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux." Feel free to follow along with their videos for a good introduction to the power of VS Code.
-
-You can easily install VS Code on Windows from the Microsoft Store. For Linux, please follow the [Official Docs](https://code.visualstudio.com/docs/setup/linux), or find a good video.
-
-Once you've installed VS Code, feel free to personalize it by setting your own Key Bindings, changing the Color Theme, and fonts! Just click FILE &rarr; PREFERENCES at the top left.
-
 ## Installing Python / Pytest
 
 For Windows, python can be installed from the Microsoft Store. However that version may be out of date. It is recommended to download the latest *stable* release from the [Python Website](https://www.python.org/downloads/windows/). 
@@ -48,7 +40,6 @@ Installation on Linux requires more command line work. If you aren't familiar wi
 2. In the Extensions search bar, type "Python" and press Enter.
 3. Look for the official "Python" extension by Microsoft and click on the "Install" button.
 4. Wait for the installation to complete, and then click on the "Reload" button to activate the extension.
-
 
 ### Step 3: Running Python Code
 1. To run your Python code, you may use the VSCode terminal. Click on "View" &rarr; "Terminal" or press ``` "Ctrl + `" ``` to open the integrated terminal.
