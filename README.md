@@ -11,43 +11,50 @@ As you complete sections of the JQR, please reach out to a qualified developer t
 | Section | Knowledge                                                           | Initials | Date |
 |---------|---------------------------------------------------------------------|----------|------|
 | Tools
-| 0.1.1  | Explain Linux and its differences from Windows                       |          |      |
-| 0.1.2  | Explain Linux shell commands                                         |          |      |
-| 0.1.3  | Explain and diagram git commands                                     |          |      |
-| 0.1.4  | Explain general operating systems concepts                           |          |      |
-| 0.1.5  | Describe terms relating to operating system virtualization           |          |      |
+|  0.1.1  | Explain Linux and its differences from Windows                      |          |      |
+|  0.1.2  | Explain Linux shell commands                                        |          |      |
+|  0.1.3  | Explain and diagram git commands                                    |          |      |
+|  0.1.4  | Explain general operating systems concepts                          |          |      |
+|  0.1.5  | Describe terms relating to operating system virtualization          |          |      |
 | Applications
-| 0.2.1  | Demonstrate usage of Linux commands                                  |          |      |
-| 0.2.2  | Demonstrate usage of git                                             |          |      |
+|  0.2.1  | Demonstrate usage of Linux commands                                 |          |      |
+|  0.2.2  | Demonstrate usage of git                                            |          |      |
 
 # 1: Python Programming
 | Section | Knowledge                                                           | Initials | Date |
 |---------|---------------------------------------------------------------------|----------|------|
-| Tools
-|  1.1.1  | Explain the python interpreter                                      |          |      |
-|  1.1.2  | Navigate the python documentation                                   |          |      |
-|  1.1.3  | Explain print debugging in a Linux terminal                         |          |      |
-|  1.1.4  | Explain use of the Visual Studio Debugger                           |          |      |
-| Application
-|  1.2.1  | Explain and demonstrate functionality of variables and data types   |          |      |
-|  1.2.2  | Explain and demonstrate looping and control flow                    |          |      |
-|  1.2.3  | Explain and demonstrate import statements                           |          |      |
-|  1.2.4  | Explain and demonstrate usage of functions                          |          |      |
-|  1.2.5  | Explain namespace and modules                                       |          |      |
-|  1.2.6  | Explain and demonstrate exceptions                                  |          |      |
-|  1.2.7  | Explain classes and methods                                         |          |      |
-|  1.2.8  | Explain and demonstrate built-in functions                          |          |      |
-|  1.2.9  | Demonstrate knowledge of classes, methods and functions             |          |      |
-|  1.2.10 | Explain mutability and how it relates to data types                 |          |      |
-|  1.2.11 | Demonstrate knowledge of mutability and data types                  |          |      |
-|  1.2.12 | Describe fundamentals of Object Oriented Programming                |          |      |
-| Competencies
-|  1.3.1  | Implement functionality of specific, predefined Python functions to demonstrate knowledge of control flow, variables, calling functions, and utilizing pydocs |          |      |
-|  1.3.2  | Implement functionality for file operations and other functions     |          |      |
-|  1.3.3  | Implement sorting algorithms in Python                              |          |      |
-|  1.3.4  | Implement wordle in Python                                          |          |      |
-|  1.3.5  | Write a program to analyze network graph data from a JSON file      |          |      |
-|  1.3.6  | Implement unit tests to find bugs in a provided program             |          |      |
+|  1.01   | Environment                                                         |          |      |
+|  1.02   | Basic Syntax                                                        |          |      |
+|  1.03   | Variable Types                                                      |          |      |
+|  1.04   | Operators                                                           |          |      |
+|  1.05   | Conditionals                                                        |          |      |
+|  1.06   | Loops                                                               |          |      |
+|  1.07   | Debugging                                                           |          |      |
+|**1.08** | **Competency 1: FizzBuzz**                                          |          |      |
+|  1.09   | Numbers                                                             |          |      |
+|  1.10   | Strings                                                             |          |      |
+|  1.11   | Typecasting                                                         |          |      |
+|  1.12   | Lists Tuples and Sets                                               |          |      |
+|  1.13   | Dictionaries                                                        |          |      |
+|**1.14** | **Competency 2: Decryption**                                        |          |      |
+|  1.15   | Functions                                                           |          |      |
+|  1.16   | Modules                                                             |          |      |
+|  1.17   | Unit Tests                                                          |          |      |
+|  1.18   | File IO                                                             |          |      |
+|**1.19** | **Competency 3: Core Crucible**                                     |          |      |
+|**1.20** | **Competency 4: Wordle**                                            |          |      |
+|  1.21   | Classes and Objects                                                 |          |      |
+|  1.22   | Data Structures                                                     |          |      |
+|  1.23   | Design Patterns                                                     |          |      |
+|**1.24** | **Competency 5: Ship**                                              |          |      |
+|  1.25   | Algorithms                                                          |          |      |
+|**1.26** | **Competency 6: Sorting**                                           |          |      |
+|  1.27   | JSON                                                                |          |      |
+|**1.28** | **Competency 7: Network Analysis**                                  |          |      |
+|  1.29   | Exceptions                                                          |          |      |
+|  1.30   | Pytest                                                              |          |      |
+|**1.31** | **Competency 8: Test Eval**                                         |          |      |
+|  1.32   | Regular Expressions                                                 |          |      |
 
 # 2: C Programming
 | Section | Knowledge                                                           | Initials | Date |
