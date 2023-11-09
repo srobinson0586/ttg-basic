@@ -77,8 +77,7 @@ There are different types of data types in Python. Some built-in Python data typ
 * **Binary types**: `bytes`, `bytearray`, `memoryview`
 * **Set data types**: `set`, `frozenset`
 
-Python Numbers
---------------
+## Python Numbers
 
 Number data types store numeric values. Number objects are created when you assign a value to them. For example:
 
@@ -267,9 +266,66 @@ In these examples, we don't need to check if `name` is a string or if `num1` and
 
 Instead, we rely on the behavior of the objects and assume that they support the necessary operations or methods. If an object behaves like a string, an integer, or a list, we can treat it as such, regardless of its specific type.
 
+## Mutable vs. Immutable Data Types
+
+This module has discussed mutability vs. immutability briefly; this section will delve into that further. In Python, data types can be categorized as either **mutable** or **immutable**. Understanding this distinction is crucial for writing efficient and error-free Python code.
+
+### Immutable Data Types
+
+Immutable data types, as the name suggests, are **unchangeable** once they are created. This means that any attempt to modify their values will result in the creation of a new object. The following are some common examples of immutable data types in Python:
+
+- `int` - Integer values are immutable. If you perform an operation that changes an integer's value, a new integer object is created.
+    ```py
+    x = 5
+    x = x + 1  # Creates a new integer object, x now holds 6
+    ```
+- `float` - Floating-point numbers, like integers, are immutable.
+    ```py
+    y = 3.14
+    y = y * 2  # Creates a new float object, y now holds 6.28
+    ```
+- `str` - Strings are also immutable. Any operation that changes a string creates a new string object.
+    ```py
+    name = "Alice"
+    name += " Smith"  # Creates a new string object, name now holds "Alice Smith"
+    ```
+- `tuple` - Tuples are ordered collections of items, and they are immutable. You cannot change the elements once a tuple is created.
+    ```py
+    point = (2, 3)
+    # Attempting to change an element will result in an error:
+    # point[0] = 1  # This will raise a TypeError
+    ```
+
+### Mutable Data Types
+
+Mutable data types, on the other hand, **can be modified** after their creation. Any changes made to these objects do not create new objects; they modify the existing ones. Here are some common examples of mutable data types in Python:
+
+- `list` - Lists are ordered collections of items, and they are mutable. You can add, remove, or modify elements within a list.
+    ```py
+    numbers = [1, 2, 3]
+    numbers.append(4)  # Modifies the existing list by adding 4
+    numbers[0] = 5     # Modifies the first element to be 5
+    ```
+- `dict` - Dictionaries are mutable mappings of keys to values. You can add, remove, or change key-value pairs within a dictionary.
+    ```py
+    person = {"name": "Bob", "age": 30}
+    person["age"] = 31  # Modifies the age value to 31
+    ```
+- `set` - Sets are unordered collections of unique elements, and they are mutable. You can add and remove elements from a set.
+    ```py
+    colors = {"red", "green", "blue"}
+    colors.add("yellow")  # Adds "yellow" to the existing set
+    colors.remove("red")  # Removes "red" from the set
+    ```
+- Most other objects in Python are also immutable.
+
+Understanding whether a data type is mutable or immutable is essential for effective Python programming. It can help you avoid unexpected side effects when passing data between functions and ensure that your code behaves as intended.
+
+Remember that when working with immutable data types, any operation that appears to modify the data will create a new object. In contrast, with mutable data types, modifications are made in place, affecting the original object. Choose the appropriate data type based on your specific programming needs.
 
 ## Resources
 - [How variables work in Python](https://www.youtube.com/watch?v=0Om2gYU6clE)
+- [Mutable vs. Immutable Types](https://realpython.com/python-mutable-vs-immutable-types/)
 
 ## Sources
 
