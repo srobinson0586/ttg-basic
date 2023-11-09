@@ -12,13 +12,15 @@ As you complete sections of the JQR, please reach out to a qualified developer t
 
 | Section | Knowledge                                                           | Initials | Date |
 |---------|---------------------------------------------------------------------|----------|------|
-| Tools
+| OS Fundamentals
 | 0.1.1  | General Operating System Concepts                                    |          |      |
 | 0.1.2  | Explain Linux shell commands                                         |          |      |
 | 0.1.3  | Explain Executable File Formats and the concept of an ABI            |          |      |
 | 0.1.4  | Describe terms relating to operating system virtualization           |          |      |
 | 0.1.5  | Explain and diagram git commands                                     |          |      |
 | 0.1.6  | Demonstrate usage of git                                             |          |      |
+| Code Testing
+| 0.2.1  | Describe Code Testing Fundamentals                                   |          |      |
 
 # 1: Python Programming
 
