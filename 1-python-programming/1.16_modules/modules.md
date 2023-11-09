@@ -4,7 +4,7 @@ In Python, a module is a file containing Python code. It could be a collection o
 
 To use the functionality defined in a module, you need to import it into your program using the `import` statement. This allows you to access the functions, classes, and variables defined in the module. For instance, if you have a module named "math_operations.py" with functions for mathematical operations, you can import and use it like this:
 
-```python
+```py
 import math_operations
 
 result = math_operations.add(5, 3)
@@ -13,7 +13,7 @@ print(result)
 
 Alternatively, you can use the `from ... import ...` syntax to directly import specific elements from a module:
 
-```python
+```py
 from math_operations import add, multiply
 
 result = add(5, 3)
@@ -21,6 +21,8 @@ product = multiply(4, 6)
 ```
 
 This approach saves you from having to use the module's name when referencing its elements.
+
+The difference between these two approaches is what **namespace** or **scope** the object is in.  In the first instance where you simply `import math_operations`, `add` and `multiply` are in the `math_operations` namespace.  However, in the second instance, `add` and `multiply` are in the **global** namespace.
 
 Python also provides several built-in modules like `math`, `random`, and `datetime`, which offer various functionalities. You can explore and utilize these modules to avoid reinventing the wheel and to make your code more efficient.
 
@@ -41,7 +43,7 @@ Python checks these locations in order until it finds the desired module. If the
 
 For instance, let's say you're working on a project and have a custom module named `my_module.py`. If `my_module.py` is in the same directory as your script, you can directly import it using `import my_module`. If the module is located in a different directory, you can add that directory's path to the `PYTHONPATH` environment variable or append it to the `sys.path` list using code like this:
 
-```python
+```py
 import sys
 sys.path.append("/path/to/your/module")
 
@@ -56,7 +58,7 @@ Understanding the module search path is important when dealing with larger proje
 One important builtin function is `dir()`. This will show you which names a module defines.
 
 Taking our `functions.py` as our example, and assuming that `functions.py` defines `fun1`, `fun2`, and `fun3`, the output of `dir(functions.py)` would appear as follows:
-```
+```py
     import functions
     dir(functions)
     >>> ['__name__','fun1','fun2', 'fun3']

@@ -9,7 +9,7 @@ As you already know, Python gives you many built-in functions like `print()`, et
 
 You can *define* functions to provide the required functionality and tell the interpreter what to do. Here are simple rules to define a function in Python.
 
--   Function blocks begin with the keyword **`def`** followed by the function name and parentheses `( )` .
+-   Function blocks begin with the keyword `def` followed by the function name and parentheses `()` .
     
 -   Any input parameters or arguments should be placed within these parentheses. You can also define *parameters* inside these parentheses.
     
@@ -20,14 +20,14 @@ You can *define* functions to provide the required functionality and tell the in
 -   The code block within every function starts with a colon (`:`) and is indented.
     - If you forgot about how python uses indentation to separate code blocks, please refer back to [1.02_basic_syntax/basic_syntax.md](../1.02_basic_syntax/basic_syntax.md#lines-and-indentation)
     
--   The statement `return <expression>` exits a function, optionally passing back an expression, or value, to the caller. A return statement with no arguments is the same as `return None`.
+-   The statement `return <expression>` exits a function, optionally passing back an expression, or value, to the caller. A return statement with no arguments is the same as `return None`.  If there is no `return` in the function, the function will execute normally and return `None`.
     
 
 ### Syntax
 
 The below pseudocode shows the basic syntax of a function. The code within isn't valid python.
 ```py
-def functionname( parameters ):
+def functionname(parameters):
    """function_docstring, explain what the function does and what the parameters are used for"""
    do_code_here
    return expression_optional
@@ -37,10 +37,9 @@ def functionname( parameters ):
 
 The following function takes a string as the input parameter and prints it to the standard output device (usually just the terminal you're running the program from). It doesn't return anything. In fact, the final `return` statement is optional here since we aren't returning anything.
 ```py
-def printme( my_str ):
+def printme(my_str):
    "This prints a passed string into this function"
-   print (my_str)
-   return
+   print(my_str)
 ```
 
 
@@ -51,29 +50,29 @@ The statement `return <expression>` exits a function, optionally passing back an
 You can return a value from a function as follows:
 ```py
 # Function definition is here
-def sum( arg1, arg2 ):
+def sum(arg1, arg2):
    # if statement for the sake of demonstrating different return types and hitting a `return` before the end of the function
-   if(arg1 == 1337 || arg2 == 1337):
+   if arg1 == 1337 or arg2 == 1337:
       return "No hackers allowed"
    
    # Add both the parameters and return them."
    total = arg1 + arg2
-   print ("Inside the function : ", total)
+   print(f"Inside the function: {total}")
    return total
 
 # Now you can call sum function
-total = sum( 10, 20 )
-print ("Outside the function : ", total )
+total = sum(10, 20)
+print(f"Outside the function: {total}")
 
 # first, sum(1337, 28) will run, and its return value will be passed as an argument to print
-print ("Attempting h4ck: ", sum(1337, 28)) 
+print(f"Attempting h4ck: {sum(1337, 28)}") 
 ```
 
 When the above code is executed, it produces the following result:
 ```
-Inside the function :  30
-Outside the function :  30
-Attempting h4ck:  No hackers allowed
+Inside the function: 30
+Outside the function: 30
+Attempting h4ck: No hackers allowed
 ```
 
 
@@ -85,7 +84,7 @@ Once the basic structure of a function is finalized, you can execute it by calli
 
 ```py
 # Function definition is here
-def printme( my_str ):
+def printme(my_str):
    "This prints a passed string into this function"
    print (my_str)
 
@@ -105,16 +104,16 @@ Second call to the same function
 All parameters(arguments) in the Python language are passed by reference. This means that if you change what a parameter refers to within a function, the change also reflects back in the calling function. For example:
 ```py
 # Function definition is here
-def changeme( mylist ):
-   print ("Values inside the function before change: ", mylist)
+def changeme(mylist):
+   print("Values inside the function before change: ", mylist)
    
-   mylist[2]=50
-   print ("Values inside the function after change: ", mylist)
+   mylist[2] = 50
+   print("Values inside the function after change: ", mylist)
 
 # Now you can call changeme function
-mylist = [10,20,30]
-changeme( mylist )
-print ("Values outside the function: ", mylist)
+mylist = [10, 20, 30]
+changeme(mylist)
+print("Values outside the function: ", mylist)
 ```
 
 Here, we are maintaining reference of the passed object and appending values in the same object. Therefore, this would produce the following result −
@@ -127,15 +126,15 @@ Values outside the function:  [10, 20, 50]
 Below is an example of how **NOT** to update variables within functions. The parameter `mylist` is local to the function `changeme()`. Changing `mylist` within the function does not affect `mylist` in `main()`. 
 ```py
 # Function definition is here
-def changeme( mylist ):
+def changeme(mylist):
    "This changes a passed list into this function"
-   mylist = [1,2,3,4] # This would assign new reference in mylist
-   print ("Values inside the function: ", mylist)
+   mylist = [1, 2, 3, 4] # This would assign new reference in mylist
+   print("Values inside the function: ", mylist)
 
 # Now you can call changeme function
-mylist = [10,20,30]
-changeme( mylist )
-print ("Values outside the function: ", mylist)
+mylist = [10, 20, 30]
+changeme(mylist)
+print("Values outside the function: ", mylist)
 ```
 
 The function accomplishes nothing and finally this would produce the following result −
@@ -144,7 +143,7 @@ Values inside the function:  [1, 2, 3, 4]
 Values outside the function:  [10, 20, 30]
 ```
 
-Variable scope is covered more in depth below in the [Scope of Variables](#scope-of-variables) section. If you would like to read more about Python's unique approach to function arguments, check out this [RealPython- Pass by Reference](https://realpython.com/python-pass-by-reference/) article. 
+Variable scope is covered more in depth below in the [Scope of Variables](#scope-of-variables--variable-namespace) section. If you would like to read more about Python's unique approach to function arguments, check out this [RealPython- Pass by Reference](https://realpython.com/python-pass-by-reference/) article. 
 
 ### Immutable Data Types
 
@@ -152,12 +151,12 @@ Since all arguments are passed by reference, keep in mind the *type* of the obje
 
 The example above worked because the `list` data type is *mutable*. Lets use the *Python interpreter* to see what happens if we try the same function but pass it a `string` object.
 ```py
->>> def changeme( mylist ):
+>>> def changeme(mylist):
 ...    "This changes a passed list into this function"
-...    print ("Values inside the function before change: ", mylist)
+...    print("Values inside the function before change: ", mylist)
 ...
-...    mylist[2]=50
-...    print ("Values inside the function after change: ", mylist)
+...    mylist[2] = 50
+...    print("Values inside the function after change: ", mylist)
 
 >>> my_str = 'TRAINO ROCKS!'
 >>> changeme(my_str)
@@ -184,9 +183,9 @@ Required arguments are the arguments passed to a function in correct positional 
 
 To call the function `printme()`, you **need** to pass one argument, otherwise it gives a syntax error as follows:
 ```py
-def printme( str ):
+def printme(str):
    "This prints a passed string into this function"
-   print (str)
+   print(str)
 
 # Now you can call printme function
 printme()
@@ -206,12 +205,12 @@ Keyword arguments are related to the function calls. When you use keyword argume
 
 This allows you to skip arguments or place them out of order because the Python interpreter is able to use the keywords provided to match the values with parameters. You can also make keyword calls to the `printme()` function in the following ways:
 ```py
-def printme( str ):
+def printme(str):
    "This prints a passed string into this function"
-   print (str)
+   print(str)
 
 # Now you can call printme function
-printme( str = "My string")
+printme(str="My string")
 ```
 
 When the above code is executed, it produces the following result:
@@ -221,13 +220,13 @@ My string
 
 The following example gives a clearer picture. Note that the order of parameters does not matter:
 ```py
-def printinfo( name, age ):
+def printinfo(name, age):
    "This prints a passed info into this function"
-   print ("Name: ", name)
-   print ("Age:  ", age)
+   print("Name: ", name)
+   print("Age:  ", age)
 
 # Now you can call printinfo function
-printinfo( age = 50, name = "miki" )
+printinfo(age=50, name="miki")
 ```
 
 When the above code is executed, it produces the following result:
@@ -240,14 +239,14 @@ Age :  50
 
 A default argument is an argument that assumes a default value if a value is not provided in the function call for that argument. The default value is specified with an (`=`) after the parameter name in the function declaration. The following example gives an idea on default arguments, it assigns a default age of 35 if it is not specified in function call arguments:
 ```py
-def printinfo( name, age = 35 ):
-   print ("Name: ", name)
-   print ("Age ", age)
+def printinfo(name, age = 35):
+   print("Name: ", name)
+   print("Age ", age)
    return
 
 # Now you can call printinfo function
-printinfo( age = 50, name = "miki" )
-printinfo( name = "miki" )
+printinfo(age=50, name="miki")
+printinfo(name="miki")
 ```
 
 When the above code is executed, it produces the following result:
@@ -264,7 +263,7 @@ You may need to process a function for more arguments than you specified while d
 
 The syntax for a function with *non-keyword* variable arguments is given below:
 ```py
-def functionname([formal_args,] *var_args_tuple ):
+def functionname([formal_args,] *var_args_tuple):
    "function_docstring"
    do_code_here
    return <expression>
@@ -273,7 +272,7 @@ def functionname([formal_args,] *var_args_tuple ):
 An asterisk (`*`) is placed before the variable name that holds the values of all nonkeyword variable arguments. This tuple remains empty if no additional arguments are specified during the function call. The following is a simple example:
 ```py
 # Function definition is here
-def printinfo( arg1, *vartuple ):
+def printinfo(arg1, *vartuple):
    print("Output is: ", arg1)
    
    for var in vartuple:
@@ -281,8 +280,8 @@ def printinfo( arg1, *vartuple ):
    return
 
 # Now you can call printinfo function
-printinfo( 10 )
-printinfo( 70, 60, 50 )
+printinfo(10)
+printinfo(70, 60, 50)
 ```
 
 When the above code is executed, it produces the following result:
@@ -314,8 +313,8 @@ Below is an short example:
 sum = lambda arg1, arg2: arg1 + arg2
 
 # Now you can call sum as a function
-print ("Value of total : ", sum( 10, 20 ))
-print ("Value of total : ", sum( 20, 20 ))
+print("Value of total : ", sum(10, 20))
+print("Value of total : ", sum(20, 20))
 print("sum is of type : ", type(sum))
 ```
 
@@ -329,28 +328,28 @@ sum is of type :  <class 'function'>
 Feel free to play around with the above lambda function, or define your own, in the interactive python interpreter! Keep in mind that lambda functions aren't extremely common.
 
 
-## Scope of Variables
+## Scope of Variables / Variable Namespace
 
 Some variables in a program may not be accessible at all locations in that program. This depends on where you have declared a variable.
 
-The scope of a variable determines the portion of the program where you can access a particular identifier. There are two basic scopes of variables in Python:
+The scope (also called a namespace) of a variable determines the portion of the program where you can access a particular identifier. There are two basic scopes of variables in Python:
 
 -   Global variables
 -   Local variables
 
 ### Global vs. Local variables
 
-Variables that are *defined inside a function body* have a "local scope", and those defined *outside of functions* have a "global scope".
+Variables that are *defined inside a function body* have a "local scope" (also called "the local namespace"), and those defined *outside of functions* have a "global scope" (or in "global namespace").
 
 This means that local variables can be **accessed only inside the function** in which they are declared, whereas global variables can be **accessed throughout the program body by all functions**. When you call a function, the variables declared inside it are brought into scope. Below is a simple example:
 ```py
 total = 0   # This is global variable.
 
 # Function definition is here
-def sum( arg1, arg2 ):
+def sum(arg1, arg2):
    # Add both the parameters and return them.
    total = arg1 + arg2; # Here total is a local variable.
-   print ("sum()'s local total is: ", total)
+   print("sum()'s local total is: ", total)
    return total
 
 # Now you can call sum function
@@ -470,11 +469,12 @@ Back in main, the global is:  NCWDG{TRYING_TO_MAKE_THIS_GLOBAL}
 
 ## References
 
-- [RealPython- Docstrings](https://realpython.com/documenting-python-code/#documenting-your-python-code-base-using-docstrings)
-- [RealPython- Pass by Reference](https://realpython.com/python-pass-by-reference/)
+- [RealPython - Docstrings](https://realpython.com/documenting-python-code/#documenting-your-python-code-base-using-docstrings)
+- [RealPython - Pass by Reference](https://realpython.com/python-pass-by-reference/)
+- [RealPython - Namespaces and Scope](https://realpython.com/python-namespaces-scope/)
 
 ## Sources
 
-- [Tutorialspoint- Function](https://www.tutorialspoint.com/python3/python_functions.htm)
+- [Tutorialspoint - Functions](https://www.tutorialspoint.com/python3/python_functions.htm)
 
 [Back to README](README.md)
