@@ -467,6 +467,51 @@ The global in print_my_global is:  NCWDG{TRYING_TO_MAKE_THIS_GLOBAL}
 Back in main, the global is:  NCWDG{TRYING_TO_MAKE_THIS_GLOBAL}
 ```
 
+## Type Hints
+
+In Python, type hints are a way to indicate the expected data types of the parameters and the return value of a function. While Python is a dynamically typed language, meaning you don't have to explicitly declare the data type of a variable, type hints provide a way to add a layer of clarity to your code and make it more understandable, especially for others who might read or work with your code.
+
+To add type hints to a function, you use the colon (`:`) syntax after the parameter name or the return arrow (`->`) before the return type. Here's a basic example:
+
+```py
+def add_numbers(x: int, y: int) -> int:
+    result = x + y
+    return result
+```
+
+In this example, the `add_numbers` function takes two parameters (`x` and `y`), both of which are expected to be of type `int`. The `-> int` syntax at the end indicates that the function is expected to return an integer.
+
+### Benefits of Type Hints:
+
+1. **Code Readability:** Type hints make your code more readable and help other developers (or even future you) understand the expected types of variables.
+2. **Editor Support:** Many code editors and IDEs use type hints to provide better autocompletion suggestions and catch potential errors as you write code.
+3. **Documentation:** Type hints serve as a form of documentation, making it easier for others to understand how to use your functions correctly.
+4. **Catch Errors Early:** While Python is dynamically typed, type hints allow you to catch type-related errors early in development, reducing the chances of runtime errors.
+
+### Common Type Hints:
+
+- `int`: Integer
+- `float`: Floating-point number
+- `str`: String
+- `bool`: Boolean
+- `list[type]`: List of elements of a specified type
+- `tuple[type, type]`: Tuple with specified types for each element
+- `dict[key_type, value_type]`: Dictionary with specified key and value types
+
+Here's an example using a list of strings:
+
+```py
+def process_names(names: list[str]):
+    for name in names:
+        print(f"Hello, {name}")
+```
+
+In this function, `process_names` takes a list of strings and doesn't return anything (`None`).
+
+> Note: in cases where you are returning `None`, `-> None` is implied if you do not put a type hint for the return type. Generally, putting `-> None` in your function definition is overkill.
+
+By incorporating type hints into your functions, you enhance the clarity and maintainability of your code, making it easier for both you and others to work with.
+
 ## References
 
 - [RealPython - Docstrings](https://realpython.com/documenting-python-code/#documenting-your-python-code-base-using-docstrings)
