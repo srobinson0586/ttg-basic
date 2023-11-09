@@ -25,12 +25,22 @@
     ANSWER:
     ```
 
-4. Assume there exists a class named `Student`. How would you create an instance of `Student` if its constructor takes arguments for `name` and `id`?
+4. What is an instance of a class?
     ```
     ANSWER:
     ```
 
-5. In Python, what does the term "inheritance" refer to?
+5. Explain the purpose of the __init__ function.
+    ```
+    ANSWER:
+    ```
+
+6. Assume there exists a class named `Student`. How would you create an instance of `Student` if its constructor takes arguments for `name` and `id`?
+    ```
+    ANSWER:
+    ```
+
+7. In Python, what does the term "inheritance" refer to?
     - A) The creation of multiple instances of a class
     - B) The ability of objects to change their state
     - C) The process of creating a new class based on an existing class
@@ -39,12 +49,17 @@
     ANSWER:
     ```
 
-6. Which operator is used to access attributes and methods of a class? How would you access an attribute called `price` of an object called `item` of class `Product`?
+8. Which operator is used to access attributes and methods of a class? How would you access an attribute called `price` of an object called `item` of class `Product`?
     ```
     ANSWER:
     ```
 
-7. Which "dunder" method needs to be created for the class `Product` so that two instances of `Product` can be compared for equality?
+9. What are getter and setter functions? Why would you use them instead of just modifying an attribute directly?
+    ```
+    ANSWER:
+    ```
+
+10. Which "dunder" method needs to be created for the class `Product` so that two instances of `Product` can be compared for equality?
     ```
     ANSWER:
     ```

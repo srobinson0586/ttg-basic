@@ -27,4 +27,19 @@
     ANSWER:
     ```
 
+5. Explain how `import sys` and `from sys import *` are different.
+    ```
+    ANSWER:
+    ```
+
+6. Explain how you would call `exit` within the `sys` module using each `import` statement.
+    ```
+    ANSWER:
+    ```
+
+7. The user has two files within the same directory (`struct.py` and `my_struct.py`).  If `my_struct.py` imports the module `struct`, will Python’s native `struct` module or my user-defined `struct` module be used? (Hint: try it)
+    ```
+    ANSWER:
+    ```
+
 [Back to README](README.md)

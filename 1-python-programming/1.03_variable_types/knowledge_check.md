@@ -38,5 +38,18 @@
     ```
     ANSWER:
     ```
+7. What does it mean for a data type to be mutable or immutable?
+    ```
+    ANSWER:
+    ```
+
+8. Categorize each of the following data types as mutable or immutable.
+    ```
+    Integer:
+    String:
+    List:
+    Tuple:
+    Dictionary:
+    ```
 
 [Back to README](README.md)
