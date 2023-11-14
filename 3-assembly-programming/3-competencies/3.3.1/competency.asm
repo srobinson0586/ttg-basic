@@ -92,7 +92,7 @@ lab1_5:
 
 
 
-;; void lab1_6(int* p);
+;; int lab1_6(int* p);
 ;; Return *p - 20.
 lab1_6:
     ;; TODO: Implement this function.
@@ -228,6 +228,10 @@ lab3_5:
     ;; to open. You can find all the details in the open(2) man page. Then
     ;; you can find the actual numerical definition of the flags you're
     ;; interested in by grepping for them in /usr/include/.
+
+    ;; In this case, /usr/include/asm-generic/fcntl.h or /usr/include/fcntl.h
+    ;; might be of use here, along with checking `man 2 open` for which flags
+    ;; you want/need for this lab.
 
     ;; You can use the `strace` utility to debug the system calls you're
     ;; making. It can also tell you what flags you're actually passing to
