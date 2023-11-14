@@ -30,7 +30,7 @@
     ANSWER:
     ```
 
-5. Explain the purpose of the __init__ function.
+5. Explain the purpose of the `__init__` function.
     ```
     ANSWER:
     ```
