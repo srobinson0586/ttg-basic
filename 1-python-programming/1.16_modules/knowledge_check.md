@@ -32,7 +32,7 @@
     ANSWER:
     ```
 
-6. Explain how you would call `exit` within the `sys` module using each `import` statement.
+6. Explain how you would call `exit` within the `sys` module using each of the above `import` statements.
     ```
     ANSWER:
     ```
