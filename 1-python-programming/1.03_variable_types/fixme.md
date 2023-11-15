@@ -3,7 +3,7 @@
 Code: [fixme.py](./fixme.py)
 
 ## Tasks
-- [ ] Comment out any errors in `fixme.py` and show that it prints `code fixed!`
+- [ ] Comment out any errors in `fixme.py` until it prints `code fixed!`
 - [ ] Explain each of the errors (in the Python file, on the same line).
 
 ## Question

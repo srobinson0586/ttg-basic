@@ -270,6 +270,8 @@ Instead, we rely on the behavior of the objects and assume that they support the
 
 This module has discussed mutability vs. immutability briefly; this section will delve into that further. In Python, data types can be categorized as either **mutable** or **immutable**. Understanding this distinction is crucial for writing efficient and error-free Python code.
 
+> NOTE: We will discuss lists, sets, and tuples in this section regarding their immutability vs. mutability. Don't worry if you don't fully understand them yet; later sections will cover them in much more depth.
+
 ### Immutable Data Types
 
 Immutable data types, as the name suggests, are **unchangeable** once they are created. This means that any attempt to modify their values will result in the creation of a new object. The following are some common examples of immutable data types in Python:

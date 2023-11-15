@@ -88,4 +88,4 @@ Apart from the above-mentioned features, Python has a big list of good features.
 
 - [Tutorialspoint - Python Overview](https://www.tutorialspoint.com/python3/python_overview.htm)
 
-[Back to README](README.md)
+[Back to Master README](../README.md)
