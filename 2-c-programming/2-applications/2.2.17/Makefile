@@ -1,4 +1,4 @@
-executables = mutex semaphore
+executables = mutex semaphore conditionals threadpool
 
 all: $(executables)
 

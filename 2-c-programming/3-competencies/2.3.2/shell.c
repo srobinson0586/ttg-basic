@@ -106,7 +106,7 @@ void help() {
 }
 
 void trimNewline(char *buf) {
-	for(int i = 0; ; i++) {
+	for(int i = 0; buf[i] != '\0' ; i++) {
 		if(buf[i] == '\n') {
 			buf[i] = '\0';
 			break;

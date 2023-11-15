@@ -2,5 +2,7 @@
     "workbench.editorAssociations": {   
         "README.md": "vscode.markdown.preview.editor",
     },
-    "markdown.validate.enabled": true,
+    "files.exclude": {
+        "**/.img": true
+    }
 }
