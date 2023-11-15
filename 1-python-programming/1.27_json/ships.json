@@ -1,0 +1,84 @@
+{
+    "ships": [
+        {
+            "name": "USS Freedom",
+            "class": "Littoral Combat Ship",
+            "commissioned": "2008-11-08",
+            "length_meters": 115,
+            "displacement_tons": 3100,
+            "home_port": "San Diego, CA"
+        },
+        {
+            "name": "USS Gerald R. Ford",
+            "class": "Ford-class Aircraft Carrier",
+            "commissioned": "2017-07-22",
+            "length_meters": 337,
+            "displacement_tons": 100000,
+            "home_port": "Norfolk, VA"
+        },
+        {
+            "name": "USS Zumwalt",
+            "class": "Zumwalt-class Destroyer",
+            "commissioned": "2016-10-15",
+            "length_meters": 183,
+            "displacement_tons": 16000,
+            "home_port": "San Diego, CA"
+        },
+        {
+            "name": "USS Virginia",
+            "class": "Virginia-class Submarine",
+            "commissioned": "2004-10-23",
+            "length_meters": 115,
+            "displacement_tons": 7800,
+            "home_port": "Norfolk, VA"
+        },
+        {
+            "name": "USS Cole",
+            "class": "Arleigh Burke-class Destroyer",
+            "commissioned": "1996-06-08",
+            "length_meters": 154,
+            "displacement_tons": 9200,
+            "home_port": "Norfolk, VA"
+        },
+        {
+            "name": "USS Coronado",
+            "class": "Independence-class Littoral Combat Ship",
+            "commissioned": "2014-04-05",
+            "length_meters": 127,
+            "displacement_tons": 2800,
+            "home_port": "San Diego, CA"
+        },
+        {
+            "name": "USS Jimmy Carter",
+            "class": "Seawolf-class Submarine",
+            "commissioned": "2005-02-19",
+            "length_meters": 138,
+            "displacement_tons": 13891,
+            "home_port": "Bangor, WA"
+        },
+        {
+            "name": "USS Nimitz",
+            "class": "Nimitz-class Aircraft Carrier",
+            "commissioned": "1975-05-03",
+            "length_meters": 333,
+            "displacement_tons": 100020,
+            "home_port": "Bremerton, WA"
+        },
+        {
+            "name": "USS Detroit",
+            "class": "Freedom-class Littoral Combat Ship",
+            "commissioned": "2016-10-22",
+            "length_meters": 115,
+            "displacement_tons": 3100,
+            "home_port": "Mayport, FL"
+        },
+        {
+            "name": "USS John S. McCain",
+            "class": "Arleigh Burke-class Destroyer",
+            "commissioned": "1994-07-02",
+            "length_meters": 155,
+            "displacement_tons": 9200,
+            "home_port": "Yokosuka, Japan"
+        }
+    ]
+}
