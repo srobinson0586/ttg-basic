@@ -1,3 +1,6 @@
+#!/bin/python
+# Python Variable Types - Fixme
+
 a = "Hello World"
 b = 20
 c = ["apple", "oranges", "banana"]

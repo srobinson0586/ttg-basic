@@ -1,5 +1,7 @@
 # JQR Section 1 (Python) Overview
 
+[Back to Master README](../README.md)
+
 This is Section 1 in the NCWDG JQR, where new Computer Network Operations (CNO) developers go from a Python Zero to a Python Hero. The section is structured in a way that first teaches students the basics of a specific topic using Markdown files in every folder, known as a **learning** Module. The learning modules then test students' knowledge by having them complete knowledge checks (`knowledge_check.md`) and python challenges (`application.py`). After several modules, or topics, their combined use is tested in the form of a **competency** module.
 
 There are 7 total competency modules. Each of them attempts to challenge the student more than the basic application challenges in the learning modules preceding it. All coding challenges are graded using the `test_application.py` script in each directory. All the students (and graders) must do to test the code is run `pytest` in the directory. `pytest` setup is covered in [1.01_environment](1.01_environment/environment.md).
