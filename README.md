@@ -96,6 +96,7 @@ As you complete sections of the JQR, please reach out to a qualified developer t
 |  2.2.25 | Identify coding standard violations in C source code                |          |      |
 |  2.2.26 | Explain concepts in secure coding                                   |          |      |
 |  2.2.27 | Demonstrate the ability to use Regular Expressions in C             |          |      |
+|  2.2.28 | Describe the Fundamentals of Embedded Systems & Demonstrate the Ability to Cross-Compile Binaries |          |      |
 | Competencies
 |  2.3.1  | Implement simple functions in C                                     |          |      |
 |  2.3.2  | Implement a simple shell in C                                       |          |      |
@@ -169,3 +170,10 @@ As you complete sections of the JQR, please reach out to a qualified developer t
 |  5.2.1  | Explain ideas relating to algorithm run-time                        |          |      |
 |  5.2.2  | Explain specific sorting algorithms                                 |          |      |
 |  5.2.3  | Explain graph search algorithms                                     |          |      |
+
+# 6: Cyber Capability
+| Release | Requirements                                                        | Initials | Date |
+|---------|---------------------------------------------------------------------|----------|------|
+|  v0.1   | High Priority Requirements                                          |          |      |
+|  v0.2   | Medium Priority Requirements                                        |          |      |
+|  v1.0   | Documentation Requirements                                          |          |      |
