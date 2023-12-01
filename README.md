@@ -8,10 +8,12 @@ As you complete sections of the JQR, please reach out to a qualified developer t
 
 
 
-# 0: Fundamentals
+# [0: Fundamentals](0-fundamentals/README.md)
 
 | Section | Knowledge                                                           | Initials | Date |
 |---------|---------------------------------------------------------------------|----------|------|
+| Introduction
+| 0.0    | Basic Foundation (0.00 - 0.09)                                       |          |      |
 | OS Fundamentals
 | 0.1.1  | General Operating System Concepts                                    |          |      |
 | 0.1.2  | Explain Linux shell commands                                         |          |      |
@@ -22,7 +24,7 @@ As you complete sections of the JQR, please reach out to a qualified developer t
 | Code Testing
 | 0.2.1  | Describe Code Testing Fundamentals                                   |          |      |
 
-# 1: Python Programming
+# [1: Python Programming](1-python-programming/README.md)
 
 | Section | Knowledge                                                           | Initials | Date |
 |---------|---------------------------------------------------------------------|----------|------|
@@ -59,7 +61,7 @@ As you complete sections of the JQR, please reach out to a qualified developer t
 |**1.31** | **Competency 8: Test Eval**                                         |          |      |
 |  1.32   | Regular Expressions                                                 |          |      |
 
-# 2: C Programming
+# [2: C Programming](2-c-programming/README.md)
 | Section | Knowledge                                                           | Initials | Date |
 |---------|---------------------------------------------------------------------|----------|------|
 | Tools
@@ -103,7 +105,7 @@ As you complete sections of the JQR, please reach out to a qualified developer t
 |  2.3.3  | Implement Madlibs in C                                              |          |      |
 |  2.3.4  | Implement a State Machine with a signal handler                     |          |      |
 
-# 3: Assembly Programming
+# [3: Assembly Programming](3-assembly-programming/README.md)
 | Section | Knowledge                                                           | Initials | Date |
 |---------|---------------------------------------------------------------------|----------|------|
 | Tools
@@ -127,7 +129,7 @@ As you complete sections of the JQR, please reach out to a qualified developer t
 |  3.3.1  | Implement specific functions in assembly for Linux x64              |          |      |
 |  3.3.2  | Implement linked lists in assembly                                  |          |      |
 
-# 4: Network Programming
+# [4: Network Programming](4-network-programming/README.md)
 | Section | Knowledge                                                           | Initials | Date |
 |---------|---------------------------------------------------------------------|----------|------|
 | Tools
@@ -156,7 +158,7 @@ As you complete sections of the JQR, please reach out to a qualified developer t
 |  4.3.2  | Implement an echo server and client in C                            |          |      |
 |  4.3.3  | Implement a robust TLS echo client and server in Python                 |          |      |
 
-# 5: Data Structures and Algorithms
+# [5: Data Structures and Algorithms](5-data-structures-and-algorithms/README.md)
 | Section | Knowledge                                                           | Initials | Date |
 |---------|---------------------------------------------------------------------|----------|------|
 | Data Structures 
