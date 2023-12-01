@@ -1,11 +1,13 @@
 # Python Exceptions
 
+[Back to README](README.md)
+
 A Python program terminates as soon as it encounters an error. In Python, an error can be a syntax error or an exception. In this module, you will learn what an exception is and how it differs from a syntax error. After that, you will learn about raising exceptions and making assertions. Then, you'll finish with a demonstration of the try and except block.
 
 ## Exceptions versus Syntax Errors
 
 Syntax errors occur when the parser detects an incorrect statement. Take for example:
-```py
+```python-repl
 >>> print( 0 / 0 ))
   File "<stdin>", line 1
     print( 0 / 0 ))
@@ -14,7 +16,7 @@ SyntaxError: invalid syntax
 ```
 
 The arrow indicates where the parser ran into the **syntax error**. In this example, there was one extra parenthesis. If you remove it and run the code again:
-```py
+```python-repl
 >>> print( 0 / 0)
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
@@ -35,7 +37,7 @@ if x > 5:
 ```
 
 When ran, that code outputs the following:
-```py
+```python-repl
 Traceback (most recent call last):
   File "<input>", line 4, in <module>
 Exception: x should not exceed 5. The value of x was: 10
@@ -62,8 +64,7 @@ if x == 8:
 
 Running that would output:
 ```
----------------------------------------------------------------------------
-MyException                               Traceback (most recent call last)
+Traceback (most recent call last):
 Cell In[4], line 2    # (using IPython shell)
       1 if x == 8:
 ----> 2     raise MyException('I h8 the number 8')
@@ -72,7 +73,7 @@ MyException: My custom output: I h8 the number 8
 ```
 
 Notice that the above `MyException` class inherits from the `ArithmeticError` class (this was chosen at random). So that means that it has all the attributes and methods of its parent. If we were to run `dir()` on it in an `IPython` shell we would get:
-```py
+```python-repl
 In [5]: dir(MyException)
 Out[5]: 
 [ # bunch of dunder methods....,
@@ -83,7 +84,7 @@ Out[5]:
 
 ## The `AssertionError` Exception
 
-Instead of waiting for a program to crash midway, you can also start by making an assertion in Python. We use the [`assert` keyword](https://docs.python.org/3/reference/simple_stmts.html#the-assert-statement) to ensure that a certain condition is met.
+Instead of waiting for a program to crash midway, you can also start by making an assertion in Python. We use the [`assert`](https://docs.python.org/3/reference/simple_stmts.html#the-assert-statement) keyword to ensure that a certain condition is met.
 
 Have a look at the following example, where it is asserted that the code will be executed on a Linux system:
 ```py
@@ -347,11 +348,11 @@ Cleaning up, irrespective of any exceptions.
 
 ## Resources
 
-- [PyDocs - `assert`](https://docs.python.org/3/reference/simple_stmts.html#the-assert-statement)
-- [PyDocs - Exceptions](https://docs.python.org/3/library/exceptions.html)
+- [PyDocs | `assert`](https://docs.python.org/3/reference/simple_stmts.html#the-assert-statement)
+- [PyDocs | Exceptions](https://docs.python.org/3/library/exceptions.html)
 
 ## Sources
 
-- [RealPython - Exceptions](https://realpython.com/python-exceptions/)
+- [RealPython | Exceptions](https://realpython.com/python-exceptions/)
 
 [Back to README](README.md)

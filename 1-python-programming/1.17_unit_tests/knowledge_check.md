@@ -1,6 +1,6 @@
 # Python Unit Tests - Knowledge Check
 
-Read and understand the code within *knowledge_check.py*
+Read and understand the code within [`knowledge_check.py`](./knowledge_check.py)
 
 This code highlights the ability to use unittests for our aquarium example.
 

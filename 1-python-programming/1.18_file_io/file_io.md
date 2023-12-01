@@ -1,8 +1,8 @@
-# Python File Io
+# Python File I/O
 
-[Link to the PYDOCS for File IO](https://docs.python.org/3/library/io.html)
+[Back to README](README.md)
 
-There are three main types of File IO within python:
+There are three main types of File I/O within python:
 - Text I/O: expect and produce str objects to the user
 - Binary I/O: expects and produces bytes-like objects (bytestrings)
 - Raw I/O: used as a low-level building block for binary and text streams
@@ -129,8 +129,12 @@ The `with` statement is particularly useful when working with files because it h
 
 In summary, when used in the context of files, the `with` statement simplifies the process of opening, reading, writing, and managing files, while also ensuring that files are properly closed to prevent resource leaks and maintain code readability.
 
-________________________________________________________
-[Video for further explanation](https://www.youtube.com/watch?v=DmHSwTiD5Tk)
+## Resources
+- [Python Docs | File I/O](https://docs.python.org/3/library/io.html)
+- [YouTube | File Handling in Python](https://www.youtube.com/watch?v=DmHSwTiD5Tk)
 
+## Sources
+- [TutorialsPoint | Python File I/O](https://www.tutorialspoint.com/python/python_files_io.htm)
+  
 [Back to README](README.md)
 

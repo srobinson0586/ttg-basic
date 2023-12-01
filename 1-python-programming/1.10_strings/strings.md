@@ -1,9 +1,11 @@
-# Python - Strings
+# Python Strings
+
+[Back to README](README.md)
 
 Strings are amongst the most popular types in Python. We can create them simply by enclosing characters in quotes. Python treats single quotes the same as double quotes. Creating strings is as simple as assigning a value to a variable. For example:
 
 ```python
-var1 = 'Hello World!'
+var1 = "Hello World!"
 var2 = "Python Programming"
 ```
 > A quick note on style: although you can use either single or double quotes in Python, consistency is important when choosing between the two. Mixing both types of quotes within the same codebase should be avoided to ensure clean and readable code.
@@ -17,21 +19,20 @@ str2 = str()    # Another way to create an empty string
 
 ## Accessing Values
 
-Python does not support a character type like C; it instead treats individual characters as strings of length one, thus also considered a substring.
-
-To access a single character of a string, use  square brackets and the index of the character in the string. For example:
+To access a single character of a string, use square brackets and the index of the character in the string. For example:
 
 ```python
-name = 'H4ck3r'
+name = "H4ck3r"
 
 print("name[0]: ", name[0]) # Get the first character (index 0) of the string
 ```
 
-**Output**
-
+Output:
 ```
 name[0]: H
 ```
+
+Python does not support a character type like C. Instead, it treats individual characters as strings of length one.
 
 ## Accessing Values: Slicing
 
@@ -54,12 +55,11 @@ my_string = "BaBaBooey"
 print(my_string[2:7])  # Slice from index 2 to 6
 print(my_string[:-1])  # Slice from beginning of string to 2nd last character
 print(my_string[2:])   # Slice from index to to final character
-print(my_string[::2])  # Slice entire string with step=2
-print(my_string[::-1]) # Slice entire string with step=-1
+print(my_string[::2])  # Slice every other character from string
+print(my_string[::-1]) # Creates a new slice with every character in reverse order
 ```
 
-**Output**
-
+Output:
 ```
 BaBoo
 BaBaBooe
@@ -80,8 +80,7 @@ x = len(my_string)
 print(x)
 ```
 
-Output
-
+Output:
 ```
 43
 ```
@@ -115,16 +114,17 @@ PythonPythonPython
 Python strings are immutable, meaning we cannot change them once they have been created. However, we can "update" an existing string by (re)assigning a variable to another string. The new value can be related to its previous value or to a completely different string altogether. For example:
 
 ```python
-var1 = 'Hello World!'
-var1 = var1[:6] + 'Python'
+var1 = "Hello World!"
+var1 = var1[:6] + "Python"
 print("Updated String:", var1)
 ```
 
 When the above code is executed, it produces the following result:
-
 ```
 Updated String: Hello Python
 ```
+
+In the example above, the word `"Python"` is appended to the first six characters from `var1` (`"Hello "`), and is copied into a new variable (which in this case happens to be `var1`).
 
 ## Truthiness of Strings
 
@@ -149,7 +149,6 @@ else:
 ```
 
 Output of the above snippet:
-
 ```
 Empty string is considered False.
 Non-empty strings are considered True.
@@ -237,8 +236,7 @@ message = f"My name is {name} and I am {age} years old."
 print(message)
 ```
 
-Output
-
+Output:
 ```
 My name is John and I am 30 years old.
 ```
@@ -278,8 +276,7 @@ print(binary_data)
 print(type(binary_data))
 ```
 
-Output
-
+Output:
 ```
 b'Hello world'
 <class 'bytes'>
@@ -294,8 +291,7 @@ binary_str = b'\x61\x62\x63'
 print(binary_str.decode())
 ```
 
-Output
-
+Output:
 ```
 abc
 ```
@@ -307,8 +303,7 @@ my_str = "abc"
 print(my_str.encode())
 ```
 
-Output
-
+Output:
 ```
 b'abc'
 ```
@@ -410,8 +405,7 @@ else:
     print("Substring not found.")
 ```
 
-#### Output
-
+Output:
 ```
 Substring found.
 ```
@@ -428,8 +422,7 @@ else:
     print("Substring not found.")
 ```
 
-#### Output
-
+Output:
 ```
 Substring not found.
 ```
@@ -448,18 +441,17 @@ else:
     print("Substring not found (case-insensitive search).")
 ```
 
-#### Output
-
+Output:
 ```
 Substring found (case-insensitive search).
 ```
 
-# Resources
+## Resources
 
-- [Python List Slicing | Geeksforgeeks](https://www.geeksforgeeks.org/python-list-slicing/)
+- [GeeksForGeeks | Python List Slicing](https://www.geeksforgeeks.org/python-list-slicing/)
 
-# Sources
+## Sources
 
-- [Python Strings | Tutorialspoint](https://www.tutorialspoint.com/python/python_strings.htm)
+- [TutorialsPoint | Python Strings](https://www.tutorialspoint.com/python/python_strings.htm)
 
 [Back to README](README.md)

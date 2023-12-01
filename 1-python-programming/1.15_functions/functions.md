@@ -1,5 +1,6 @@
 # Python Functions
 
+[Back to README](README.md)
 
 A function is a block of organized, reusable code that is used to perform a single, related action. Functions provide better modularity for your application and a high degree of code reuse.
 
@@ -28,7 +29,8 @@ You can *define* functions to provide the required functionality and tell the in
 The below pseudocode shows the basic syntax of a function. The code within isn't valid python.
 ```py
 def functionname(parameters):
-   """function_docstring, explain what the function does and what the parameters are used for"""
+   """function_docstring, explain what the function does 
+   and what the parameters are used for"""
    do_code_here
    return expression_optional
 ```
@@ -93,7 +95,7 @@ printme("This is first call to the user defined function!")
 printme("Second call to the same function")
 ```
 
-When the above code is executed, it produces the following result −
+When the above code is executed, it produces the following result: 
 ```
 This is first call to the user defined function!
 Second call to the same function
@@ -116,7 +118,7 @@ changeme(mylist)
 print("Values outside the function: ", mylist)
 ```
 
-Here, we are maintaining reference of the passed object and appending values in the same object. Therefore, this would produce the following result −
+Here, we are maintaining reference of the passed object and appending values in the same object. Therefore, this would produce the following result:
 ```
 Values inside the function before change:  [10, 20, 30]
 Values inside the function after change:  [10, 20, 50]
@@ -137,7 +139,7 @@ changeme(mylist)
 print("Values outside the function: ", mylist)
 ```
 
-The function accomplishes nothing and finally this would produce the following result −
+The function accomplishes nothing and finally this would produce the following result:
 ```
 Values inside the function:  [1, 2, 3, 4]
 Values outside the function:  [10, 20, 30]
@@ -150,7 +152,7 @@ Variable scope is covered more in depth below in the [Scope of Variables](#scope
 Since all arguments are passed by reference, keep in mind the *type* of the object you pass in to the function. If the function attempts to modify an **immutable** data type, you will get an error. 
 
 The example above worked because the `list` data type is *mutable*. Lets use the *Python interpreter* to see what happens if we try the same function but pass it a `string` object.
-```py
+```python-repl
 >>> def changeme(mylist):
 ...    "This changes a passed list into this function"
 ...    print("Values inside the function before change: ", mylist)
@@ -512,14 +514,14 @@ In this function, `process_names` takes a list of strings and doesn't return any
 
 By incorporating type hints into your functions, you enhance the clarity and maintainability of your code, making it easier for both you and others to work with.
 
-## References
+## Resources
 
-- [RealPython - Docstrings](https://realpython.com/documenting-python-code/#documenting-your-python-code-base-using-docstrings)
-- [RealPython - Pass by Reference](https://realpython.com/python-pass-by-reference/)
-- [RealPython - Namespaces and Scope](https://realpython.com/python-namespaces-scope/)
+- [RealPython | Docstrings](https://realpython.com/documenting-python-code/#documenting-your-python-code-base-using-docstrings)
+- [RealPython | Pass by Reference](https://realpython.com/python-pass-by-reference/)
+- [RealPython | Namespaces and Scope](https://realpython.com/python-namespaces-scope/)
 
 ## Sources
 
-- [Tutorialspoint - Functions](https://www.tutorialspoint.com/python3/python_functions.htm)
+- [TutorialsPoint | Functions](https://www.tutorialspoint.com/python3/python_functions.htm)
 
 [Back to README](README.md)

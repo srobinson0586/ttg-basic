@@ -11,7 +11,7 @@
     ANSWER: 
     ```
 
-2. Name and describe 3 other built-in data-type conversion functions not covered in [typecasting](typecasting.md). (i.e. not `float()`, `int()`, `str()`, `list()`, `tuple()`, `set()`, or `bytes()`)
+2. Name and describe 3 other built-in data-type conversion functions not covered in [Typecasting](typecasting.md). (i.e. not `float()`, `int()`, `str()`, `list()`, `tuple()`, `set()`, or `bytes()`)
     ```
     ANSWER: 
     ```

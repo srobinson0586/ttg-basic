@@ -1,8 +1,8 @@
 # Python Operators
 
+[Back to README](README.md)
 
 Operators are the symbols which can compute new things using operands. Take for example the expression `4 + 5 = 9`. Here, `4` and `5` are called the operands, `+` is called the operator, and the new value `9` is computed.
-
 
 ## Types of Operators
 
@@ -380,13 +380,13 @@ Precedence TLDR;
 
 ## Resources
 
-- [Bitwise Operators and WHY we use them](https://www.youtube.com/watch?v=igIjGxF2J-w)
-- [Python 3 Docs- Operator Precedence](https://docs.python.org/3/reference/expressions.html#operator-precedence)
+- [YouTube | Bitwise Operators and WHY we use them](https://www.youtube.com/watch?v=igIjGxF2J-w)
+- [Python 3 Docs | Operator Precedence](https://docs.python.org/3/reference/expressions.html#operator-precedence)
 - [PEP 572](https://peps.python.org/pep-0572/#examples)
 
 ## Sources
 
-- [Tutorialspoint- Python Basic Operators](https://www.tutorialspoint.com/python3/python_basic_operators.htm)
-- [Tutorialspoint- Python Comparison Operators](https://www.tutorialspoint.com/python3/comparison_operators_example.htm)
+- [TutorialsPoint | Python Basic Operators](https://www.tutorialspoint.com/python3/python_basic_operators.htm)
+- [TutorialsPoint | Python Comparison Operators](https://www.tutorialspoint.com/python3/comparison_operators_example.htm)
 
 [Back to README](README.md)

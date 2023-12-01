@@ -1,5 +1,5 @@
 #!/bin/python
-# Python Competency 6A Json Parser
+# Python Competency 7A JSON Parser
 
 """ This module implements functions for parsing JSON files.
 

@@ -4,7 +4,7 @@
 
 This is Section 1 in the NCWDG JQR, where new Computer Network Operations (CNO) developers go from a Python Zero to a Python Hero. The section is structured in a way that first teaches students the basics of a specific topic using Markdown files in every folder, known as a **learning** Module. The learning modules then test students' knowledge by having them complete knowledge checks (`knowledge_check.md`) and python challenges (`application.py`). After several modules, or topics, their combined use is tested in the form of a **competency** module.
 
-There are 7 total competency modules. Each of them attempts to challenge the student more than the basic application challenges in the learning modules preceding it. All coding challenges are graded using the `test_application.py` script in each directory. All the students (and graders) must do to test the code is run `pytest` in the directory. `pytest` setup is covered in [1.01_environment](1.01_environment/environment.md).
+There are 8 total competency modules. Each of them attempts to challenge the student more than the basic application challenges in the learning modules preceding it. All coding challenges are graded using the `test_application.py` script in each directory. All the students (and graders) must do to test the code is run `pytest` in the directory. `pytest` setup is covered in [1.01_environment](1.01_environment/environment.md).
 
 > Remember you can preview markdown in VS Code by pressing the "Open Preview" icon in the top right corner, or by pressing `<CTRL>+<SHIFT>+V`. You can't edit the file in this mode. To edit files (usually Knowledge Checks), double click on the preview and it will pull up the actual Markdown (`.md`) file.
 
@@ -29,7 +29,7 @@ There are 7 total competency modules. Each of them attempts to challenge the stu
 | [1.15 Functions](1.15_functions/README.md)  | Overview on function creation, variable scope, function arguments, and function return values |
 | [1.16 Modules](1.16_modules/README.md)  | How to use reusable code and function definitions that can be imported into other programs |
 | [1.17 Unit Tests](1.17_unit_tests/README.md) | Testing individual units or components of a software application in isolation to ensure they behave as expected. |
-| [1.18 File IO](1.18_file_io/README.md)  | Basics on reading, writing, and modifying data stored in files |
+| [1.18 File I/O](1.18_file_io/README.md)  | Basics on reading, writing, and modifying data stored in files |
 | **[1.19 Competency 3: Core Crucible](1.19_competency_3_core_crucible/README.md)** | Test your skills in boolean logic, arithmetic, file io, recursion, string manipulation, looping, and more. |
 | **[1.20 Competency 4: Wordle](1.20_competency_4_wordle/README.md)**  | Recreate the sensational game Wordle using python |
 | [1.21 Classes and Objects](1.21_classes_and_objects/README.md)  | Fundamentals on objects and classes. Covers object-oriented programming fundamentals like encapsulation, polymorphism, and inheritance. |
@@ -81,13 +81,12 @@ Apart from the above-mentioned features, Python has a big list of good features.
 -   It supports automatic garbage collection.
 -   It can be easily integrated with C, C++, COM, ActiveX, CORBA, and Java.
 
-
 ## Resources
-- [Python explained in 2 Minutes](https://youtu.be/QoIRX37VZpo)
-- [Python in 100 Seconds](https://www.youtube.com/watch?v=x7X9w_GIm1s)
+- [YouTube | Python explained in 2 Minutes](https://youtu.be/QoIRX37VZpo)
+- [YouTube | Python in 100 Seconds](https://www.youtube.com/watch?v=x7X9w_GIm1s)
 
 ## Sources
 
-- [Tutorialspoint - Python Overview](https://www.tutorialspoint.com/python3/python_overview.htm)
+- [TutorialsPoint | Python Overview](https://www.tutorialspoint.com/python3/python_overview.htm)
 
 [Back to Master README](../README.md)

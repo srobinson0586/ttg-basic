@@ -1,10 +1,10 @@
-# Python - Debugging
+# Python Debugging
 
 [Back to README](README.md)
 
 More often than not, your Python code will crash when you go to run it for the first time. Even experienced developers writing simple programs can have flaws in their code which cause crashes or unexpected behaviors. However, we can get our programs to behave the way we want them to through debugging, which is the process of figuring out and correcting the logical flaws that cause the program to deviate in the first place.
 
-## **Print Statement Debugging**
+## Print Statement Debugging
 
 Print statement debugging is a simple and commonly used technique for debugging code in Python. It involves inserting print statements at strategic points in your code to observe and analyze the values of variables, function outputs, or other relevant information during runtime. By printing out these values, you can gain insights into the program's behavior and identify potential issues or unexpected behavior.
 
@@ -17,7 +17,7 @@ z = x / y
 print("Result of division: ", z)
 ```
 
-**Output**
+Output:
 
 ```
 TypeError: unsupported operand type(s) for /: 'str' and 'str'
@@ -34,7 +34,7 @@ z = x / y
 print("Result of division: ", z)
 ```
 
-**Output**
+Output:
 
 ```
 10 <class 'str'>
@@ -55,7 +55,7 @@ z = x / y
 print("Result of division: ", z)
 ```
 
-**Output**
+Output:
 
 ```
 10 <class 'int'>
@@ -75,7 +75,7 @@ Here are some key aspects and benefits of print statement debugging:
 
 While print statement debugging can be effective for simple debugging scenarios, it may not be the most efficient or scalable approach for complex projects or situations where you need more advanced debugging capabilities. In such cases, using a dedicated debugger or integrated development environments (IDEs) with debugging features can provide additional tools and insights to diagnose and solve issues more efficiently.
 
-## **The Python Debugger (pdb)**
+## The Python Debugger (pdb)
 
 The Python debugger, often referred to as **pdb** (Python Debugger), is a built-in module in Python that provides a powerful and interactive debugging environment. It allows you to step through your code, inspect variables, set breakpoints, and perform various debugging operations to analyze and resolve issues in your Python programs.
 
@@ -126,9 +126,9 @@ Here are some common pdb commands you can use within the debugger session:
 - `h` (help): Get help on available pdb commands.
 - `q` (quit): Exit the interactive debugging session.
 
-Using the same script from earlier (now referred to as *divide.py*), we can achieve similar results to our print statement debugging example using `pdb`:
+Using the same script from earlier (now referred to as `divide.py`), we can achieve similar results to our print statement debugging example using `pdb`:
 
-**divide.py**
+**`divide.py`**
 ```python
 x = input("Enter a number for x: ")     # user enters '10'
 y = input("Enter a number for y: ")     # user enters '5'
@@ -197,12 +197,12 @@ To debug a Python script, follow these instructions:
 
 The above is just a basic intro to debugging Python with VSCode. More information on VSCode debugging for Python can be found [here](https://code.visualstudio.com/docs/python/debugging).
 
-# Sources
-- [The Python Debugger | Tutorialspoint](https://www.tutorialspoint.com/the-python-debugger-pdb)
+## Resources
+- [YouTube | PDB debugging by Real Python](https://www.youtube.com/watch?v=bHx8A8tbj2c)
+- [YouTube | PDB debugging by Patrick Loeber](https://www.youtube.com/watch?v=aZJnGOwzHtU)
+- [VSCode | Debugging Python](https://code.visualstudio.com/docs/python/debugging)
 
-# Extra Resources
-- [PDB debugging by Real Python | YouTube](https://www.youtube.com/watch?v=bHx8A8tbj2c)
-- [PDB debugging by Patrick Loeber | YouTube](https://www.youtube.com/watch?v=aZJnGOwzHtU)
-- [Debugging Python in VSCode | VSCode](https://code.visualstudio.com/docs/python/debugging)
+## Sources
+- [TutorialsPoint | The Python Debugger](https://www.tutorialspoint.com/the-python-debugger-pdb)
 
 [Back to README](README.md)

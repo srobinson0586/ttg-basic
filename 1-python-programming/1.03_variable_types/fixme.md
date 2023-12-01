@@ -1,9 +1,11 @@
 # Demonstrate the behavior of mutable and immutable objects in Python
 
-Code: [fixme.py](./fixme.py)
+[Back to README](README.md)
+
+Code: [`fixme.py`](./fixme.py)
 
 ## Tasks
-- [ ] Comment out any errors in `fixme.py` until it prints `code fixed!`
+- [ ] Comment out any errors in [`fixme.py`](./fixme.py) until it prints `code fixed!`
 - [ ] Explain each of the errors (in the Python file, on the same line).
 
 ## Question

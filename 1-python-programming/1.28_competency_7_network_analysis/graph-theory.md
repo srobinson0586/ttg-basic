@@ -1,5 +1,7 @@
 # Basic Graph Theory
 
+[Back to Competency 7 Assignment](./README.md)
+
 A graph is a collection of *nodes* and *edges*.
 - Nodes (also called *vertices*) often represent locations.
 - Edges represent connections between nodes.
@@ -65,5 +67,7 @@ The Wikipedia page for the algorithm (linked below) has a good description.
 
 ## References
 
-- [Edsger Dijkstra](https://en.wikipedia.org/wiki/Edsger_W._Dijkstra)
-- [Dijkstra's Algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)
+- [Wikipedia | Edsger Dijkstra](https://en.wikipedia.org/wiki/Edsger_W._Dijkstra)
+- [Wikipedia | Dijkstra's Algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)
+
+[Back to Competency 7 Assignment](./README.md)

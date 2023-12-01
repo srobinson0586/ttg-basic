@@ -1,5 +1,7 @@
 # Python Algorithms
 
+[Back to README](README.md)
+
 > Algorithms are a key concept in computer science that extends beyond a single programming language. In reality, it takes more than a single day to learn about algorithms. Universities typically require a quarter or a semester long class on algorithms as a requirement to graduate with a computer science degree. However, this section aims to familiarize newer developers with the core ideas of algorithms so they can complete the JQR and understand more of what a Google search might yield. There will *always* be more to learn about algorithms and what they have to offer.
 
 As developers, it is our job to write code efficiently and effectively to solve complex problems. We typically accomplish this by analyzing problems to create step-by-step instructions on how to always get our desired output from given input. During the process of creating step-by-step instructions to solve problems, we are formulating an algorithm.
@@ -58,7 +60,7 @@ In recursive algorithms, the problem is solved by breaking it down into smaller,
 
 - Recursive algorithms are often used when the problem has a *recursive structure* or can be expressed in terms of smaller, repetitive instances of the same problem.
 
-* * *
+### Example
 
 Below are two algorithms for finding the factorial of a number `n`. One algorithm uses an iterative approach while the other uses a recursive approach.
 
@@ -179,11 +181,6 @@ Common searching algorithms include:
 
 Both searching and sorting algorithms are essential for various applications, and their selection depends on the specific requirements and characteristics of the data being processed. Efficient searching and sorting algorithms play a crucial role in optimizing performance and improving the overall efficiency of algorithms and data processing tasks.
 
-
-## Sources
-
-[Big-O Cheat Sheet](https://www.bigocheatsheet.com/)
-
 ## Resources
 
 #### Sorting Animations
@@ -198,9 +195,12 @@ Click [here](https://www.toptal.com/developers/sorting-algorithms) to view anima
 
 Among other online resources, these may come in useful for the next competency as they illustrate an example of each algorithm and provide pseudocode that can be referenced for implementation in most programming languages.
 
-- [Bubble sort](https://www.tutorialspoint.com/data_structures_algorithms/bubble_sort_algorithm.htm)
-- [Insertion sort](https://www.tutorialspoint.com/data_structures_algorithms/insertion_sort_algorithm.htm)
-- [Selection sort](https://www.tutorialspoint.com/data_structures_algorithms/selection_sort_algorithm.htm)
-- [Merge sort](https://www.tutorialspoint.com/data_structures_algorithms/merge_sort_algorithm.htm)
+- [TutorialsPoint | Bubble sort](https://www.tutorialspoint.com/data_structures_algorithms/bubble_sort_algorithm.htm)
+- [TutorialsPoint | Insertion sort](https://www.tutorialspoint.com/data_structures_algorithms/insertion_sort_algorithm.htm)
+- [TutorialsPoint | Selection sort](https://www.tutorialspoint.com/data_structures_algorithms/selection_sort_algorithm.htm)
+- [TutorialsPoint | Merge sort](https://www.tutorialspoint.com/data_structures_algorithms/merge_sort_algorithm.htm)
+
+## Sources
+- [Big-O Cheat Sheet](https://www.bigocheatsheet.com/)
 
 [Back to README](README.md)

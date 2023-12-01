@@ -1,5 +1,6 @@
 # Python Conditionals
 
+[Back to README](README.md)
 
 In the [last module](../1.04_operators/operators.md) we covered several operators that are critical to python condtional statements, mainly Comparison, Logical, Membership, and Identity Operators. These operators can be used in several ways, most commonly in "if statements" and loops.
 
@@ -167,13 +168,15 @@ match menu_selection:
         print("You didn't choose 1 OR 2")
 ```
 
-If you'd like more examples, checkout [Freecodecamp- Python Switch](https://www.freecodecamp.org/news/python-switch-statement-switch-case-example/).
+If you'd like more examples, checkout [FreeCodeCamp | Python Switch](https://www.freecodecamp.org/news/python-switch-statement-switch-case-example/).
 
 **Note**
 > Keep in mind that newer Python features like this one **will not work** on old python versions. You need to be aware of where your code will be ran and by who. If you are in an environment where Python packages don't get updated frequently, usually because of classification hurdles, you are better off sticking to basic builtin python features.
 
 ## Resources
+- [FreeCodeCamp | Python Switch](https://www.freecodecamp.org/news/python-switch-statement-switch-case-example/)
 
-- [Freecodecamp- Python Switch](https://www.freecodecamp.org/news/python-switch-statement-switch-case-example/)
+## Sources
+- [TutorialsPoint | if-elif-else](https://www.tutorialspoint.com/python/python_if_else.htm)
 
 [Back to README](README.md)

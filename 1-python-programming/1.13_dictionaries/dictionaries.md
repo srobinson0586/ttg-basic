@@ -1,5 +1,7 @@
 # Python Dictionaries
 
+[Back to README](README.md)
+
 In dictionaries, each key is separated from its value by a colon (`:`), the items are separated by commas, and the whole thing is enclosed in curly braces. An empty dictionary without any items is written with just two curly braces, like this: `{}`.
 
 - *Keys are unique* within a dictionary while values may not be
@@ -201,12 +203,12 @@ print(json.dumps(my_json, indent=2))
 
 ## Resources
 
-- [Wikipedia- JSON](https://en.wikipedia.org/wiki/JSON)
-- [Medium- Python Dicts v.s. JSON](https://medium.com/analytics-vidhya/python-dictionary-and-json-a-comprehensive-guide-ceed58a3e2ed)
+- [Wikipedia | JSON](https://en.wikipedia.org/wiki/JSON)
+- [Medium | Python Dicts vs JSON](https://medium.com/analytics-vidhya/python-dictionary-and-json-a-comprehensive-guide-ceed58a3e2ed)
 
 ## Sources
 
-- [Tutorialspoint- Dictionaries](https://www.tutorialspoint.com/python3/python_dictionary.htm)
+- [TutorialsPoint | Dictionaries](https://www.tutorialspoint.com/python3/python_dictionary.htm)
 
 
 [Back to README](README.md)

@@ -1,5 +1,7 @@
 # Python Unit Tests
 
+[Back to README](README.md)
+
 "Unit testing is a method for testing software that looks at the smallest testable pieces of code, called units, which are tested for correct operation."    
         - _A Gentle introduction to Unit Testing in Python_, 2022
 
@@ -41,10 +43,13 @@ _Focus on the implementation of `self.assertEqual`_
 This is a perfect explanation of the unittest case. This given example will **assert** if the given value, 6, in the parameters is equal to the instantiated rectangle's area.
 
 In this case, the outcome is true, and the outcome will look something like this:
->   ----------------------------------------------------------------------
-> Ran 1 test in 0.003s
->
-> OK
+```
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+```
 
 [More reading on UnitTesting](https://machinelearningmastery.com/a-gentle-introduction-to-unit-testing-in-python/)
 
@@ -55,5 +60,12 @@ As a developer, you are free to design your own unit testing for your software. 
 As long as you understand how your code is being tested, and can communicate that clearly to others, you can use whichever methodology you see fit.
 
 [More resources on testing your code](https://realpython.com/python-testing/)
+
+## Resources
+- [Machine Learning Mastery | Python Unit Testing](https://machinelearningmastery.com/a-gentle-introduction-to-unit-testing-in-python/)
+- [RealPython | Testing](https://realpython.com/python-testing/)
+
+## Sources
+- [Python Docs | `unittest`](https://docs.python.org/3/library/unittest.html)
 
 [Back to README](README.md)

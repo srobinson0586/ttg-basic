@@ -1,5 +1,7 @@
 # Python Classes and Objects
 
+[Back to README](README.md)
+
 In Python 3, an **object** is a fundamental concept that represents a real-world entity, concept, or thing. Objects are created from *classes*, which are templates for objects. Just about everything in Python is an object, including built-in data types like integers, strings, lists, dictionaries, and much more. You have already worked with many Python objects from the following built-in class types:
 
 - **`int`**, **`float`**, and **`complex`**: Represent numerical values.
@@ -153,7 +155,6 @@ class Dog:
     def set_age(self, age):  
         if age > -1:        # check that `age` is non-negative before assignment
             self.age = age
-
 
 
 # Creating an instance of `Dog`
@@ -395,12 +396,11 @@ Similar to algorithms, object-oriented programming is not something that you can
 
 ## Resources
 
-- [Classes - PyDocs](https://docs.python.org/3/tutorial/classes.html)
-- [`copy` - PyDocs](https://docs.python.org/3/library/copy.html)
-- [Python Classes - W3Schools](https://www.w3schools.com/python/python_classes.asp)
-- [Object Oriented Programming in 7 Minutes | Mosh](https://www.youtube.com/watch?v=pTB0EiLXUC8)
-- [Object Oriented Programming with Python - Full Course for Beginners - FreeCodeCamp.org](https://www.youtube.com/watch?v=Ej_02ICOIgs)
-- [Dunder Methods | Pydon't](https://mathspp.com/blog/pydonts/dunder-methods)
-
+- [PyDocs | Classes](https://docs.python.org/3/tutorial/classes.html)
+- [PyDocs | `copy`](https://docs.python.org/3/library/copy.html)
+- [W3Schools | Python Classes](https://www.w3schools.com/python/python_classes.asp)
+- [YouTube | Object Oriented Programming in 7 Minutes](https://www.youtube.com/watch?v=pTB0EiLXUC8)
+- [YouTube | Object Oriented Programming with Python - Full Course for Beginners](https://www.youtube.com/watch?v=Ej_02ICOIgs)
+- [Pydon'ts | Dunder Methods](https://mathspp.com/blog/pydonts/dunder-methods)
 
 [Back to README](README.md)

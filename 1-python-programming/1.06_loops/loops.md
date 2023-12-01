@@ -1,4 +1,6 @@
-# Python - Loops
+# Python Loops
+
+[Back to README](README.md)
 
 In general, statements are executed sequentially; the first statement in a function is executed first, followed by the second, and so on. When programming, there are often situations where we need to execute the same statement many times. We can do this using loops.
 
@@ -13,7 +15,7 @@ Python provides the following types of loops to handle looping requirements.
 
 In python, a `while` loop is used to execute a block of statements repeatedly until a given condition is no longer satisfied. When the conditional expression evaluates to `False`, the loop is exited and the line immediately after the loop in the program is executed. The syntax of a `while` loop is very similar to the syntax of an `if` statement:
 
-**Syntax:**
+### Syntax
 
 ```python
 while condition:
@@ -22,7 +24,7 @@ while condition:
 
 For as long as `condition` evaluates to `True`, `statement(s)` will run.
 
-**Example of a Python While Loop**
+### Example of a Python While Loop
 
 In this example, a counter is intialized to 0. The condition of the loop checks to see if the counter is less than 3. The statements inside the loop will execute so long as the counter remains less than 3.
 
@@ -35,15 +37,14 @@ while count < 3:
 
 As a result, the message "Hello World" outputs three times, once for each time that the loop condition was satisfied. When `count == 3`, the loop condition no longer evaluates to `True` and the loop statement is terminated.
 
-**Output**
-
+Output:
 ```
 Hello World
 Hello World
 Hello World
 ```
 
-**Infinite Loops**
+### Infinite Loops
 
 If the condition of a while loop always evaluates to `True`, then the loop will always run. We can take advantage of this to explicitly write inifinite loops like the following:
 
@@ -52,7 +53,7 @@ while True:
     print("ha")
 ```
 
-**Output**
+Output:
 ```
 ha
 ha
@@ -74,12 +75,11 @@ The `while` loop in this code will run forever because its condition will always
 
 If you execute a program and it seems to run forever, then chances are you have an infinite loop due to some condition not being updated properly!
 
-**For Loops in Python**
-----------------------
+## For Loops in Python
 
 `for` loops are used for sequential traversal, making them excellent for traversing lists, strings, arrays, and other built-in types. A `for` loop follows the syntax:
 
-**Syntax:**
+### Syntax
 
 ```python
 for iterator in sequence:
@@ -87,6 +87,8 @@ for iterator in sequence:
 ```
 
 An *iterator* is an object in Python that represents a stream of data and is used to traverse through a *sequence* of elements one at a time. The main purpose of an iterator is to provide a consistent and efficient way to loop through elements of a sequence, regardless of whether that sequence is a list, tuple, string, dictionary, or any other iterable data structure.
+
+### Example of a Python For Loop
 
 Here is a simple example of using a `for` loop to print each number in a list:
 
@@ -96,8 +98,7 @@ for i in numbers:
     print(i)
 ```
 
-**Output**
-
+Output:
 ```
 0
 1
@@ -113,8 +114,7 @@ for i in range(0, n):
     print(i)
 ```
 
-**Output**
-
+Output:
 ```
 0
 1
@@ -124,11 +124,11 @@ for i in range(0, n):
 
 In this example, we effectively use the `range()` function to create a list of numbers like the list in the `for` loop example. As a result, the output of the two examples are identical because the `for` loops are iterating through the same sequence.
 
-### **Using `for` loops to iterate through a List, Tuple, String, Dictionary, and a Set**
+### Using `for` loops to iterate through data
 
-We can use `for` loops to iterate through lists, tuples, strings, dictionaries, and sets in Python. 
+We can use `for` loops to iterate through data stored in lists, tuples, strings, dictionaries, and sets in Python. 
 
-**List Example**
+#### List Example
 
 A `for` loop can iterate through every element in a list:
 
@@ -139,7 +139,7 @@ for i in l:
     print(i)
 ```
 
-**Output**
+Output:
 ```
 List Iteration
 Welcome
@@ -147,7 +147,7 @@ to
 N7 training
 ```
 
-**Tuple Example**
+#### Tuple Example
 
 A `for` loop can iterate through every element in a tuple:
 
@@ -158,7 +158,7 @@ for i in t:
     print(i)
 ```
 
-**Output**
+Output:
 ```
 Tuple Iteration
 at
@@ -168,7 +168,7 @@ NBP
 
 More information on how you can use lists and tuples in your Python code is given in [1.12_lists_tuples_and_sets](../1.12_lists_tuples_and_sets/README.md).
 
-**String Example**
+#### String Example
 
 A `for` loop can iterate through every character in a string:
 
@@ -179,7 +179,7 @@ for i in s:
     print(i)
 ```
 
-**Output**
+Output:
 ```
 String Iteration
 s
@@ -190,7 +190,7 @@ o
 r
 ```
 
-**Dictionary Example**
+#### Dictionary Example
 
 A `for` loop can iterate through every key in a dictionary:
 
@@ -203,14 +203,14 @@ for i in d:
     print(f"key: {i}, value: {d[i]}")
 ```
 
-**Output**
+Output:
 ```
 Dictionary Iteration
 key: xyz, value: 123
 key: abc, value: 345
 ```
 
-**Set Example**
+#### Set Example
 
 A `for` loop can iterate through every member of a set:
 
@@ -221,7 +221,7 @@ for i in set1:
     print(i)
 ```
 
-**Output**
+Output:
 ```
 Set Iteration
 1
@@ -242,7 +242,7 @@ for index, value in enumerate(lst):
     print(f"Index in list: {index}; Value: {value}")
 ```
 
-**Output**
+Output:
 
 ```
 Index in list: 0; Value: dog
@@ -260,8 +260,7 @@ for index in range(len(lst)):
     print(lst[index])
 ```
 
-**Output**
-
+Output:
 ```
 dog
 cat
@@ -270,12 +269,11 @@ mouse
 
 You may come across this method for looping when searching through code on the internet, but it is less powerful than using `enumerate`. In your own code, you should try to always make use of `enumerate` if you need to use indices with your `for` loops.
 
-**Nested Loops in Python**
---------------------------
+## Nested Loops in Python
 
 A nested loop is a loop inside a loop. The "inner loop" will be executed one time for each iteration of the "outer loop":
 
-**Example of a nested `for` loop**
+### Example of a nested `for` loop
 
 Print each adjective for every fruit:
 
@@ -288,7 +286,7 @@ for x in adj:
     print(x, y)
 ```
 
-**Output**
+Output:
 ```
 red apple
 red banana
@@ -303,19 +301,16 @@ tasty cherry
 
 The use of nested loops is useful for iterating though multi-dimensional objects like 2-D lists. Nested loops are also common in sorting and searching algorithms.
 
-**Loop Control Statements**
----------------------------
+## Loop Control Statements
 
 Loop control statements change execution from its normal sequence. Loop control statements can be combined to achieve specific desired behavior from loops.
 
-Python supports the following control statements.
+Python supports the following control statements:
+- `break`
+- `continue`
+- `pass`
 
-
-* `break`
-* `continue`
-* `pass`
-
-### **Break Statement**
+### Break Statement
 
 The `break` statement in Python brings control out of the loop. In other words, the loop will terminate and the program will resume execution at the first statement after the loop's code block.
 
@@ -329,8 +324,7 @@ for letter in 'abcdefghijklmnopqrstuvwxyz':
 print('Break out at: ', letter)
 ```
 
-**Output**
-
+Output:
 ```
 Current Letter: a
 Current Letter: b
@@ -339,7 +333,7 @@ Current Letter: d
 Break out at: e
 ```
 
-### **Continue Statement**
+### Continue Statement
 
 The `continue` statement in Python returns the control to the beginning of the loop, meaning the loop will immediately recheck its condition and begin a new iteration.
 
@@ -352,8 +346,7 @@ for letter in 'geeksforgeeks':
     print('Current Letter :', letter)
 ```
 
-**Output**
-
+Output:
 ```
 Current Letter : g
 Current Letter : k
@@ -364,7 +357,7 @@ Current Letter : g
 Current Letter : k
 ```
 
-### **Pass Statement**
+### Pass Statement
 
 We use `pass` in Python to write empty loops. Pass is also used for empty control statements, functions and classes. 
 
@@ -374,7 +367,7 @@ for letter in 'geeksforgeeks':
 print('Last Letter :', letter)
 ```
 
-# Recap
+## Recap
 After reading this, you should have a basic understanding of:
 - `while` Loops
 - Infinite Loops
@@ -382,7 +375,7 @@ After reading this, you should have a basic understanding of:
 - How to iterate through lists, strings, tuples, and other built-in types
 - Loop control statements like `break` and `continue`
 
-# Sources
-- [Geeks for Geeks](https://www.geeksforgeeks.org/loops-in-python/)
+## Sources
+- [GeeksforGeeks | Loops](https://www.geeksforgeeks.org/loops-in-python/)
 
 [Back to README](README.md)

@@ -1,5 +1,6 @@
 # Python Environment
 
+[Back to README](README.md)
 
 This guide will walk you through the step-by-step process of installing Python and configuring Visual Studio Code (VSCode) on your Linux Operating System. 
 
@@ -28,7 +29,7 @@ Installation on Linux requires more command line work. If you aren't familiar wi
     ```bash
     sudo apt install python3-pip
     ```
-5. Lastly, we need to install the [`pytest` package](https://pypi.org/project/pytest/) which we use extensively throughout these modules and cover in detail in module [1.30_pytest](../1.30_pytest/README.md). 
+5. Lastly, we need to install the [`pytest`](https://pypi.org/project/pytest/) package which we use extensively throughout these modules and cover in detail in module [1.30_pytest](../1.30_pytest/README.md). 
     ```bash
     pip3 install pytest
     ```
@@ -36,10 +37,14 @@ Installation on Linux requires more command line work. If you aren't familiar wi
 > More information on this nightmare can be found in this [stackoverflow thread](https://stackoverflow.com/questions/29310688/sudo-pip-install-vs-pip-install-user) (important read).
 
 ### Step 2: Installing the Python Extension in VSCode
+Step 5 in Section [0.00 IDEs and VSCode](../../0-fundamentals/0-introduction/0.00_IDEs_and_VSCode.md) instructed to install recommended extensions, which included "Python". Verify this is installed by doing the following:
 1. Open up VSCode, then click on the Extensions icon in the left sidebar (represented by four squares).
 2. In the Extensions search bar, type "Python" and press Enter.
-3. Look for the official "Python" extension by Microsoft and click on the "Install" button.
-4. Wait for the installation to complete, and then click on the "Reload" button to activate the extension.
+3. Look for the official "Python" extension by Microsoft and click on it.
+
+If it says it is installed and enabled, move on to Step 3. If not:
+1. Click on the "Install" button.
+2. Wait for the installation to complete, and then click on the "Reload" button to activate the extension.
 
 ### Step 3: Running Python Code
 1. To run your Python code, you may use the VSCode terminal. Click on "View" &rarr; "Terminal" or press ``` "Ctrl + `" ``` to open the integrated terminal.
@@ -57,7 +62,7 @@ The Python standard shell, or REPL (Read-Eval-Print Loop), allows you to run Pyt
 As a Python developer, you’ll spend a considerable part of your coding time in a REPL session because this tool allows you to test new ideas, explore and experiment with new tools and libraries, refactor and debug your code, and try out examples.
 
 If you see three greater-than signs (`>>>`) and then python code either in the JQR or online, that means the code was written and ran in a python shell. Below is an example:
-```py
+```python-repl
 >>> def my_func(): 
 ...     print("Hello")
 ... 
@@ -68,12 +73,12 @@ Hello
 "In a terminal, you don't have to call print() to print a variable's value!!!"
 ```
 
-It can be incredibly useful to debug small code snippets, and has some differences to running python code from a file. For a brief overview on it, checkout the quick [Python 101- The REPL](https://www.youtube.com/watch?v=ucllf6bDgnw) video (note IDLE isn't installed by default, contrary to his claim). For an in-depth overview, read the [Realpython Article](https://realpython.com/python-repl/) on it.
+It can be incredibly useful to debug small code snippets, and has some differences to running python code from a file. For a brief overview on it, checkout the quick [Python 101 - The REPL](https://www.youtube.com/watch?v=ucllf6bDgnw) video (note IDLE isn't installed by default, contrary to his claim). For an in-depth overview, read the [RealPython Article](https://realpython.com/python-repl/) on it.
 
 It is **HIGHLY** recommended that you run the small code snippets shown throughout the JQR yourself, not simply take us at our word. You can play around with the variables in the shell to truly understand the concepts.
 
 > If the Python REPL shell isn't intuitive enough for you, try out the [python `IPython` module](https://pypi.org/project/ipython/)! It has syntax highlighting, tab completion, and many other features (check out the link).
-> You can install it with `pip install ipython`. To run it from the terminal, do `python -m IPython`. To run it from within a script, you can use this one-liner: `import IPython; IPython.embed()`, and you will be able to execute python in the context of your script! This is useful for analyzing values of variables and any actions performed on them.
+> You can install it with `pip install ipython`. To run it from the terminal, do `ipython` or `python -m IPython`. To run it from within a script, you can use this one-liner: `import IPython; IPython.embed()`, and you will be able to execute python in the context of your script! This is useful for analyzing values of variables and any actions performed on them.
 
 ## Resources
 
@@ -84,5 +89,5 @@ It is **HIGHLY** recommended that you run the small code snippets shown througho
 - [Python 101- The REPL](https://www.youtube.com/watch?v=ucllf6bDgnw)
 - [Realpython Article](https://realpython.com/python-repl/)
 - [`IPython`](https://pypi.org/project/ipython/)
-- 
+
 [Back to README](README.md)

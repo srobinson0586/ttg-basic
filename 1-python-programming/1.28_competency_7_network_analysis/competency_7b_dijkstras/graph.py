@@ -1,5 +1,5 @@
 #!/bin/python
-# Python Competency 6B Dijkstras
+# Python Competency 7B Dijkstras
 
 class Infinity:
     """ A class to represent infinity. It has been implemented for you

@@ -33,7 +33,7 @@ Because of this, in order to do a pattern match in Python you first have to *com
 
 Regular expressions are compiled into pattern objects, which have methods for various operations such as searching for pattern matches or performing string substitutions.
 
-```py
+```python-repl
 >>> import re
 >>> p = re.compile('ab*')
 >>> p
@@ -42,7 +42,7 @@ re.compile('ab*')
 
 `re.compile()` also accepts an optional flags argument, used to enable various special features and syntax variations. We’ll go over the available settings later, but for now a single example will do:
 
-```py
+```python-repl
 >>> p = re.compile('ab*', re.IGNORECASE)
 ```
 
@@ -70,7 +70,7 @@ Once you have an object representing a compiled regular expression, what do you 
 
 `match()` and `search()` return `None` if no match can be found. If they’re successful, a match object instance is returned, containing information about the match: where it starts and ends, the substring it matched, and more.
 
-```py
+```python-repl
 >>> import re
 >>> p = re.compile('[a-z]+')  # Look for 1 or more lowercase
 >>> type(p)       
@@ -104,7 +104,7 @@ Match objects can be queried for information about the matching string. Match ob
 
 
 To try these query methods out, lets assume we're looking for a password in some text file. The below code walks you through setting up the `Match` object:
-```py
+```python-repl
 >>> import re
 >>> p = re.compile('password:?\s*(\w+)')    # password:<wildcard>
 >>> data = "blah blah blah ..... password:NCWDG_420 ... blah blah blah" # assumed file contents
@@ -114,7 +114,7 @@ To try these query methods out, lets assume we're looking for a password in some
 ```
 
 Then, we can try all the newly introduced query methods:
-```py
+```python-repl
 >>> m               # holds everything
 <re.Match object; span=(21, 39), match='password:NCWDG_420'>
 >>> m.group()
@@ -127,13 +127,13 @@ Then, we can try all the newly introduced query methods:
 (21, 39)
 ```
 
-## Sources
-
-- [Pydocs - Regular Expression HOWTO](https://docs.python.org/3/howto/regex.html)
-- [SitePoint - Learn Regex](https://www.sitepoint.com/learn-regex/)
-
 ## Resources
 
-- [RegexOnce- Learn Regex with simple interactive exercises](https://regexone.com/)
+- [RegexOnce | Learn Regex with simple interactive exercises](https://regexone.com/)
+
+## Sources
+
+- [Pydocs | Regular Expression HOWTO](https://docs.python.org/3/howto/regex.html)
+- [SitePoint | Learn Regex](https://www.sitepoint.com/learn-regex/)
 
 [Back to README](README.md)

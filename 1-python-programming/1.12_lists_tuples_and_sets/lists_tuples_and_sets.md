@@ -12,7 +12,7 @@ There are certain things you can do with all the sequence types. These operation
 
 The list is the most versatile datatype available in Python, which can be written as a list of comma-separated values (items) between square brackets. An important thing about a list is that the items in a list need not be of the same type.
 
-For more information, check out [Python Docs- Lists](https://docs.python.org/3/library/stdtypes.html#lists). 
+For more information, check out [Python Docs | Lists](https://docs.python.org/3/library/stdtypes.html#lists). 
 
 Creating a list is as simple as putting different comma-separated values between square brackets. For example:
 
@@ -53,7 +53,7 @@ Where:
 - `stop`: The index of the element where the slice ends (exclusive). If omitted, it goes till the end of the list.
 - `step`: The number of steps to take between elements in the slice. If omitted, it defaults to 1, which means consecutive elements are included in the slice.
 Here are some examples to illustrate list slicing:
-```py
+```python-repl
 # (in the interpreter)
 >>> my_list = ['C++', 'Java', 'Python', 'NCWDG', 'TG-66', 0xdeadbeef]
 >>> print(my_list[0]) # Indexing (first element at index 0)
@@ -93,7 +93,7 @@ TG-66
 Keep in mind that list slicing creates a new list with the specified elements, and it does not modify the original list. If you modify the new list, it won't affect the original list and vice versa.
 
 Just to expound on it, when you use negative indeces, the index is interpreted as starting from the end and moving towards the beginning.
-```py
+```python-repl
 >>> a = [1, 2, 3, 4, 5, 6, 7]
 >>> a[-2]
 6
@@ -150,7 +150,7 @@ print(my_phys)
 print("After the pop() operation:", my_list)
 ```
 
-When the above code is executed, it produces the following result −
+When the above code is executed, it produces the following result:
 ```
 ['physics', 'chemistry', 1997, 2000, 2000]
 After deleting value at index 2: ['physics', 'chemistry', 2000, 2000]
@@ -252,7 +252,7 @@ If you are still having trouble understanding List Comprehension, I recommend ch
 
 A tuple is a sequence of **immutable** Python objects. Tuples can be used much like lists. *The main difference between the tuples and the lists is that the tuples cannot be changed (immutable) unlike lists*. Tuples use parentheses `()`, whereas lists use square brackets `[]`.
 
-For more information, check out [Python Docs- Tuples](https://docs.python.org/3/library/stdtypes.html#tuples).
+For more information, check out [Python Docs | Tuples](https://docs.python.org/3/library/stdtypes.html#tuples).
 
 Creating a tuple is as simple as putting different comma-separated values. Optionally, you can put these comma-separated values between parentheses also. For example:
 
@@ -353,7 +353,7 @@ If you would like specifics, run `help(tuple)`.
 ### Tuple Unpacking
 
 Basically the most important use case for a tuple is when you want to be able to group together a bunch of variables without creating an entire Class for them. This is often the case for return values from functions (covered in [1.15_functions](../1.15_functions/functions.md)).
-```py
+```python-repl
 >>> def get_coordinates( ship ): 
 ...     if ship == 'CVN-69':
 ...             return (132.3, 201)
@@ -406,10 +406,10 @@ A set is a collections, or sequence, much like lists and tuples except that sets
 - Are **unindexed**
     - Cannot be referred to by index or key
 
-For more, reference the [Python Docs- Sets](https://docs.python.org/3/library/stdtypes.html#set-types-set-frozenset) page.
+For more, reference the [Python Docs | Sets](https://docs.python.org/3/library/stdtypes.html#set-types-set-frozenset) page.
 
 Sets are written with curly brackets `{}` and do not allow duplicate values for items:
-```py
+```python-repl
 >>> thisset = {"apple", "banana", "cherry", "apple"}
 >>> print(thisset)
 {'cherry', 'banana', 'apple'}
@@ -418,7 +418,7 @@ Sets are written with curly brackets `{}` and do not allow duplicate values for 
 ### Set Items
 
 Set items can be of any data type, and a set can contain different data types:
-```py
+```python-repl
 >>> set1 = {"apple", "banana", "cherry"}
 >>> set2 = {1, 5, 7, 9, 3}
 >>> set3 = {True, False,"abc", 34, True, 40, "male"}
@@ -429,7 +429,7 @@ Set items can be of any data type, and a set can contain different data types:
 ### Accessing Items
 
 Set can't be referred to by index or key:
-```py
+```python-repl
 >>> set3
 {False, True, 34, 40, 'abc', 'male'}
 >>> set3[3]
@@ -439,7 +439,7 @@ TypeError: 'set' object is not subscriptable
 ```
 
 *However*, you can loop through the set items using a `for` loop, or ask if a specified value is present in a set, by using the `in` keyword:
-```py
+```python-repl
 >>> thisset = {"apple", "banana", "cherry"}
 >>> for x in thisset:
 ...   print(x, end=',') # instead of a newline each time, put a comma
@@ -452,7 +452,7 @@ True
 ### Adding & Removing Items
 
 You can add items, to a set using its `add()` method. You can use the `update()` method to add items from another set or *any iterable like tuples, lists, etc*.
-```py
+```python-repl
 >>> thisset = {"apple", "banana", "cherry"}
 >>> thisset.add("orange")
 >>> thisset
@@ -472,15 +472,15 @@ You can add items, to a set using its `add()` method. You can use the `update()`
 Notice how `thisset` didn't duplicate any values that were present both in itself and `mylist`. This ability to maintain *unique* items can be useful in situations like maintaining password lists for bruteforcing.
 
 ## Resources
-- [Python- List Comprehensions](https://youtu.be/3dt4OGnU5sM).
-- [W3 Schools- List Comprehension](https://www.w3schools.com/python/python_lists_comprehension.asp)
-- [Python Docs- Lists](https://docs.python.org/3/library/stdtypes.html#lists)
-- [Python Docs- Sets](https://docs.python.org/3/library/stdtypes.html#set-types-set-frozenset)
-- [Python Docs- Tuples](https://docs.python.org/3/library/stdtypes.html#tuples)
+- [YouTube | Python Tutorial: Comprehensions](https://youtu.be/3dt4OGnU5sM)
+- [W3Schools | List Comprehension](https://www.w3schools.com/python/python_lists_comprehension.asp)
+- [Python Docs | Lists](https://docs.python.org/3/library/stdtypes.html#lists)
+- [Python Docs | Sets](https://docs.python.org/3/library/stdtypes.html#set-types-set-frozenset)
+- [Python Docs | Tuples](https://docs.python.org/3/library/stdtypes.html#tuples)
 
 ## Sources
-- [Tutorialspoint- Lists](https://www.tutorialspoint.com/python3/python_lists.htm)
-- [Tutorialspoint- Tuples](https://www.tutorialspoint.com/python3/python_tuples.htm)
-- [W3 Schools- Sets](https://www.w3schools.com/python/python_sets.asp)
+- [TutorialsPoint | Lists](https://www.tutorialspoint.com/python3/python_lists.htm)
+- [TutorialsPoint | Tuples](https://www.tutorialspoint.com/python3/python_tuples.htm)
+- [W3Schools | Sets](https://www.w3schools.com/python/python_sets.asp)
 
 [Back to README](README.md)

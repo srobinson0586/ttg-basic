@@ -1,6 +1,20 @@
-# Python - FizzBuzz
+# Python Competency 1 - FizzBuzz
 
 [Back to OVERVIEW](../README.md)
+
+Code: [`fizzbuzz.py`](./fizzbuzz.py)
+
+## Objectives
+
+This competency will provide you the opportunity to put all the skills and topics from the start of the Python section until this point into practice. After completing this competency, you should be comfortable with:
+
+- [Basic Syntax](../1.02_basic_syntax/README.md)
+- [Variable Types](../1.03_variable_types/README.md)
+- [Operators](../1.04_operators/README.md)
+- [Conditionals](../1.05_conditionals/README.md)
+- [Loops](../1.06_loops/README.md)
+
+## FizzBuzz Implementation Description
 
 For this competency, you will be writing in the code needed for the FizzBuzz program. 
 
@@ -14,7 +28,7 @@ If the number is only a multiple of 3, you should print "Fizz". Similarly, if th
 
 If none of the above conditions are met, the program should simply print the number itself.
 
-As an example, a correct implementation fizzbuzz with the `limit=20` would be:
+As an example, a correct implementation of fizzbuzz with the `limit = 20` would be:
 
 ```
 1
@@ -39,12 +53,13 @@ Fizz
 Buzz
 ```
 
-## Requirements
-
-- [ ] Use of a loop to iterate through the number range
-- [ ] Use of conditional statements and operators
-- [ ] Use of appropriate arithmetic operator(s)
-- [ ] The program correctly prints out "Fizz", "Buzz", "FizzBuzz", or the current number in the loop iteration
+## Assignment
+- [ ] Implement [`fizzbuzz.py`](./fizzbuzz.py) with the functionality described above so that it correctly prints out "Fizz", "Buzz", "FizzBuzz", or the current number in the loop iteration
+- [ ] Your program must additionally meet the following requirements:
+  - Use of a loop to iterate through the number range
+  - Use of conditional statements and operators
+  - Use of appropriate arithmetic operator(s)
 - [ ] Run `pytest` in your current directory.  If there are no errors, you completed this section.
+  - To help debug if you are having issues, [`expected.txt`](./expected.txt) contains the expected output and [`actual.txt`](./actual.txt) contains the output your program produces. 
 
 [Back to OVERVIEW](../README.md)

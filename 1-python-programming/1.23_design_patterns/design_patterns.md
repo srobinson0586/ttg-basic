@@ -1,5 +1,7 @@
 # Python Design Patterns
 
+[Back to README](README.md)
+
 > The general outline for this module follows the [refactoring.guru design pattern article](https://refactoring.guru/design-patterns). It has been condensed and tweaked to teach the Factory, Singleton, Adapter, and Bridge design patterns.
 
 In software engineering, a **design pattern** is a general repeatable solution to a commonly occurring problem in software design. A design pattern isn't a finished design that can be transformed directly into code. It is a description or template for how to solve a problem that can be used in many different situations.
@@ -149,21 +151,20 @@ The [Bridge pattern](https://refactoring.guru/design-patterns/bridge) *decouples
 
 *The original class hierarchy is divided into two parts: devices and remote controls.*
 
-## Sources
-
-- [refactoring.guru design pattern article](https://refactoring.guru/design-patterns)
-- [Factory Method](https://refactoring.guru/design-patterns/factory-method)
-- [Singleton pattern](https://refactoring.guru/design-patterns/singleton)
-- [Adapter structural design pattern](https://refactoring.guru/design-patterns/adapter)
-- [Bridge pattern](https://refactoring.guru/design-patterns/bridge)
-
 ## Resources
 
-- [Abstract Factory](https://refactoring.guru/design-patterns/abstract-factory)
-- [Factory Method in Python](https://refactoring.guru/design-patterns/factorysingleton/python/example)
-- [Singleton in Python](https://refactoring.guru/design-patterns/singleton/python/example)
-- [Derek Banas' "Design Patterns Video Tutorial"](https://www.youtube.com/playlist?list=PLF206E906175C7E07)
-- [GeeksforGeeks - Singleton Patterns](https://www.geeksforgeeks.org/singleton-pattern-in-python-a-complete-guide/)
+- [RefactoringGuru | Abstract Factory](https://refactoring.guru/design-patterns/abstract-factory)
+- [RefactoringGuru | Factory Method in Python](https://refactoring.guru/design-patterns/factorysingleton/python/example)
+- [RefactoringGuru | Singleton in Python](https://refactoring.guru/design-patterns/singleton/python/example)
+- [YouTube | Design Patterns Video Tutorial](https://www.youtube.com/playlist?list=PLF206E906175C7E07)
+- [GeeksforGeeks | Singleton Patterns](https://www.geeksforgeeks.org/singleton-pattern-in-python-a-complete-guide/)
 
+## Sources
+
+- [RefactoringGuru | Design Pattern Article](https://refactoring.guru/design-patterns)
+- [RefactoringGuru | Factory Method](https://refactoring.guru/design-patterns/factory-method)
+- [RefactoringGuru | Singleton pattern](https://refactoring.guru/design-patterns/singleton)
+- [RefactoringGuru | Adapter structural design pattern](https://refactoring.guru/design-patterns/adapter)
+- [RefactoringGuru | Bridge pattern](https://refactoring.guru/design-patterns/bridge)
 
 [Back to README](README.md)

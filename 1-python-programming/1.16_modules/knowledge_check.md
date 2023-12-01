@@ -2,8 +2,6 @@
 
 [Back to README](README.md)
 
-## Complete the following
-
 1. True/False: Python modules can provide functionality beyond the scope of your input.
     ```
     ANSWER:

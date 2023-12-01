@@ -1,5 +1,7 @@
 # Specification for `expression.py`
 
+[Return to Competency 8 Assignment](README.md)
+
 ## Expression format
 
 The simplest kind of expression is a single integer. Integers can be
@@ -13,25 +15,24 @@ More complex expressions can be constructed according to these rules:
    ("[]") is a valid expression.
 
 3. An expression preceeded by a unary operator is a valid expression.
-   The valid unary operators are:
-   A. Negation ("-")
+   The valid unary operators are: 
+   - Negation ("-")
 
 4. Two expressions joined by a binary operator is a valid expression.
    The valid binary operators are:
-   A. Addition ("+")
-   B. Subtraction ("-")
-   C. Multiplication ("*")
-   D. Division ("/")
-   E. Exponentiation ("^")
+   - Addition ("+")
+   - Subtraction ("-")
+   - Multiplication ("*")
+   - Division ("/")
+   - Exponentiation ("^")
 
-
-## Expression evaluation
+## Expression Evaluation
 
 Expressions are evaluated according to the standard order of operations:
-1. Expressions in parentheses are evaluated as a unit.
-2. Exponentiation.
-3. Mulitplication and division.
-4. Addition and subtraction.
+1. Expressions in parentheses are evaluated as a unit
+2. Exponentiation
+3. Mulitplication and division
+4. Addition and subtraction
 
 Division is always integer division (notated in Python3 with "//").
 
@@ -52,3 +53,5 @@ an expression has multiple issues, any appropriate error may be raised):
 
 See the docstrings in [`expression/errors.py`](./expression/errors.py) for
 detailed information about each error class.
+
+[Return to Competency 8 Assignment](README.md)

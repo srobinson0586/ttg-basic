@@ -1,8 +1,6 @@
-# Python Modules - Knowledge Check
+# Python Data Structures - Knowledge Check
 
 [Back to README](README.md)
-
-## Complete the following
 
 1. Short Answer: What are the core functions to interact with data on a stack?
     ```
@@ -14,7 +12,7 @@
     ANSWER:
     ```
 
-3. Short Answer: Three nodes are pushed in the following sequence onto a stack:
+3. Short Answer: Nodes are pushed in the following sequence onto a stack:
 
     `A`, `D`, `C`, `B`, `E`
 

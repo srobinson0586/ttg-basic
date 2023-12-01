@@ -1,5 +1,6 @@
 # Python Variable Types
 
+[Back to README](README.md)
 
 In programming, we use something called "variables." Variables are like named storage containers in a computer's memory. Think of them as labeled boxes that can hold different types of information, such as numbers or words. When we create a variable, we're reserving a specific area in the computer's memory to store data.
 
@@ -8,7 +9,7 @@ Think of it this way: Instead of remembering the exact location in memory where 
 Based on the data type of a variable, the interpreter allocates memory and decides what can be stored in the reserved memory. Therefore, by assigning different data types to the variables, you can store integers, decimals or characters in these variables.
 
 **Note**
-> Objects in memory, memory allocation, garbage collection, and object "id"s in Python are a bit advanced topics for now. However if you are interested in it, and as CNO developer you should be, there is a decent video at "[How variables work in Python](https://www.youtube.com/watch?v=0Om2gYU6clE)". If you are having trouble grasping what a variable is, the video is highly recommended.
+> Objects in memory, memory allocation, garbage collection, and object "id"s in Python are a bit advanced topics for now. However if you are interested in it, and as CNO developer you should be, there is a decent video at "[How variables work in Python](https://www.youtube.com/watch?v=0Om2gYU6clE)." If you are having trouble grasping what a variable is, the video is highly recommended.
 
 ## Assigning Values to Variables
 
@@ -39,7 +40,7 @@ a = b = c = 1
 ```
 
 Here, an integer object is created with the value 1, and all the three variables are assigned to the same memory location. This can be confirmed with the `id()` function, which returns the memory address of the variable:
-```py
+```python-repl
 >>> a = b = c = 1
 >>> hex(id(a))   # hex() just returns the hexadecimal representation of an integer
 '0x7ffd42f6e328'
@@ -52,7 +53,7 @@ Yup, They're all the same object!
 ```
 
 You can also assign multiple objects to multiple variables. For example:
-```python
+```python-repl
 >>> a, b, c = 1, 2, "john"
 >>> a
 1
@@ -326,11 +327,11 @@ Understanding whether a data type is mutable or immutable is essential for effec
 Remember that when working with immutable data types, any operation that appears to modify the data will create a new object. In contrast, with mutable data types, modifications are made in place, affecting the original object. Choose the appropriate data type based on your specific programming needs.
 
 ## Resources
-- [How variables work in Python](https://www.youtube.com/watch?v=0Om2gYU6clE)
-- [Mutable vs. Immutable Types](https://realpython.com/python-mutable-vs-immutable-types/)
+- [YouTube | How variables work in Python](https://www.youtube.com/watch?v=0Om2gYU6clE)
+- [RealPython | Mutable vs. Immutable Types](https://realpython.com/python-mutable-vs-immutable-types/)
 
 ## Sources
 
-- [tutorialspoint - Variable Types](https://www.tutorialspoint.com/python3/python_variable_types.htm)
+- [TutorialsPoint | Python Variable Types](https://www.tutorialspoint.com/python3/python_variable_types.htm)
 
 [Back to README](README.md)

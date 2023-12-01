@@ -1,5 +1,6 @@
 # Python Basic Syntax
 
+[Back to README](README.md)
 
 ## First Python Program
 
@@ -8,7 +9,7 @@ In this section we will execute some python code in different modes.
 ### Interactive Mode Programming (REPL)
 
 Invoking the interpreter without passing a script file as a parameter brings up the following prompt:
-```bash
+```python-repl
 $ python
 
 Python 3.3.2 (default, Dec 10 2013, 11:35:01)
@@ -23,9 +24,9 @@ Type "copyright", "credits" or "license()" for more information.
 >>>
 ```
 
-Type the following text at the Python prompt and press Enter −
+Type the following text at the Python prompt and press Enter:
 
-```py
+```python-repl
 >>> print("Hello, Python!")
 ```
 
@@ -57,7 +58,7 @@ print("Hello, this is scripted Python!")
 However, if you now attempted to run it with `./test.py`, you would likely get a permission denied error. This is because you haven't made the file **executable**. In order to give it execute permission, use the linux `chmod` command first.
 ```bash
 $ chmod +x test.py     # This is to make the file executable
-$./test.py
+$ ./test.py
 ```
 
 This produces the following result:
@@ -150,11 +151,11 @@ else:
 However, the following block generates an error −
 ```python
 if True:
-   print ("Answer")
-      print ("True")  # BAD SYNTAX!
+   print("Answer")
+      print("True")   # BAD SYNTAX!
 else:
-   print ("Answer") 
-      print ("False")  # BAD SYNTAX!
+   print("Answer") 
+      print("False")  # BAD SYNTAX!
 ```
 
 Thus, in Python all the continuous lines indented with the same number of spaces would form a block. The following example has various statement blocks:
@@ -183,8 +184,7 @@ except IOError:
    print("There was an error writing to", file_name)
    sys.exit()
 
-print("Enter '", file_finish,)
-print("' When finished")
+print("Enter '", file_finish, "' When finished")
 
 while file_text != file_finish:
    file_text = input("Enter text: ")
@@ -260,7 +260,7 @@ You could technically use triple-quotes to get around this but it isn't good pra
 A line containing only whitespace, possibly with a comment, is known as a blank line and Python totally ignores it.
 
 In an interactive interpreter session, you must enter an empty physical line to terminate a multiline statement (like a function definition).
-```py
+```python-repl
 >>> def my_func(): 
 ...     print("Hello")
 ... 
@@ -304,14 +304,14 @@ You can also program your script in such a way that it should accept various com
 
 ## Resources
 
-- [Dunder Methods and Variables](https://mathspp.com/blog/pydonts/dunder-methods)
-- [Python: What is Shebang](https://www.youtube.com/watch?v=zani1BGrSAM)
-- [Command Line Arguments](https://www.tutorialspoint.com/python3/python_command_line_arguments.htm)
-- [Python Naming Convention](https://peps.python.org/pep-0008/#function-and-variable-names)
-- [Python Docstrings](https://realpython.com/documenting-python-code/#documenting-your-python-code-base-using-docstrings)
+- [Pydon'ts | Dunder Methods and Variables](https://mathspp.com/blog/pydonts/dunder-methods)
+- [YouTube | Python: What is Shebang](https://www.youtube.com/watch?v=zani1BGrSAM)
+- [TutorialsPoint | Command Line Arguments](https://www.tutorialspoint.com/python3/python_command_line_arguments.htm)
+- [PEP8 | Python Naming Convention](https://peps.python.org/pep-0008/#function-and-variable-names)
+- [RealPython | Python Docstrings](https://realpython.com/documenting-python-code/#documenting-your-python-code-base-using-docstrings)
 
 ## Sources
 
-- [Tutorialspoint - Basic Syntax](https://www.tutorialspoint.com/python3/python_basic_syntax.htm)
+- [TutorialsPoint | Python Basic Syntax](https://www.tutorialspoint.com/python3/python_basic_syntax.htm)
 
 [Back to README](README.md)

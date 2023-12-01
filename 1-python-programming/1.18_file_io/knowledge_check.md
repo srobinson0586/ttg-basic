@@ -1,6 +1,4 @@
-# Python File IO - Knowledge Check
-
-## Complete the following
+# Python File I/O - Knowledge Check
 
 1. Short Answer: What is returned by the `open(...)` command?
     ```

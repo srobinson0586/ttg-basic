@@ -1,10 +1,12 @@
 # Python Pytest
 
-The `pytest` framework makes it easy to write small, readable tests, and can scale to support complex functional testing for applications and libraries. This module draws from the [Pytest Docs - Getting Started](https://docs.pytest.org/en/7.4.x/getting-started.html#get-started) page.
+[Back to README](README.md)
+
+The `pytest` framework makes it easy to write small, readable tests, and can scale to support complex functional testing for applications and libraries. This module draws from the [Pytest Docs | Getting Started](https://docs.pytest.org/en/7.4.x/getting-started.html#get-started) page.
 
 ## Install `pytest`
 
-We begin by making sure that `pytest` is installed on your system. `pytest` requires: Python 3.7+ or PyPy3.
+We begin by making sure that `pytest` is installed on your system. `pytest` requires: Python 3.7+ or PyPy3. 
 
 1.  Run the following command in your command line:
 ```bash
@@ -135,7 +137,7 @@ def test_mytest():
 ```
 
 Execute the test function with “quiet” reporting mode:
-```bash
+```
 $ pytest -q test_sysexit.py
 .                                                                    [100%]
 1 passed in 0.12s
@@ -157,7 +159,6 @@ class TestClass:
     def test_two(self):
         x = "hello"
         assert hasattr(x, "check")
-
 ```
 
 There is no need to subclass anything, but **make sure to prefix your class with `Test` otherwise the class will be skipped**. We can simply run the module by passing its filename:

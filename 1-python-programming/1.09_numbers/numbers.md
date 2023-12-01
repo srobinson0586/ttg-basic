@@ -1,4 +1,4 @@
-# Python - Numbers
+# Python Numbers
 
 [Back to README](README.md)
 
@@ -6,17 +6,17 @@ Whether it is for simple arithmetic like you'd perform on a basic calculator or 
 
 ## Numerical Types
 
-As mentioned in [module 1.03](../1.03_variable_types/variable_types.md), Python 3 supports three different numerical types:
+As mentioned in [Module 1.03](../1.03_variable_types/variable_types.md), Python 3 supports three different numerical types:
 
-*   **`int` (signed integers)** − They are often called just integers or ints, are positive or negative whole numbers with no decimal point.
+- **`int` (signed integers)** − They are often called just integers or ints, are positive or negative whole numbers with no decimal point.
     
-*   **`float` (floating point real values)** − Also called floats, they represent real numbers and are written with a decimal point dividing the integer and fractional parts. Floats may also be in scientific notation, with E or e indicating the power of 10 (2.5e2 = 2.5 x 10^2 = 250).
+- **`float` (floating point real values)** − Also called floats, they represent real numbers and are written with a decimal point dividing the integer and fractional parts. Floats may also be in scientific notation, with E or e indicating the power of 10 (2.5e2 = 2.5 x 10^2 = 250).
     
-*   **`complex` (complex numbers)** − are of the form `a + bJ`, where `a` and `b` are floats and `J` (or `j`) represents the square root of -1 (which is an imaginary number). The real part of the number is `a`, and the imaginary part is `b`. We will not be using Complex numbers much in the JQR.
+- **`complex` (complex numbers)** − are of the form `a + bJ`, where `a` and `b` are floats and `J` (or `j`) represents the square root of -1 (which is an imaginary number). The real part of the number is `a`, and the imaginary part is `b`. We will not be using Complex numbers much in the JQR.
 
 ### Examples
 
-Here are some examples of numbers
+Here are some examples of numbers:
 
 
 |int     |float       |complex     |
@@ -102,7 +102,7 @@ There are many mathematical functions offered by the `math` module (which can be
 
 - **`sqrt(x)`** - The square root of `x` for `x > 0`.
 
-#### Example uses
+#### Example Uses
 
 ```python
 x = 5.5
@@ -149,7 +149,7 @@ x = 42
 if x:
     print("x is truthy")
 ```
-
+Output:
 ```
 x is truthy
 ```
@@ -163,14 +163,13 @@ if x:
 else:
     print("x is falsy")
 ```
-
+Output:
 ```
 x is falsy
 ```
 
-# Sources
-
-- [Math | Python Docs](https://docs.python.org/3/library/math.html)
-- [Python Math Module | Geeksforgeeks](https://www.geeksforgeeks.org/python-math-module/)
+## Sources
+- [Python Docs | Math](https://docs.python.org/3/library/math.html)
+- [GeeksForGeeks | Python Math Module](https://www.geeksforgeeks.org/python-math-module/)
 
 [Back to README](README.md)

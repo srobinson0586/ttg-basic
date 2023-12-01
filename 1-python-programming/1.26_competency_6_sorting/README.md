@@ -1,10 +1,12 @@
-# Python Competency 6 Sorting - README
+# Python Competency 6 - Sorting
 
 [Back to OVERVIEW](../README.md)
 
+Code: [`sorting.py`](./sorting.py) 
+
 ## Objectives
 
-This competency will help students apply the knowledge they have learned from previous competencies and recent modules. After completing this competency, students will be comfortable with:
+This competency will help you apply the knowledge you have learned from previous competencies and recent modules. After completing this competency, you should be comfortable with:
 
 - [Data Structures](../1.20_data_structures/README.md)
 - [Algorithms](../1.21_algorithms/README.md)
@@ -43,9 +45,14 @@ Each of these functions will be tested with using several lists as inputs. You m
 
 Many implementations of these algorithms exist, but the following links are good starting point before searching elsewhere:
 
-- [Bubble sort](https://www.tutorialspoint.com/data_structures_algorithms/bubble_sort_algorithm.htm)
-- [Insertion sort](https://www.tutorialspoint.com/data_structures_algorithms/insertion_sort_algorithm.htm)
-- [Selection sort](https://www.tutorialspoint.com/data_structures_algorithms/selection_sort_algorithm.htm)
-- [Merge sort](https://www.tutorialspoint.com/data_structures_algorithms/merge_sort_algorithm.htm)
+- [TutorialsPoint | Bubble sort](https://www.tutorialspoint.com/data_structures_algorithms/bubble_sort_algorithm.htm)
+- [TutorialsPoint | Insertion sort](https://www.tutorialspoint.com/data_structures_algorithms/insertion_sort_algorithm.htm)
+- [TutorialsPoint | Selection sort](https://www.tutorialspoint.com/data_structures_algorithms/selection_sort_algorithm.htm)
+- [TutorialsPoint | Merge sort](https://www.tutorialspoint.com/data_structures_algorithms/merge_sort_algorithm.htm)
+
+## Assignment
+- [ ] Implement the four functions in [`sorting.py`](./sorting.py) with the functionality described above (`bubble_sort()`, `insertion_sort()`, `selection_sort()`, and `merge_sort()`)
+- [ ] OPTIONAL: Implement `test()` in [`sorting.py`](./sorting.py) to test the functionality of your four sorting functions. This is especially helpful if you have errors in the next step. 
+- [ ] Run `pytest` in your current directory.  If there are no errors, you completed this section.
 
 [Back to OVERVIEW](../README.md)

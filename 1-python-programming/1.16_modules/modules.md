@@ -1,5 +1,7 @@
 # Python Modules
 
+[Back to README](README.md)
+
 In Python, a module is a file containing Python code. It could be a collection of functions, classes, and variables that can be used in other programs. Modules help in organizing and structuring your code, making it easier to manage and maintain.
 
 To use the functionality defined in a module, you need to import it into your program using the `import` statement. This allows you to access the functions, classes, and variables defined in the module. For instance, if you have a module named "math_operations.py" with functions for mathematical operations, you can import and use it like this:
@@ -58,14 +60,21 @@ Understanding the module search path is important when dealing with larger proje
 One important builtin function is `dir()`. This will show you which names a module defines.
 
 Taking our `functions.py` as our example, and assuming that `functions.py` defines `fun1`, `fun2`, and `fun3`, the output of `dir(functions.py)` would appear as follows:
-```py
-    import functions
-    dir(functions)
-    >>> ['__name__','fun1','fun2', 'fun3']
+```python-repl
+>>> import functions
+>>> dir(functions)
+['__name__','fun1','fun2', 'fun3']
 ```
 
 Another way to view the functions provided by a module is to use VSCode autocompletion.
 
 To use this, import a module like `socket` and type `socket.` and VSCode will automatically generate a dropdown list from which you can check all the functions and globals provided by the `socket` module.
+
+## Resources
+- [Python Docs | Modules](https://docs.python.org/3/tutorial/modules.html)
+- [TutorialsPoint | Python Modules](https://www.tutorialspoint.com/python/python_modules.htm)
+
+## Sources
+- [W3Schools | Python Modules](https://www.w3schools.com/python/python_modules.asp)
 
 [Back to README](README.md)

@@ -1,21 +1,25 @@
 # Python JSON
 
+[Back to README](README.md)
+
 ## JSON
 
 JSON (**J**ava**S**cript **O**bject **N**otation) is a lightweight data-interchange format. It is easy for humans to read and write, and its easy to write code that parses and generates it.
 
 JSON is built on two structures.
 - A collection of name/value pairs, which is called an *object*
-    - `{ <key> : <value> }`
+  ```json
+  { <key> : <value> }
+  ```
 - An ordered list of values, which allows an object's key to map to many values
-    - ```json
-        { 
-            "my_key" : [
-                "val1",
-                "val2",
-                ]
-        }
-      ```
+  ```json
+  { 
+    "my_key" : [
+        "val1",
+        "val2",
+    ]
+  }
+  ```
 
 In Python, JSON exists as a string, and is extremely similar in structure to `dictionaries`. For example:
 ```py
@@ -47,7 +51,7 @@ Keep in mind that in the examples that follow, we use a string that is defined w
 
 #### `loads()`
 You can parse a JSON string using the `json.loads()` method. The method returns a dictionary, so that you can work more easily with the underlying data. Below is an example:
-```py
+```python-repl
 >>> import json
 >>> timmy_pii = '{"Name" : {"First" : "Sailor", "Second" : "Timmy"}, "Address" : "9800 Savage Rd #6623, Fort Meade, MD 20755", "SSN" : 123456789 }'
 >>> timmy_pii['Name']       # Can't index the string like we need to
@@ -103,7 +107,7 @@ You can convert a dictionary to a JSON string using the `json.dumps()` method.
 When printing JSON strings with `dumps()` or `dump()` (covered next), there are two important argument that help to pretty-print the output. If you specify the `ident` argument it tells the methods to pretty-print the JSON object with that indentation level. The `sort_keys` argument tells the methods to sort the output based on the keys.
 
 For example:
-```py
+```python-repl
 >>> import json
 >>> timmy_dict = {'Name': {'First': 'Sailor', 'Second': 'Timmy'}, 'Address': '9800 Savage Rd #6623, Fort Meade, MD 20755', 'SSN': 123456789}
 
@@ -155,10 +159,10 @@ with open('timmy.json', 'w') as file:
 
 ## Resources
 
-- [Python JSON & APIs](https://realpython.com/api-integration-in-python/)
+- [RealPython | Python JSON & APIs](https://realpython.com/api-integration-in-python/)
 
 ## Sources
 
-- [JSON.org](https://www.json.org/json-en.html)
+- [JSON](https://www.json.org/json-en.html)
 
 [Back to README](README.md)
