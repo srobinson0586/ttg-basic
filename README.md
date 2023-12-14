@@ -173,7 +173,7 @@ As you complete sections of the JQR, please reach out to a qualified developer t
 |  5.2.2  | Explain specific sorting algorithms                                 |          |      |
 |  5.2.3  | Explain graph search algorithms                                     |          |      |
 
-# 6: Cyber Capability
+# [6: Cyber Capability](6-cyber-capability/README.md)
 | Release | Requirements                                                        | Initials | Date |
 |---------|---------------------------------------------------------------------|----------|------|
 |  v0.1   | High Priority Requirements                                          |          |      |
