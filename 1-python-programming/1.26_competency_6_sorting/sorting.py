@@ -12,7 +12,7 @@ def bubble_sort(lst):
         - lst: list; A python list composed entirely of strings or entirely of numbers to be sorted.
 
     Returns:
-        This function should not return a value.
+        This function returns a sorted list.
 
     Example:
     >>> lst = [6, 1, 5, 2, 3, 9, 7, 8, 4, 0]
@@ -34,7 +34,7 @@ def insertion_sort(lst):
         - lst: list; A python list composed entirely of strings or entirely of numbers to be sorted.
 
     Returns:
-        This function should not return a value.
+        This function returns a sorted list.
 
     Example:
     >>> lst = [6, 1, 5, 2, 3, 9, 7, 8, 4, 0]
@@ -57,7 +57,7 @@ def selection_sort(lst):
         - lst: list; A python list composed entirely of strings or entirely of numbers to be sorted.
 
     Returns:
-        This function should not return a value.
+        This function returns a sorted list.
 
     Example:
     >>> lst = [6, 1, 5, 2, 3, 9, 7, 8, 4, 0]
@@ -83,7 +83,7 @@ def merge_sort(lst):
         - lst: list; A python list composed entirely of strings or entirely of numbers to be sorted.
 
     Returns:
-        This function should not return a value.
+        This function returns a sorted list.
 
     Example:
     >>> lst = [6, 1, 5, 2, 3, 9, 7, 8, 4, 0]
