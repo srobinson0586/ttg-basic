@@ -8,6 +8,10 @@ Code: [`wordle.py`](./wordle.py)
 
 In this competency you will apply your accumulated Python skills by completing a relatively complex project.
 
+## What is Wordle?
+According to [Wikipedia](https://en.wikipedia.org/wiki/Wordle):
+> "Wordle is a web-based word game created and developed by Welsh software engineer Josh Wardle. Players have six attempts to guess a five-letter word, with feedback given for each guess in the form of colored tiles indicating when letters match or occupy the correct position... Wordle has a single daily solution, with all players attempting to guess the same word."
+
 ## Wordle Implementation Description
 
 There are docstrings in each of the methods that you are required to implement which provide more detail on what is required.
