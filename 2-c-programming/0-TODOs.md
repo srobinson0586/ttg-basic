@@ -1,0 +1,3 @@
+- [ ] Update the README at the end with descriptions of each section along with the proper numbering
+  - [ ] Make sure all links work
+- [ ] Add descriptions for all of the competencies
