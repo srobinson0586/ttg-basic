@@ -4,6 +4,8 @@
 # Write a function, myFunction, which will take a list of numbers and return only the primes
 # You must use the sympy module to complete this
 
+#1 is not a prime number :)
+
 # TODO 
 # import ...
 

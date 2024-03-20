@@ -1,3 +1,99 @@
+# JQR Section 1 (Python) Overview
+
+[Back to Master README](../README.md)
+
+This is Section 1 in the NCWDG JQR, where new Computer Network Operations (CNO) developers go from a Python Zero to a Python Hero. The section is structured in a way that first teaches students the basics of a specific topic using Markdown files in every folder, known as a **learning** Module. The learning modules then test students' knowledge by having them complete knowledge checks (`knowledge_check.md`) and python challenges (`application.py`). After several modules, or topics, their combined use is tested in the form of a **competency** module.
+
+There are 8 total competency modules. Each of them attempts to challenge the student more than the basic application challenges in the learning modules preceding it. All coding challenges are graded using the `test_application.py` script in each directory. All the students (and graders) must do to test the code is run `pytest` in the directory. `pytest` setup is covered in [1.01_environment](1.01_environment/environment.md).
+
+> Remember you can preview markdown in VS Code by pressing the "Open Preview" icon in the top right corner, or by pressing `<CTRL>+<SHIFT>+V`. You can't edit the file in this mode. To edit files (usually Knowledge Checks), double click on the preview and it will pull up the actual Markdown (`.md`) file.
+
+### Table of Contents
+
+|     Section    |   Brief   |
+-----------------|-----------|
+| [1.01 Environment](1.01_environment/README.md) | Instructs student on `python` and `pytest` setup | 
+| [1.02 Basic Syntax](1.02_basic_syntax/README.md)  | Executing first python code and following basic python rules | 
+| [1.03 Variable Types](1.03_variable_types/README.md)  | Basic python Data Types |
+| [1.04 Operators](1.04_operators/README.md)  | Overview of python Arithmetic, Comparison, Assignment, Bitwise, Membership, Identity, and Logical operator types | 
+| [1.05 Conditionals](1.05_conditionals/README.md) | Intro to python `if`, `elif`, and `else` statements |
+| [1.06 Loops](1.06_loops/README.md)  | Intro to `while` loops, `for` loops, and loop control statements |
+| [1.07 Debugging](1.07_debugging/README.md)  | Overview of print statement debugging and the Python Debugger |
+| **[1.08 Competency 1: FizzBuzz](1.08_competency_1_fizzbuzz/README.md)**  | The student will implement the `fizzbuzz` function to demonstrate knowledge of basic programming concepts like arithmetic operations, conditional statements, and loops  |
+| [1.09 Numbers](1.09_numbers/README.md)  | Covers Python's numerical types, truthiness of numbers, and introduces the `math` module |
+| [1.10 Strings](1.10_strings/README.md)  | Information about strings including access, modification, truthiness, string functions, and string types |
+| [1.11 Typecasting](1.11_typecasting/README.md)  | Overview on getting variables of different types to work together | 
+| [1.12 Lists Tuples and Sets](1.12_lists_tuples_and_sets/README.md)  | Intro to the popular sequence objects and best use cases |
+| [1.13 Dictionaries](1.13_dictionaries/README.md)  | A quick run down on python dictionaries and their most important features |
+| **[1.14 Competency 2: Decryption](1.14_competency_2_decryption/README.md)**  | Implement a Vigenere cipher, a Substitution Cipher, and an XOR One Time Pad cipher to get a flag |
+| [1.15 Functions](1.15_functions/README.md)  | Overview on function creation, variable scope, function arguments, and function return values |
+| [1.16 Modules](1.16_modules/README.md)  | How to use reusable code and function definitions that can be imported into other programs |
+| [1.17 Unit Tests](1.17_unit_tests/README.md) | Testing individual units or components of a software application in isolation to ensure they behave as expected. |
+| [1.18 File I/O](1.18_file_io/README.md)  | Basics on reading, writing, and modifying data stored in files |
+| **[1.19 Competency 3: Core Crucible](1.19_competency_3_core_crucible/README.md)** | Test your skills in boolean logic, arithmetic, file io, recursion, string manipulation, looping, and more. |
+| **[1.20 Competency 4: Wordle](1.20_competency_4_wordle/README.md)**  | Recreate the sensational game Wordle using python |
+| [1.21 Classes and Objects](1.21_classes_and_objects/README.md)  | Fundamentals on objects and classes. Covers object-oriented programming fundamentals like encapsulation, polymorphism, and inheritance. |
+| [1.22 Data Structures](1.22_data_structures/README.md)  | Coverage of basic data structures like arrays, stacks, binary search trees, graphs, and linked lists. |
+| [1.23 Design Patterns](1.23_design_patterns/README.md) | Introduction to the Factory, Singleton, Adapter, and Bridge design patterns. |
+| **[1.24 Competency 5: Ship](1.24_competency_5_ship/README.md)**  | Implement a Ship class to represent any type of ship, then use the Ship class to represent a fleet.  |
+| [1.25 Algorithms](1.25_algorithms/README.md) | Basics of algorithms, including their characteristics, iterative and recursive algorithms, time and space complexities, and algorithms for searching and sorting. |
+| **[1.26 Competency 6: Sorting](1.26_competency_6_sorting/README.md)**  | Implement bubble sort, selection sort, insertion sort, and merge sort. |
+| [1.27 JSON](1.27_json/README.md)  | In depth explanation of JSON and the `json` Python package |
+| **[1.28 Competency 7: Network Analysis](1.28_competency_7_network_analysis/README.md)**  | Parse a JSON file without the `json` package. Implement Dijkstra's shortest path algorithm. Use both to find the shortest path to a target IP address. |
+| [1.29 Exceptions](1.29_exceptions/README.md)  | In depth explanation of built-in/custom Python Exceptions and `try`/`catch`/`except`/`finally` blocks |
+| [1.30 Pytest](1.30_pytest/README.md)  | Quick intro to `pytest` and how to create test cases |
+| **[1.31 Competency 8: Test Eval](1.31_competency_8_test_eval/README.md)**  | Find bugs in a Python package by writing test cases and documenting them |
+| [1.32 Regular Expressions](1.32_regular_expressions/README.md)  |  Introduction to Regular Expressions and their use in Python |
+
+
+If you don't have a Linux Operating System (OS) either as a host, or inside a Virtual Machine (VM), please inform the TRAINO. The Python section of the JQR can be completed in a Windows environment for the most part, but you will need Linux for further sections.
+
+## Python Overview
+
+Python is a high-level, interpreted, interactive and object-oriented scripting language. Python is designed to be highly readable. It uses English keywords frequently whereas the other languages use punctuations. It has fewer syntactical constructions than other languages.
+
+-   **Python is Interpreted** − Python is processed at runtime by the interpreter. You do not need to compile your program before executing it. This is similar to Javascript and Bash.
+-   **Python is Interactive** − You can actually sit at a Python prompt and interact with the interpreter directly to write your programs.
+-   **Python is Object-Oriented** − Python supports Object-Oriented style or technique of programming that encapsulates code within objects.
+-   **Python is a Beginner's Language** − Python is a great language for the beginner-level programmers and supports the development of a wide range of applications from simple text processing to WWW browsers to games.
+
+If you would like more guidance on what the above paragraph really means, and really anything taught in the entire JQR, YouTube videos are highly recommended. If you don't understand it, Google it. Below are two recommendations for inch-deep, mile-wide intros to python:
+- [Python explained in 2 Minutes](https://youtu.be/QoIRX37VZpo)
+- [Python in 100 Seconds](https://www.youtube.com/watch?v=x7X9w_GIm1s)
+
+
+## Python Features
+
+Python's features include:
+-   **Easy-to-learn** : Python has few keywords, simple structure, and a clearly defined syntax. This allows a student to pick up the language quickly.
+-   **Easy-to-maintain** : Python's source code is fairly easy-to-maintain.
+-   **A broad standard library** : Python's bulk of the library is very portable and cross-platform compatible on UNIX, Windows, and Macintosh.
+-   **Interactive Mode** : Python has support for an interactive mode which allows interactive testing and debugging of snippets of code.
+-   **Portable** : Python can run on a wide variety of hardware platforms and has the same interface on all platforms.
+-   **Extendable** : You can add low-level modules to the Python interpreter. These modules enable programmers to add to or customize their tools to be more efficient.
+-   **Scalable** : Python provides a better structure and support for large programs than shell scripting.
+    
+
+Apart from the above-mentioned features, Python has a big list of good features. A, few are listed below :
+-   It supports functional and structured programming methods as well as Object-Oriented Programming.
+-   It can be used as a scripting language or can be compiled to byte-code for building large applications.
+-   It provides very high-level dynamic data types and supports dynamic type checking.
+-   It supports automatic garbage collection.
+-   It can be easily integrated with C, C++, COM, ActiveX, CORBA, and Java.
+
+## Resources
+- [YouTube | Python explained in 2 Minutes](https://youtu.be/QoIRX37VZpo)
+- [YouTube | Python in 100 Seconds](https://www.youtube.com/watch?v=x7X9w_GIm1s)
+
+## Sources
+
+- [TutorialsPoint | Python Overview](https://www.tutorialspoint.com/python3/python_overview.htm)
+
+[Back to Master README](../README.md)
+
+
+
+
 # JQR Section 2 (C) Overview
 
 [Back to Master README](../README.md)
@@ -8,51 +104,33 @@ This is Section 2 in the NCWDG JQR, where new Computer Network Operations (CNO) 
 ### 1. Tools
 |     Section    |   Brief   |
 -----------------|-----------|
-| [2.1.1](1-tools/2.1.1.md) | Explain stages of compilation for a C program | 
-| [2.1.2](1-tools/2.1.2.md)  | Explain functionality of `gcc` command line options |
-| [2.1.3](1-tools/2.1.3.md)  | Explain functionality and parts of a Makefile |
-| [2.1.4](1-tools/2.1.4.md)  | Explain functionality of `gdb` commands |
-| [2.1.5](1-tools/2.1.5.md)  | Explain memory checking with Valgrind |
-
-
-### 2. Applications
-|     Section    |   Brief   |
------------------|-----------|
-|  [2.2.1](2-applications/2.2.1/2.2.1.md)  | Write a Makefile to compile a project |
-|  [2.2.2](2-applications/2.2.2/2.2.2.md)  | Explain fundamental C concepts |    
-|  [2.2.3](2-applications/2.2.3/2.2.3.md)  | Demonstrate understanding of the arguments of `main` in C |
-|  [2.2.4](2-applications/2.2.4/2.2.4.md)  | Explain and demonstrate understanding of endianness |
-|  [2.2.5](2-applications/2.2.5/2.2.5.md)  | Explain and demonstrate understanding of pointers |
-|  [2.2.6](2-applications/2.2.6/2.2.6.md)  | Explain and demonstrate understanding of type-casting |
-|  [2.2.7](2-applications/2.2.7/2.2.7.md)  | Explain and demonstrate understanding of format specifiers |
-|  [2.2.8](2-applications/2.2.8/2.2.8.md)  | Demonstrate understanding of function prototypes in C |
-|  [2.2.9](2-applications/2.2.9/2.2.9.md)  | Explain the difference between Pass by Value & Pass by Reference |
-|  [2.2.10](2-applications/2.2.10/2.2.10.md) | Demonstrate understanding of parsing input from `stdin` in C |
-|  [2.2.11](2-applications/2.2.11/2.2.11.md) | Explain pointer arithmetic in C |
-|  [2.2.12](2-applications/2.2.12/2.2.12.md) | Explain and demonstrate usage of arrays and structs |
-|  [2.2.13](2-applications/2.2.13/2.2.13.md) | Explain and demonstrate structs in memory |
-|  [2.2.14](2-applications/2.2.14/2.2.14.md) | Explain and demonstrate the effects of the preprocessor |
-|  [2.2.15](2-applications/2.2.15/2.2.15.md) | Explain and demonstrate macros and include guards |
-|  [2.2.16](2-applications/2.2.16/2.2.16.md) | Explain and demonstrate linked lists |
-|  [2.2.17](2-applications/2.2.17/2.2.17.md) | Explain and demonstrate threading |
-|  [2.2.18](2-applications/2.2.18/2.2.18.md) | Demonstrate understanding of memory using GDB |
-|  [2.2.19](2-applications/2.2.19/2.2.19.md) | Demonstrate memory inspection using GDB Dashboard |
-|  [2.2.20](2-applications/2.2.20/2.2.20.md) | Compare and contrast the stack and the heap |
-|  [2.2.21](2-applications/2.2.21/2.2.21.md) | Demonstrate understanding of memory by implementing getline |
-|  [2.2.22](2-applications/2.2.22/2.2.22.md) | Demonstrate understanding of complex, nested structs |
-|  [2.2.23](2-applications/2.2.23/2.2.23.md) | Describe and demonstrate understanding of bitwise operators |
-|  [2.2.24](2-applications/2.2.24/2.2.24.md) | Demonstrate using `main()` parameters |
-|  [2.2.25](2-applications/2.2.25/2.2.25.md) | Identify coding standard violations in C source code |
-|  [2.2.26](2-applications/2.2.26/2.2.26.md) | Explain concepts in secure coding |
-|  [2.2.27](2-applications/2.2.27/2.2.27.md) | Demonstrate the ability to use Regular Expressions in C |
-
-### 3. Competencies
-|     Section    |   Brief   |
------------------|-----------|
-|  [2.3.1](3-competencies/2.3.1/2.3.1.md)  | Implement simple functions in C |
-|  [2.3.2](3-competencies/2.3.2/2.3.2.md)  | Implement a simple shell in C |
-|  [2.3.3](3-competencies/2.3.3/2.3.3.md)  | Implement Madlibs in C |
-|  [2.3.4](3-competencies/2.3.4/2.3.4.md)  | Implement a State Machine with a signal handler |
+| [2.01](2.01_tools/) | Explain stages of compilation for a C program | 
+| [2.02](2.02_basic_syntax/)  | Explain functionality of `gcc` command line options |
+| [2.03](2.03_data_types)  | Explain functionality and parts of a Makefile |
+| [2.04](2.04_variables)  | Explain functionality of `gdb` commands |
+| [2.05](2.05_operators)  | Explain memory checking with Valgrind |
+| [2.06](2.06_conditionals)  | Explain memory checking with Valgrind |
+| [2.07](2.06_conditionals)  | Explain memory checking with Valgrind |
+| [2.08](2.06_conditionals)  | Explain memory checking with Valgrind |
+| [2.09](2.06_conditionals)  | Explain memory checking with Valgrind |
+| [2.10](2.06_conditionals)  | Explain memory checking with Valgrind |
+| [2.11](2.06_conditionals)  | Explain memory checking with Valgrind |
+| [2.12](2.06_conditionals)  | Explain memory checking with Valgrind |
+| [2.13](2.06_conditionals)  | Explain memory checking with Valgrind |
+| [2.14](2.14_conditionals)  | Explain memory checking with Valgrind |
+| [2.15](2.15_conditionals)  | Explain memory checking with Valgrind |
+| [2.16](2.16_conditionals)  | Explain memory checking with Valgrind |
+| [2.17](2.17_conditionals)  | Explain memory checking with Valgrind |
+| [2.18](2.18_conditionals)  | Explain memory checking with Valgrind |
+| [2.19](2.19_conditionals)  | Explain memory checking with Valgrind |
+| [2.20](2.20_)  | Explain memory checking with Valgrind |
+| [2.21](2.21_gdb)  | Explain memory checking with Valgrind |
+| [2.22](2.22_makefiles)  | Explain memory checking with Valgrind |
+| [2.23](2.23_competency_4a_shell)  | Explain memory checking with Valgrind |
+| [2.24](2.24_structs)  | Explain memory checking with Valgrind |
+| [2.25](2.25_linked_lists)  | Explain memory checking with Valgrind |
+| [2.26](2.26_com)  | Explain memory checking with Valgrind |
+| [2.27](2.27_competency_5_madlib)  | Explain memory checking with Valgrind |
 
 ## C Overview
 C is a prominent general-purpose, procedural compiled programming language. 
