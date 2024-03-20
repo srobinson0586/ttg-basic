@@ -1,16 +1,13 @@
 CC = gcc
 CFLAGS = -g -Wall -Wextra
 
-run: main
-	valgrind --leak-check=full --show-leak-kinds=all ./main
+.PHONY: run clean
 
-main: main.c exercise.o
-	$(CC) $(CFLAGS) $^ -o $@
+run: exercise
+	valgrind --leak-check=full --show-leak-kinds=all ./exercise
 
-exercise.o: exercise.c
-	$(CC) $(CFLAGS) -c $^ -o $@
+exercise: exercise.c
+	$(CC) $(CFLAGS) -o $@ $^
 
 clean:
-	rm -f *.o main
-
-.PHONY: run clean
+	rm -f exercise
