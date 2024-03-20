@@ -1,0 +1,89 @@
+---cat inputs---
+$ cat hello.txt
+cat: hello.txt not found
+$ cat
+s1mpl3 sh3ll: ill formatted cat command
+$ cat test_files/test_00.txt hello.txt
+s1mpl3 sh3ll: ill formatted cat command
+$ cat test_files/test_04.txt
+sh3llz are
+funnn
+like
+the most
+funnn!
+
+- test all files in test_files directory
+- compare to native cat cmd
+
+---wc inputs---
+$ wc hello.txt
+wc: hello.txt not found
+$ wc
+s1mpl3 sh3ll: ill formatted wc command
+$ wc test_files/test_00.txt hello.txt
+s1mpl3 sh3ll: ill formatted wc command
+$ wc test_files/test_04.txt
+ 5  7 38 test_04.txt
+
+- test all files in test_files directory
+- compare to native wc cmd
+
+---student input---
+$ student student
+s1mpl3 sh3ll: ill formatted student command
+$ student print
+no students in list
+$ student
+student id: 123
+student name: linux
+hacker name: tux
+$ student print
+---STUDENT-01---
+student id: 123
+student name: linux
+hacker name: tux
+$ student
+student id: 369
+student name: kate libby
+hacker name: acid burn
+$ student
+student id: 625
+student name: dade murphy
+hacker name: zero cool
+$ student
+student id: 524
+student name: emmanuel goldstein
+hacker name: cereal killer
+$ student print
+---STUDENT-01---
+student id: 123
+student name: linux
+hacker name: tux
+---STUDENT-02---
+student id: 369
+student name: kate libby
+hacker name: acid burn
+---STUDENT-03---
+student id: 625
+student name: dade murphy
+hacker name: zero cool
+---STUDENT-04---
+student id: 524
+student name: emmanuel goldstein
+hacker name: cereal killer
+
+---exit input---
+$ exit exit
+s1mp3 sh3ll: ill formatted exit command
+$ exit
+exiting now...
+
+---other input---
+$ exitstudent
+exitstudent: command not found
+$ wccat
+wccat: command not found
+$ catwc
+catwc: command not found
+$ ls
+ls: command not found
