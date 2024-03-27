@@ -20,9 +20,17 @@ If the number is only a multiple of 3, you should print "Fizz". Similarly, if th
 
 If none of the above conditions are met, the program should simply print the number itself.
 
+### Printing a number:
+Here is some sample code for printing a number which will be covered in detail in a later [section](../2.11_strings/knowledge_check.md):
+```c
+int num = 11;
+printf("%d\n", num);
+```
+For now just know that the `%d` within the string lets the `printf` function know that we intend to pass an integer as an additional parameter.
+
 ### Example Usage:
 
-```
+```bash
 $ ./fizzbuzz
 Enter limit: 20
 1
