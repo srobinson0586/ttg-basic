@@ -15,7 +15,7 @@ void fizzBuzz(int n) {
 
 int main() {
 
-    // TODO: Prompt the user to enter a number
+    // TODO: Prompt the user to enter a number using getint()
 
     // TODO: Read the number entered by the user and store it in the variable 'num'
 
