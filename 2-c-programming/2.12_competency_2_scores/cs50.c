@@ -49,6 +49,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 
 #include "cs50.h"
 
@@ -431,6 +432,18 @@ long long get_long_long(const char *format, ...)
                 return n;
             }
         }
+    }
+}
+
+/*Helper function to fill an array with random ints*/
+void fill_random_array(int *array, int len){
+    int min = 1;
+    int max = 100;
+    
+    srand(time(NULL));
+    
+    for (int i = 0; i < len; i++){
+        array[i] = rand() % (max - min + 1) + min;
     }
 }
 

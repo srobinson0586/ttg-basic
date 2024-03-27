@@ -97,6 +97,9 @@ long get_long(const char *format, ...) __attribute__((format(printf, 1, 2)));
  */
 long long get_long_long(const char *format, ...) __attribute__((format(printf, 1, 2)));
 
+/*Helper function to fill an array with random ints*/
+void fill_random_array(int *array, int len);
+
 /**
  * Prompts user for a line of text from standard input and returns
  * it as a string (char *), sans trailing line ending. Supports

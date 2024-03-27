@@ -8,11 +8,13 @@ This competency will provide you the opportunity to put all the skills and topic
 
 ## FizzBuzz Implementation Description
 
-For this competency, you will be writing in the code needed for the FizzBuzz program. 
+For this competency, you will be writing the code needed for the FizzBuzz program. 
 
 FizzBuzz is a program that prints numbers from 1 to a given limit, replacing multiples of 3 with "Fizz," multiples of 5 with "Buzz," and multiples of both 3 and 5 with "FizzBuzz."
 
-We have given you access to the CS50 library (Courtesy of Harvard University). This will allow you to receive user input since user input will not be taught until later in the JQR due to the complexity. You will make use of the `get_int()` function in this library to receive a limit from the user. You should use a loop to iterate from 1 to the given input.
+We have given you access to the CS50 library (Courtesy of Harvard University). This will allow you to receive user input since user input will not be taught until later in the JQR due to the complexity. 
+
+You will make use of the `get_int()` function in this library to receive a limit from the user. You should use a loop to iterate from 1 to the given input.
 
 For each number in this range, the program should check if it's a multiple of both 3 and 5. If so, you should print "FizzBuzz."
 
@@ -36,11 +38,12 @@ printf("%i\n", num);
 ```
 For now just know that the `%i` within the string lets the `printf` function know that we intend to pass an integer as an additional parameter.
 
-### Example Usage:
+### Example FizzBuzz Usage:
 
 ```bash
 $ ./fizzbuzz
 Enter limit: 20
+
 1
 2
 Fizz
@@ -68,7 +71,7 @@ Buzz
 - [ ] Your program must additionally meet the following requirements:
   - Use of a loop to iterate through the number range
   - Use of conditional statements and operators
-  - Use of appropriate arithmetic operator(s) 
+  - Use of appropriate arithmetic operators
   - Get user input with the `get_int()` function
 
 [Back to Overview](../README.md)
