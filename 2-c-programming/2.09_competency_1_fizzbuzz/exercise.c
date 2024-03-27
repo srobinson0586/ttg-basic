@@ -1,7 +1,15 @@
 #include <stdio.h>
 #include "cs50.h"
 
-// TODO: Define a function called fizzBuzz that takes an integer parameter 'n'
+void fizzBuzz(int n) {
+    // TODO: This function should print the following:
+    //       Fizz for numbers divisible by 3,
+    //       Buzz for numbers divisible by 5, 
+    //       FizzBuzz for numbers divisible by both 3 and 5,
+    //       and the number itself for all other cases.
+
+
+}
 
 int main() {
 
@@ -12,15 +20,4 @@ int main() {
     // TODO: Call the fizzBuzz function with the entered number
 
     return 0;
-}
-
-void fizzBuzz(int n) {
-    /* TODO: This function should print the following:
-                Fizz for numbers divisible by 3,
-                Buzz for numbers divisible by 5, 
-                FizzBuzz for numbers divisible by both 3 and 5,
-                and the number itself for all other cases.
-    */
-
-
 }
