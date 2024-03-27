@@ -4,11 +4,11 @@ LIBS = cs50.c
 
 .PHONY: run clean
 
-run: exercise
-	valgrind --leak-check=full --show-leak-kinds=all ./exercise
+run: fizzbuzz
+	valgrind --leak-check=full --show-leak-kinds=all ./fizzbuzz
 
-exercise: exercise.c $(LIBS)
+fizzbuzz: fizzbuzz.c $(LIBS)
 	$(CC) $(CFLAGS) -o $@ $^
 
 clean:
-	rm -f exercise
+	rm -f fizzbuzz
