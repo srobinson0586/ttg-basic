@@ -1,6 +1,18 @@
 #include <stdio.h>
+#include "cs50.h"
 
 // TODO: Define a function called fizzBuzz that takes an integer parameter 'n'
+
+int main() {
+
+    // TODO: Prompt the user to enter a number using get_int()
+
+    // TODO: Read the number entered by the user and store it in the variable 'num'
+
+    // TODO: Call the fizzBuzz function with the entered number
+
+    return 0;
+}
 
 void fizzBuzz(int n) {
     /* TODO: This function should print the following:
@@ -11,15 +23,4 @@ void fizzBuzz(int n) {
     */
 
 
-}
-
-int main() {
-
-    // TODO: Prompt the user to enter a number using getint()
-
-    // TODO: Read the number entered by the user and store it in the variable 'num'
-
-    // TODO: Call the fizzBuzz function with the entered number
-
-    return 0;
 }

@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include "cs50.h"
 
 // Define a constant for the maximum number of students
 #define MAX_STUDENTS 50
@@ -8,16 +9,12 @@
 //       and the index of the student as parameters.
 //       This function should prompt the user to enter the name and score of the student
 //       at the specified index, and store them in the arrays.
-void inputStudentData(char names[][50], int scores[], int index) {
-    // Your code here
-}
+
 
 // TODO: Define a function called 'highestScoreIndex' that takes an array of scores,
 //       an array of names, and the number of students as parameters.
 //       This function should return the index of the highest score in the array.
-int highestScoreIndex(int scores[], int numStudents) {
-    // Your code here
-}
+
 
 int main() {
     char names[MAX_STUDENTS][50];
