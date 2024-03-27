@@ -1,6 +1,8 @@
 # C Programming Tools
 
-One of the key distinctions between C and Python lies in their approach to code execution, specifically their interpretive and compiled natures. C is a compiled language, which means that the source code is first translated entirely into machine code by a compiler before the program is executed. This compilation process optimizes the code for performance and produces an executable binary that can be directly run on the target hardware. On the other hand, Python is an interpreted language, where the source code is executed line by line by an interpreter at runtime. This [Tutorialspoint Article](https://www.tutorialspoint.com/cprogramming/c_overview.htm) provides an overview of the potential usage of C applications.
+One of the key distinctions between C and Python lies in their approach to code execution, specifically their interpretive and compiled natures. C is a **compiled** language, which means that the source code is first translated entirely into machine code by a compiler before the program is executed. This compilation process optimizes the code for performance and produces an executable binary that can be directly run on the target hardware. 
+
+On the other hand, Python is an **interpreted** language, where the source code is executed line by line by an interpreter at runtime. This [Tutorials Point Article](https://www.tutorialspoint.com/cprogramming/c_overview.htm) provides an overview of the potential usage of C applications.
 
 As such, to start programming in C you'll need a few additional tools to compile and run your programs on your Linux Operating System: 
 
@@ -30,28 +32,17 @@ $ gdb --version
 ```
 ### GEF via the install script
 
-There are four ways you may use to install GEF:
+GEF is an add-on to GDB that adds a set of commands to assist exploit developers and reverse engineers. We will explore GEF later in the JQR. There are multiple ways you may install GEF:
 
 #### using curl
 ```bash
 $ sh -c "$(curl -fsSL http://gef.blah.cat/sh)"
 ```
 
-#### using wget
-```bash
-$ sh -c "$(wget http://gef.blah.cat/sh -O -)"
-```
-
 #### manually
 ```bash
 $ wget -O ~/.gdbinit-gef.py -q http://gef.blah.cat/py
 $ echo source ~/.gdbinit-gef.py >> ~/.gdbinit
-```
-
-#### from inside gdb directly
-```bash
-$ gdb -q
-(gdb) pi import urllib.request as u, tempfile as t; g=t.NamedTemporaryFile(suffix='-gef.py'); open(g.name, 'wb+').write(u.urlopen('https://tinyurl.com/gef-master').read()); gdb.execute('source %s' % g.name)
 ```
 
 #### Check GEF install

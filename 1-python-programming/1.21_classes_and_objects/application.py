@@ -99,19 +99,19 @@ class BasketballGame(Game):
 
             Parameters:
                 - self
-                - scoring_team: int; The integer 1 or 2 to represent the scoring team as team1 or team2.
                 - score_type: str; A string indicating the type of score.
                     "3ptr"         = 3 points
                     "2ptr"         = 2 points
                     "free throw"  = 1 point
                     other         = 0 points
+                - scoring_team: int; The integer 1 or 2 to represent the scoring team as team1 or team2.
             
             Returns:
                 This function should not return a value.
 
             Example:
-            >>> game1.add_points(scoring_team=1, "3ptr")
-            >>> game1.add_points(scoring_team=2, "free throw")
+            >>> game1.add_points("3ptr", scoring_team=1)
+            >>> game1.add_points("free throw", scoring_team=2)
 
             
         - call_timeout

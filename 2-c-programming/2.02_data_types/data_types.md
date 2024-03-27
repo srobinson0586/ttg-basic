@@ -1,8 +1,10 @@
 # C Programming: Data Types
 
-Where Python has dynamic data typing (i.e. "Duck typing"), C has strict data typing, meaning you need to declare the data type of a variable before using it. Data types in C refer to an extensive system used for declaring variables or functions of different types. The type of a variable determines how much space it occupies in storage and how the bit pattern stored is interpreted.  Also C is a statically typed language, so the type of a variable cannot change once it's declared.
+Where Python has dynamic data typing (i.e. "Duck typing"), C has strict data typing, meaning you need to **declare the data type of a variable** before using it. Data types in C refer to an extensive system used for declaring variables or functions of different types. The type of a variable determines how much space it occupies in storage and how the bit pattern stored is interpreted.  
 
-In C programming, there are several common data types that you can use to store different kinds of values. Here are the most commonly used data types:
+C is a statically typed language, so the type of a variable cannot change once it's declared.
+
+In C programming, there are several common data types that you can use to store different kinds of values. Here are some commonly used data types:
 
 1. **int (Integer)**:
    - Used to store whole numbers (positive or negative) without decimal points.
@@ -22,16 +24,7 @@ In C programming, there are several common data types that you can use to store 
    price = 3.99; // Assigning a value to the variable
    ```
 
-1. **double (Double Precision Floating-Point)**:
-   - Used to store floating-point numbers with higher precision compared to `float`.
-   - Typically 8 bytes in size.
-   - Example:
-   ```c
-   double pi; // Declaration of a double precision floating-point variable
-   pi = 3.14159265359; // Assigning a value to the variable
-   ```
-
-1. **char (Character)**:
+2. **char (Character)**:
    - Used to store a single character or a small integer.
    - Always 1 byte in size.
    - Example:
@@ -39,7 +32,7 @@ In C programming, there are several common data types that you can use to store 
    char grade; // Declaration of a character variable
    grade = 'A'; // Assigning a value to the variable
    ```
-1. **char array (String)**:
+3. **char array (String)**:
    - In C, a string is an array of characters; there is not a dedicated data type as in Python. 
    - Example:
    ```c
@@ -47,7 +40,7 @@ In C programming, there are several common data types that you can use to store 
    strcpy(name, "John Smith"); // Assigning a string to the array
    ```
 
-1. **_Bool (Boolean)**:
+4. **_Bool (Boolean)**:
    - Used to represent Boolean values, which can be either true or false.
    - 0 typically represents `false`, and any non-zero value represents `true`.
    - Size is implementation-dependent but often 1 byte.
@@ -57,7 +50,7 @@ In C programming, there are several common data types that you can use to store 
    isTrue = 1; // Assigning a value (true)
    ```
 
-1. **short (Short Integer)**:
+5. **short (Short Integer)**:
    - Used to store small whole numbers.
    - Typically 2 bytes in size.
    - Example:
@@ -66,16 +59,7 @@ In C programming, there are several common data types that you can use to store 
    distance = 100; // Assigning a value to the variable
    ```
 
-1. **long (Long Integer)**:
-   - Used to store larger whole numbers.
-   - Size can vary but is typically 4 bytes or more.
-   - Example:
-   ```c
-   long population; // Declaration of a long integer variable
-   population = 1000000L; // Assigning a value to the variable (the 'L' denotes a long literal)
-   ```
-
-1. **Arrays**:
+6. **Arrays**:
    - Used to store a collection of elements of the same data type.
    - Size is determined by the number of elements and the data type.
    - Example:
@@ -90,16 +74,8 @@ In C programming, there are several common data types that you can use to store 
    // Declaration and initialization of a character array
    char vowels[] = {'a', 'e', 'i', 'o', 'u'}; 
    ```
-1. **void**:
-    - Represents an absence of type for use in several contexts.
-    - Common use as a return type for functions that do not return any value.
-    - Example:
-    ```c
-    void printHello() {
-        printf("Hello, World!\n");
-    }
-    ```
-1. **Pointers**:
+
+8. **Pointers** (will be discussed in greater detail in section 2.12):
     - Used to store memory addresses of other variables.
     - Size is platform-dependent but often 4 or 8 bytes on modern systems.
     - Example:
@@ -108,8 +84,6 @@ In C programming, there are several common data types that you can use to store 
     int value = 42;
     ptr = &value; // Assigning the address of 'value' to 'ptr'
     ```
-
-NOTE: Pointers will be discussed in greater detail in section 2.12
 
 ## Integer Types
 
@@ -120,8 +94,8 @@ Type | Storage Size | Value range
 char | 1 byte | -128 to 127 or 0 to 255
 unsigned char  | 1 byte | 0 to 255 |
 signed char | 1 byte | -128 to 127 
-int | 2 or 4 bytes | -32,768 to 32,767 or -2,147,483,648 to 2,147,483,647 
-unsigned int | 2 or 4 bytes | 0 to 65,535 or 0 to 4,294,967,295
+int | 4 bytes | -2,147,483,648 to 2,147,483,647 
+unsigned int | 4 bytes | 0 to 4,294,967,295
 short | 2 bytes | -32,768 to 32,767 
 unsigned short | 2 bytes | 0 to 65,535
 long | 8 bytes or (4bytes for 32 bit OS) | -9223372036854775808 to 9223372036854775807
@@ -179,7 +153,7 @@ USHRT_MAX   :   65535
 
 ## Floating-Point Types
 
-The following table provide the details of standard floating-point types with storage sizes and value ranges and their precision:
+How do you write a number that has a decimal in it? We use floats! The following table provide the details of standard floating-point types with storage sizes and value ranges and their precision:
 
 Type | Storage size | Value range | Precision
 --- | --- | --- | ---
@@ -228,8 +202,9 @@ Precision value: 6
 The void type specifies that no value is available. It is used in three kinds of situations:
 
 **Function returns as void**
+- In C, each function needs to have a "type" unlike in Python. This "type" is the data type that you are returning from the function.
 - There are various functions in C which do not return any value.  This is stated as they return `void`. 
-- A function with no return value has the return type as void.
+- **A function with no return value has the return type as void.
 - Example:
 ```c
 void exit (int status);

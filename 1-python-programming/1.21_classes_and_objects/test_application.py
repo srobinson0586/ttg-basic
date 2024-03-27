@@ -17,7 +17,7 @@ def test_game():
     assert game2.team2_name == "Admin", "`team2_name` not properly set when passed into constructor"
     assert game2.team1_points == 102, "`team1_points` not properly set when passed into constructor"
     assert game2.team2_points == 100, "`team2_points` not properly set when passed into constructor"
-    assert game2.winner() == "Devs win!", "`winner` logic is incorrect when first team wins"
+    assert game2.winner() == "Devs won!", "`winner` logic is incorrect when first team wins"
 
     # Testing inheritance and child class constructor default arguments
     game3 = application.BasketballGame()
@@ -39,23 +39,23 @@ def test_game():
 
     # Testing child class functionality
     game4.team1_points = 50
-    game4.add_points(1, "free throw")
+    game4.add_points("free throw", 1)
     assert game4.team1_points == 51, "Points not correctly added to `team1_points` for \"free throw\" score type"
     game4.team1_points = 50
-    game4.add_points(1, "2ptr")
+    game4.add_points("2ptr", 1)
     assert game4.team1_points == 52, "Points not correctly added to `team1_points` for \"2ptr\" score type"
     game4.team1_points = 50
-    game4.add_points(1, "3ptr")
+    game4.add_points("3ptr", 1)
     assert game4.team1_points == 53, "Points not correctly added to `team1_points` for \"3ptr\" score type"
     
     game4.team2_points = 61
-    game4.add_points(2, "free throw")
+    game4.add_points("free throw", 2)
     assert game4.team2_points == 62, "Points not correctly added to `team2_points` for \"free throw\" score type"
     game4.team2_points = 61
-    game4.add_points(2, "2ptr")
+    game4.add_points("2ptr", 2)
     assert game4.team2_points == 63, "Points not correctly added to `team2_points` for \"2ptr\" score type"
     game4.team2_points = 61
-    game4.add_points(2, "3ptr")
+    game4.add_points("3ptr", 2)
     assert game4.team2_points == 64, "Points not correctly added to `team2_points` for \"3ptr\" score type"
     
     game4.team1_timeouts = 6
@@ -72,4 +72,4 @@ def test_game():
     game4.call_timeout(2)
     assert game4.team2_timeouts == 0, "Timeout called even though `team2_timeouts` was 0"
 
-    assert game4.winner() == "Warriors win!", "`winner` logic is incorrect when second team wins"
+    assert game4.winner() == "Warriors won!", "`winner` logic is incorrect when second team wins"
