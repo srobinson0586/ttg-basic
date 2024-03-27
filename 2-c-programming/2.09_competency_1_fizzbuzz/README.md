@@ -20,13 +20,21 @@ If the number is only a multiple of 3, you should print "Fizz". Similarly, if th
 
 If none of the above conditions are met, the program should simply print the number itself.
 
+### Using get_int():
+This function prompts the user for an integer. The user's input is validated and the function will prompt the user again if necessary. Below is some sample code for using the function:
+```c
+int num = get_int("Input: ");
+// num now holds the value the user typed
+```
+More information can be found [here](https://manual.cs50.io/3/get_int)
+
 ### Printing a number:
 Here is some sample code for printing a number which will be covered in detail in a later [section](../2.11_strings/knowledge_check.md):
 ```c
 int num = 11;
-printf("%d\n", num);
+printf("%i\n", num);
 ```
-For now just know that the `%d` within the string lets the `printf` function know that we intend to pass an integer as an additional parameter.
+For now just know that the `%i` within the string lets the `printf` function know that we intend to pass an integer as an additional parameter.
 
 ### Example Usage:
 
