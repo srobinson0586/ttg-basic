@@ -3,11 +3,11 @@ CFLAGS = -g -Wall -Wextra
 
 .PHONY: run clean
 
-run: application
-	valgrind --leak-check=full --show-leak-kinds=all ./application
+run: caesar
+	valgrind --leak-check=full --show-leak-kinds=all ./caesar
 
-application: application.c
+application: caesar.c
 	$(CC) $(CFLAGS) -o $@ $^
 
 clean:
-	rm -f application
+	rm -f caesar
