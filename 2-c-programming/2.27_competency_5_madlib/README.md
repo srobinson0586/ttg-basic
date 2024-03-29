@@ -22,7 +22,7 @@ project with nested structs in C.
    2. Create a structure that can represent an arbitrary category (e.g., noun,
       adjective, verb, etc).
 
-   3. Store all cactegories found in the template in a dynamically reallocated
+   3. Store all categories found in the template in a dynamically reallocated
       array (i.e, an array of contiguous elements in memory, which you reallocate
       as needed as it grows).
 
