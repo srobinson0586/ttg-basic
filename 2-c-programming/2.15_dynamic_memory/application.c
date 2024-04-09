@@ -42,8 +42,6 @@ int main() {
         return 1;
     }
 
-    // Display the reallocated memory
-    printf("Memory reallocated for %d elements successfully.\n", n);
 
     // TODO: Step 5 - Free the dynamically allocated memory using free and set it to NULL
     
