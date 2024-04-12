@@ -1,16 +1,18 @@
 int main(){
     int x = 10;
-    //TODO:: create a pointer and that points to x 
+    //TODO:: create a pointer that points to x 
     
-    //TODO::call ptrFunction to change x value to 20
+    //TODO:: call passByValueFunction and print the value of x
 
-    if (x != 20){
-        printf("Value was not changed");
-        return 1;
-    }
+    //TODO::call passByPtrFunction and print the value of x
+
+
     
     return 0;
 }
-void ptrFunction(int* ptr){
+void passByPtrFunction(int* ptr){
     *ptr = 20;
+}
+void passByValueFunction(int ptr){
+    ptr = 20;
 }
