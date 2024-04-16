@@ -28,7 +28,7 @@ def test_exceptions():
 
     # Test the count_lines_in_file function
     # NOTE: IF YOU ADD ANY LINES TO THE REAMDE, YOU NEED TO UPDATE THIS CHECK
-    assert application.count_lines_in_file('./README.md') == 6
+    assert application.count_lines_in_file('./README.md') == 8
     try:
         application.count_lines_in_file('nonexistent.txt')  # Nonexistent file should raise FileNotFoundError
     except Exception as e:

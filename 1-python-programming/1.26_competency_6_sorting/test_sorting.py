@@ -27,7 +27,7 @@ def test_bubble():
     assert sample3 != sorted_3, "See link: https://stackoverflow.com/a/38134344"
     bubble_rv = sorting.bubble_sort(sample3)
     assert sorted_3 == bubble_rv, "bubble_sort incorrectly sorted on the the third test case (input: a reverse sorted list of strings with duplicates)"
-    assert sorted_2 is not bubble_rv, "See link: https://stackoverflow.com/a/38134344"
+    assert sorted_3 is not bubble_rv, "See link: https://stackoverflow.com/a/38134344"
     
     assert sample4 != sorted_4, "See link: https://stackoverflow.com/a/38134344"
     bubble_rv = sorting.bubble_sort(sample4)

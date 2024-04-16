@@ -64,70 +64,60 @@ As you complete sections of the JQR, please reach out to a qualified developer t
 # [2: C Programming](2-c-programming/README.md)
 | Section | Knowledge                                                           | Initials | Date |
 |---------|---------------------------------------------------------------------|----------|------|
-| Tools
-|  2.1.1  | Explain stages of compilation for a C program                       |          |      |
-|  2.1.2  | Explain functionality of gcc command line options                   |          |      |
-|  2.1.3  | Explain functionality and parts of a Makefile                       |          |      |
-|  2.1.4  | Explain functionality of gdb commands                               |          |      |
-|  2.1.5  | Explain memory checking with Valgrind                               |          |      |
-| Application
-|  2.2.1  | Write a Makefile to compile a project                               |          |      |
-|  2.2.2  | Explain fundamental C concepts                                      |          |      |
-|  2.2.3  | Demonstrate understanding of the arguments of main in C             |          |      |
-|  2.2.4  | Explain and demonstrate understanding of endianness                 |          |      |
-|  2.2.5  | Explain and demonstrate understanding of pointers                   |          |      |
-|  2.2.6  | Explain and demonstrate understanding of type-casting               |          |      |
-|  2.2.7  | Explain and demonstrate understanding of format specifiers          |          |      |
-|  2.2.8  | Demonstrate understanding of function prototypes in C               |          |      |
-|  2.2.9  | Explain the difference between Pass by Value & Pass by Reference    |          |      |
-|  2.2.10 | Demonstrate understanding of parsing input from stdin in C          |          |      |
-|  2.2.11 | Explain pointer arithmetic in C                                     |          |      |
-|  2.2.12 | Explain and demonstrate usage of arrays and structs                 |          |      |
-|  2.2.13 | Explain and demonstrate structs in memory                           |          |      |
-|  2.2.14 | Explain and demonstrate the effects of the preprocessor             |          |      |
-|  2.2.15 | Explain and demonstrate macros and include guards                   |          |      |
-|  2.2.16 | Explain and demonstrate linked lists                                |          |      |
-|  2.2.17 | Explain and demonstrate threading                                   |          |      |
-|  2.2.18 | Demonstrate understanding of memory using GDB                       |          |      |
-|  2.2.19 | Demonstrate memory inspection using GDB Dashboard                   |          |      |
-|  2.2.20 | Compare and contrast the stack and the heap                         |          |      |
-|  2.2.21 | Demonstrate understanding of memory by implementing getline         |          |      |
-|  2.2.22 | Demonstrate understanding of complex, nested structs                |          |      |
-|  2.2.23 | Describe and demonstrate understanding of bitwise operators         |          |      |
-|  2.2.24 | Demonstrate using main() parameters                                 |          |      |
-|  2.2.25 | Identify coding standard violations in C source code                |          |      |
-|  2.2.26 | Explain concepts in secure coding                                   |          |      |
-|  2.2.27 | Demonstrate the ability to use Regular Expressions in C             |          |      |
-|  2.2.28 | Describe the Fundamentals of Embedded Systems & Demonstrate the Ability to Cross-Compile Binaries |          |      |
-| Competencies
-|  2.3.1  | Implement simple functions in C                                     |          |      |
-|  2.3.2  | Implement a simple shell in C                                       |          |      |
-|  2.3.3  | Implement Madlibs in C                                              |          |      |
-|  2.3.4  | Implement a State Machine with a signal handler                     |          |      |
+|  2.01   | Tools                                                               |          |      |
+|  2.02   | Data Types                                                          |          |      |
+|  2.03   | Basic Syntax                                                        |          |      |
+|  2.04   | Variables                                                           |          |      |
+|  2.05   | Operators                                                           |          |      |
+|  2.06   | Conditionals                                                        |          |      |
+|  2.07   | Functions                                                           |          |      |
+|  2.08   | Loops                                                               |          |      |
+|**2.09** | **Competency 1: FizzBuzz**                                          |          |      |
+|  2.10   | Arrays                                                              |          |      |
+|  2.11   | Strings                                                             |          |      |
+|**2.12** | **Competency 2: Scores**                                            |          |      |
+|  2.13   | Pointers                                                            |          |      |
+|  2.14   | Stack                                                               |          |      |
+|  2.15   | Dynamic Memory                                                      |          |      |
+|  2.16   | Heap Arrays & Strings                                               |          |      |
+|  2.17   | File IO                                                             |          |      |
+|  2.18   | Valgrind                                                            |          |      |
+|  2.19   | GDB                                                                 |          |      |
+|  2.20   | Makefiles                                                           |          |      |
+|**2.21** | **Competency 3: Caesar**                                            |          |      |
+|  2.22   | Structs                                                             |          |      |
+|  2.23   | Linked Lists                                                        |          |      |
+|**2.24** | **Competency 4: Shell**                                             |          |      |
+|**2.25** | **Competency 5: Madlib**                                            |          |      |
 
 # [3: Assembly Programming](3-assembly-programming/README.md)
 | Section | Knowledge                                                           | Initials | Date |
 |---------|---------------------------------------------------------------------|----------|------|
-| Tools
-|  3.1.1  | Explain x86/x64 assembly syntaxes                                   |          |      |
-| Application
-|  3.2.1  | Explain the concept of registers                                    |          |      |
-|  3.2.2  | Explain usage of specific registers                                 |          |      |
-|  3.2.3  | Diagram the parts of a register                                     |          |      |
-|  3.2.4  | Explain and demonstrate two's complement                            |          |      |
-|  3.2.5  | Demonstrate constructing instructions from opcodes                  |          |      |
-|  3.2.6  | Explain declaration of strings                                      |          |      |
-|  3.2.7  | Explain calling conventions                                         |          |      |
-|  3.2.8  | Explain and diagram function calls in memory                        |          |      |
-|  3.2.9  | Explain interrupts                                                  |          |      |
-|  3.2.10 | Explain system calls                                                |          |      |
-|  3.2.11 | Explain the FLAGS register                                          |          |      |
-|  3.2.12 | Demonstrate bit shifting and masking                                |          |      |
-|  3.2.13 | Explain and demonstrate branching using FLAGS                       |          |      |
-|  3.2.14 | Demonstrate understanding of assembly prologues and epilogues       |          |      |
-| Competencies
-|  3.3.1  | Implement specific functions in assembly for Linux x64              |          |      |
-|  3.3.2  | Implement linked lists in assembly                                  |          |      |
+|  3.00   | Fundamentals                                                        |          |      |
+|  3.01   | Tools                                                               |          |      |
+|  3.02   | Syntax                                                              |          |      |
+|  3.03   | Registers                                                           |          |      |
+|  3.04   | Data Types                                                          |          |      |
+|  3.05   | Basic Operations                                                    |          |      |
+|  3.06   | Basic Debugging                                                     |          |      |
+|  3.07   | Arithmetic Operations                                               |          |      |
+|**3.08** | **Competency 1: Speed**                                             |          |      |
+|  3.09   | Bit Operations                                                      |          |      |
+|  3.10   | Boolean Operations                                                  |          |      |
+|**3.11** | **Competency 2: It's a Bomb**                                       |          |      |
+|  3.12   | Flow Operations                                                     |          |      |
+|  3.13   | Control Flow                                                        |          |      |
+|  3.14   | Loop Operations                                                     |          |      |
+|  3.15   | Loops                                                               |          |      |
+|**3.16** | **Competency 3: FizzBuzz**                                          |          |      |
+|  3.17   | Stack                                                               |          |      |
+|  3.18   | Memory                                                              |          |      |
+|  3.19   | Strings                                                             |          |      |
+|**3.20** | **Competency 4: Stumped**                                           |          |      |
+|  3.21   | Functions                                                           |          |      |
+|**3.22** | **Competency 5: Locked Up**                                         |          |      |
+|  3.23   | Interrupts and Syscalls                                             |          |      |
+|**3.24** | **Competency 6: It's About Time**                                   |          |      |
 
 # [4: Network Programming](4-network-programming/README.md)
 | Section | Knowledge                                                           | Initials | Date |
