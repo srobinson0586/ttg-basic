@@ -25,14 +25,15 @@ This is Section 2 in the NCWDG JQR, where new Computer Network Operations (CNO) 
 | [2.15 Dynamic Memory](2.15_dynamic_memory/README.md)  | Memory management with `malloc`, `calloc`, `realloc` and `free` |
 | [2.16 Heap](2.16_heap_arrays_strings/README.md)  | Overview of using the heap for storing data  |
 | [2.17 File I/O](2.17_file_input_output/README.md)  | Basics on reading, writing, and modifying data stored in files |
-| [2.18 Valgrind](2.18_valgrind/README.md)  | How to use Valgrind to pinpoint memory related errors and issues |
-| [2.19 GDB](2.19_gdb/README.md)  | Basics of using GDB to debug code |
-| [2.20 Makefiles](2.20_makefiles/README.md)  | How to create and use make files to automate the build process |
-| **[2.21 Competency 3: Caesar](2.21_competency_3_caesar/README.md)**  | Implement a Caesar cipher to encrypt and decrypt a file with a key |
-| [2.22 Structs](2.22_structs/README.md)  | Overview of grouping together variables with structs |
-| [2.23 Linked Lists](2.23_linked_lists/README.md)  | Introduction to the linked list data structure |
-| **[2.24 Competency 4: Shell](2.24_competency_4_shell/README.md)**  | Make a custom shell program to run user-defined commands and custom implementations of `wc`, `cat`, and `exit` |
-| **[2.25 Competency 5: Madlib](2.25_competency_5_madlib/README.md)**  | Create a program that parses `.madlib` files and creates random mad libs |
+| **[2.18 Competency 3: Rapid Fire](2.18_competency_3_rapid_fire/README.md)**  | Implement a Caesar cipher to encrypt and decrypt a file with a key |
+| [2.19 Valgrind](2.18_valgrind/README.md)  | How to use Valgrind to pinpoint memory related errors and issues |
+| [2.20 GDB](2.19_gdb/README.md)  | Basics of using GDB to debug code |
+| [2.21 Makefiles](2.20_makefiles/README.md)  | How to create and use make files to automate the build process |
+| **[2.22 Competency 4: Caesar](2.21_competency_3_caesar/README.md)**  | Implement a Caesar cipher to encrypt and decrypt a file with a key |
+| [2.23 Structs](2.22_structs/README.md)  | Overview of grouping together variables with structs |
+| [2.24 Linked Lists](2.23_linked_lists/README.md)  | Introduction to the linked list data structure |
+| **[2.25 Competency 5: Shell](2.24_competency_4_shell/README.md)**  | Make a custom shell program to run user-defined commands and custom implementations of `wc`, `cat`, and `exit` |
+| **[2.26 Competency 6: Madlib](2.25_competency_5_madlib/README.md)**  | Create a program that parses `.madlib` files and creates random mad libs |
 
 ## C Overview
 C is a prominent general-purpose, procedural compiled programming language. 

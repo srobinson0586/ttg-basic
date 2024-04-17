@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <stdlib.h>
+
 int main(){
     int x = 10;
     //TODO:: create a pointer that points to x 

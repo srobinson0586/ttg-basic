@@ -81,14 +81,15 @@ As you complete sections of the JQR, please reach out to a qualified developer t
 |  2.15   | Dynamic Memory                                                      |          |      |
 |  2.16   | Heap Arrays & Strings                                               |          |      |
 |  2.17   | File IO                                                             |          |      |
-|  2.18   | Valgrind                                                            |          |      |
-|  2.19   | GDB                                                                 |          |      |
-|  2.20   | Makefiles                                                           |          |      |
-|**2.21** | **Competency 3: Caesar**                                            |          |      |
-|  2.22   | Structs                                                             |          |      |
-|  2.23   | Linked Lists                                                        |          |      |
-|**2.24** | **Competency 4: Shell**                                             |          |      |
-|**2.25** | **Competency 5: Madlib**                                            |          |      |
+|**2.18** | **Competency 3: Rapid Fire**                                        |          |      |
+|  2.19   | Valgrind                                                            |          |      |
+|  2.20   | GDB                                                                 |          |      |
+|  2.21   | Makefiles                                                           |          |      |
+|**2.22** | **Competency 4: Caesar**                                            |          |      |
+|  2.23   | Structs                                                             |          |      |
+|  2.24   | Linked Lists                                                        |          |      |
+|**2.25** | **Competency 5: Shell**                                             |          |      |
+|**2.26** | **Competency 6: Madlib**                                            |          |      |
 
 # [3: Assembly Programming](3-assembly-programming/README.md)
 | Section | Knowledge                                                           | Initials | Date |

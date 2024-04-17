@@ -13,11 +13,10 @@ void fizzBuzz(int n) {
 
 int main() {
 
-    // TODO: Prompt the user to enter a number using get_int()
+    // TODO: Prompt the user to enter a number using get_int() and store it in the variable 'num'
 
-    // TODO: Read the number entered by the user and store it in the variable 'num'
-
-    // TODO: Call the fizzBuzz function with the entered number
+    // TODO: Call fizzBuzz() in a loop from 1 to the number that the user has entered as the parameter.
+    // Example: if the user entered 20, fizzBuzz() should run for every number between 1 to 20.
 
     return 0;
 }

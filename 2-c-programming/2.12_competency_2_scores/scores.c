@@ -32,7 +32,7 @@ int main() {
     // TODO: Create an array based on the user specified size 
 
 
-    // TODO: Use the fill_random_array() function with the array and the size
+    // TODO: Use the fill_random_array() function with the array and the size (You do not create this function. You can simply call it as it is provided externally)
 
 
     // TODO: Call the 'printScores' function with the array of scores and the number of students
