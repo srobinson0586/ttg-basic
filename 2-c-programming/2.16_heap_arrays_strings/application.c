@@ -11,9 +11,9 @@ void printArray(int *arr, int size) {
     printf("\n");
 }
 
-// TODO: allocate and assign values for heapArray given the size of the array.   
-// TODO: Check if memory allocation was successful
-// TODO: itterate through the array and assign the value 0-size to the elements in the array.
+// TODO: Allocate and assign values for heapArray given the size of the array.   
+// TODO: Check if memory allocation was successful.
+// TODO: Iterate through the array and assign the values 0, 1, 2, ... to the elements in the array.
 void allocateArray(int size){
 
 
@@ -21,10 +21,9 @@ void allocateArray(int size){
 }
 
 int main() {
-    // TODO: Explain what the heap is and why it's useful
+
     printf("Heap and Arrays in C\n");
 
-    // TODO: Explain dynamic memory allocation and the use of malloc
     int size;
     printf("Enter the size of the array: ");
     scanf("%d", &size);
@@ -36,6 +35,8 @@ int main() {
 
     // TODO: implement allocateArray()
     allocateArray(size);
+
+    printArray(heapArray, size);
 
     // TODO: free heapArray
     

@@ -55,7 +55,7 @@ The **int puts(const char \*s)** function writes the string 's' and 'a' trailing
 #include <stdio.h>
 int main( ) {
 
-   char str\[100\];
+   char str[100];
 
    printf( "Enter a value :");
    gets( str );
@@ -88,7 +88,7 @@ The **format** can be a simple constant string, but you can specify %s, %d, %c, 
 #include <stdio.h>
 int main( ) {
 
-   char str\[100\];
+   char str[100];
    int i;
 
    printf( "Enter a value :");
@@ -210,8 +210,8 @@ If this function encounters a newline character '\\n' or the end of the file EOF
 
 main() {
 
-   FILE \*fp;
-   char buff\[255\];
+   FILE *fp;
+   char buff[255];
 
    fp = fopen("/tmp/test.txt", "r");
    fscanf(fp, "%s", buff);

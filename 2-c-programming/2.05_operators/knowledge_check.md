@@ -113,7 +113,6 @@ ANSWER:
 11. **Problem:** Calculate the absolute value of an integer `num` using the conditional operator (ternary operator). If `num` is negative, negate it; otherwise, leave it unchanged.
    ```c
    int num = -8;
-   int absoluteValue = (num < 0) ? -num : num;
    ```
    
 ```

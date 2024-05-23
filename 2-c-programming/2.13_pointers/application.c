@@ -3,19 +3,21 @@
 
 int main(){
     int x = 10;
-    //TODO:: create a pointer that points to x 
+
+    //TODO:: Create a pointer that points to x. 
     
-    //TODO:: call passByValueFunction and print the value of x
+    //TODO:: Call the passByValueFunction, giving it x as an argument. Print the value of x after the function returns.
 
-    //TODO::call passByPtrFunction and print the value of x
+    //TODO:: Call the passByPtrFunction, giving it the pointer to x as an argument. Print the value of x after the function returns.
 
 
-    
     return 0;
 }
+
+void passByValueFunction(int x){
+    x = 70;
+}
+
 void passByPtrFunction(int* ptr){
     *ptr = 20;
-}
-void passByValueFunction(int ptr){
-    ptr = 20;
 }
