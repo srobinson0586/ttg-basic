@@ -24,7 +24,7 @@ def decrypt_vigenere_cipher(ciphertext, vigenere_key):
     >>> vigenere_key = 'LEETCODE'
     >>> decrypted_text = decrypt_vigenere_cipher(ciphertext, vigenere_key)
     >>> print(decrypted_text)
-    'phinfjt4087:1m;>[wok'
+    'phinfjt4087:1w;>[poz'
     """
     # TODO: Implement
     pass

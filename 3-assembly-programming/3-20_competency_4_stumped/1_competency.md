@@ -47,8 +47,8 @@ always have a number with them ... ... `33`.
                                     | |                     ((   ;            
 ```
 
-Your function should take a string and decrypt it by `XOR`ing each character 
-by `33` and then by rotating each character by `33`. Then your function has to 
+Your function should take a string and decrypt it by `XOR`ing each *character* 
+by `33` and then by rotating each *character* by `33`. Then your function has to 
 reverse the string. Easy!
 
 If you want to print your string before or after, a print function has been 

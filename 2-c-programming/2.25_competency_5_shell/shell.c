@@ -76,6 +76,7 @@ void cat(char *cmd_buf, size_t buf_len) {
  */
 void wc(char *cmd_buf, size_t buf_len) {
 	// TODO: implement wc
+	// No need to handle situation where no filename is passed
 
 }
 

@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void caesarChiper(char *inputFileName, char *outputFileName, int key) {
+void caesarCipher(char *inputFileName, char *outputFileName, int key) {
     // TODO: Implement file encryption/decryption function
     
 

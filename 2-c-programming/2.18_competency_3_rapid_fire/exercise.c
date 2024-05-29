@@ -93,6 +93,7 @@ int SectionThreeFive(int** nums, int width, int height){
  *   1: "This is "
  *   2: "order\n"
  *   3: "the correct "
+ *  Additionally, return the value of the switch statement.
  */
 int SectionThreeSix(int num){
     // TODO    return -1;

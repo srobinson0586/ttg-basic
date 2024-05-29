@@ -8,7 +8,7 @@ As you complete sections of the JQR, please reach out to a qualified developer t
 
 
 
-# [0: Fundamentals](0-fundamentals/README.md)
+# [0: Fundamentals (Work In Progress)](0-fundamentals/README.md)
 
 | Section | Knowledge                                                           | Initials | Date |
 |---------|---------------------------------------------------------------------|----------|------|
