@@ -1,9 +1,0 @@
-### Download Ubuntu
-
-On your computer, go to the Microsoft Store. Once there, search for Ubuntu and download the "Ubuntu" app by Canonical Group Limited. 
-The direct link is here: https://www.microsoft.com/store/productId/9PDXGNCFSCZV?ocid=pdpshare
-
-You can now install everything you need to run WSL with a single command. Open PowerShell or Windows Command Prompt in administrator mode by right-clicking and selecting "Run as administrator", enter the wsl --install command, then restart your machine.
-```ps
-wsl --install
-````

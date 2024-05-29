@@ -1,7 +1,8 @@
+# Pointer Practice
 Write a program in C to show the basic declaration of a pointer.
-Expected Output :
- Pointer : Show the basic declaration of pointer :                                                            
--------------------------------------------------------                                                       
+
+## Expected Output:
+
  Here is m=10, n and o are two integer variable and *z is an integer                                          
                                                                                                               
  z stores the address of m  = 0x7ffd40630d44                                                                  
