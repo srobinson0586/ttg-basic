@@ -7,8 +7,8 @@ def nested_conditionals(x):
     Write a function called nested_conditionals that takes an integer input x.
     The function should perform the following checks:
     - If x is greater than 1337 and less than or equal to 4444, return "Between 1338 and 4444".
-    - If x is greater than 4444, print "Above 4444".
-    - If x is less than or equal to 1337, print "1337 or below".
+    - If x is greater than 4444, return "Above 4444".
+    - If x is less than or equal to 1337, return "1337 or below".
 
     Return:
         A string depending on the input.

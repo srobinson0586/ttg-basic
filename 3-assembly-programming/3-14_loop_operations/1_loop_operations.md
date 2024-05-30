@@ -1,6 +1,9 @@
 
 # 🔁 3-14 Loop Operations - Knowledge
 
+<span style="color:lightcoral">*"“I’ll try spinning. That’s a good trick!”"*</span>
+ ~-~ Anakin Skywalker
+
 [Back to README](README.md)
 
 
@@ -8,12 +11,14 @@
 
 In this tutorial, we will go over the following topics:
 
-- [Loop Operations Introduction](#loop-operations-introduction)
-- [`loop` Instruction](#loop-instruction)
-- [`loopcc` Instruction](#loopcc-instruction)
-- [Sources](#sources)
-- [Required Additional Readings](#required-additional-readings)
-- [Resources](#resources)
+- [🔁 3-14 Loop Operations - Knowledge](#-3-14-loop-operations---knowledge)
+  - [Primer Contents](#primer-contents)
+  - [Loop Operations Introduction](#loop-operations-introduction)
+  - [`loop` Instruction](#loop-instruction)
+  - [`loopcc` Instruction](#loopcc-instruction)
+  - [Sources](#sources)
+  - [Required Additional Readings](#required-additional-readings)
+  - [Resources](#resources)
 
 
 ## Loop Operations Introduction
