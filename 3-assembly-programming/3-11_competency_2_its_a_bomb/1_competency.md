@@ -78,7 +78,7 @@ And Circuit C executes the following:
 
 $$
     % `C = NOT ( B OR C XOR ((A AND B) OR C) ) XOR 0xca7dec0de57ac05`.
-    C = \lnot ( B \lor C \oplus ((A \land B) \lor C) ) 
+    C = \lnot ( (B \lor C) \oplus ((A \land B) \lor C) ) 
     \oplus \mathrm {0xca7dec0de57ac05}
     \\{}
     \\
