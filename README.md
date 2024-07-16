@@ -1,10 +1,10 @@
-# Basic Developer Job Qualification Requirements (JQR)
+# Technical Training Guide - Basic (TTG-B)
 
-The basic JQR will get you a basic proficiency in low-level development. These skills are foundational in building your skills as a CNO tool developer.
+The basic TTG-B will get you a basic proficiency in low-level development. These skills are foundational in building your skills as a CNO tool developer.
 
-The JQR requires a Linux-based development environment.
+The TTG-B requires a Linux-based development environment.
 
-As you complete sections of the JQR, please reach out to a qualified developer to sign off on each section below:
+As you complete sections of the TTG-B, please reach out to a qualified developer to sign off on each section below:
 
 
 
