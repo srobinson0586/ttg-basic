@@ -124,9 +124,11 @@ As you complete sections of the TTG-B, please reach out to a qualified developer
 | Section | Knowledge                                                           | Initials | Date |
 |---------|---------------------------------------------------------------------|----------|------|
 | Tools
-|  4.1.1  | Demonstrate netcat usage                                            |          |      |
-|  4.1.2  | Demonstrate packet filtering using Wireshark                        |          |      |
-|  4.1.3  | Demonstrate Knowledge of Telecom Networks and their Infrastructure  |          |      |
+|  4.1.1  | Demonstrate an understanding of the purpose of CNO Networking | 
+|  4.1.2  | Demonstrate an Understanding of Core Socket Concepts | 
+|  4.1.3  | Demonstrate netcat usage                                            |          |      |
+|  4.1.4  | Demonstrate packet filtering using Wireshark                        |          |      |
+|  4.1.5  | Demonstrate Knowledge of Telecom Networks and their Infrastructure  |          |      |
 | Application
 |  4.2.1  | Diagram the key steps of TCP socket communication                   |          |      |
 |  4.2.2  | Explain and demonstrate sockets and socket creation                 |          |      |

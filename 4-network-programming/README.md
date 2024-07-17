@@ -8,9 +8,11 @@ This is Section 4 in the NCWDG JQR, where new Computer Network Operations (CNO) 
 ### 1. Tools
 |     Section    |   Brief   |
 -----------------|-----------|
-| [4.1.1](1-tools/4.1.1.md) |  Demonstrate netcat (`nc`) usage | 
-| [4.1.2](1-tools/4.1.2.md)  | Demonstrate packet filtering using Wireshark |
-| [4.1.3](1-tools/4.1.3.md)  | Demonstrate Knowledge of Telecom Networks and their Infrastructure  | 
+| [4.1.1](1-tools/4.1.1.md)  | Demonstrate an understanding of the purpose of CNO Networking | 
+| [4.1.2](1-tools/4.1.2.md)  | Demonstrate an Understanding of Core Socket Concepts | 
+| [4.1.3](1-tools/4.1.3.md)  | Demonstrate netcat (`nc`) usage | 
+| [4.1.4](1-tools/4.1.4.md)  | Demonstrate packet filtering using Wireshark |
+| [4.1.5](1-tools/4.1.5.md)  | Demonstrate Knowledge of Telecom Networks and their Infrastructure  | 
 
 ### 2. Applications
 |     Section    |   Brief   |
