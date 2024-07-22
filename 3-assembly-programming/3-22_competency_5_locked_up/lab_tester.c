@@ -6,10 +6,8 @@
  * 
  * Application Test Source Code
  * 
- * This file is NOT module specific (the same copy is in all modules). 
- * 
- * This file is standardized to allow placement in multiple modules without 
- * editing. Any customizations other than test cases should be noted here.
+ * This specific file was edited by Hugh Wright on 7/22/2024 to provide additional details 
+ * in the case of failed test cases.
  *  
  * Instructors will have a copy of test cases.
  * 
@@ -580,7 +578,9 @@ void printParam(Param param, char* str) {
             break;
 
         case STR:
-            printf("%s%s", (char*) param.val, str);
+            printf("\nCombo 1: %d, %d, %d, %d", ((char*)param.val)[0], ((char*)param.val)[1], ((char*)param.val)[2], ((char*)param.val)[3]);
+            printf("\nCombo 2: %d, %d, %d, %d", ((char*)param.val)[4], ((char*)param.val)[5], ((char*)param.val)[6], ((char*)param.val)[7]);
+            printf("\nCombo 3: %d, %d, %d, %d \n%s", ((char*)param.val)[8], ((char*)param.val)[9], ((char*)param.val)[10], ((char*)param.val)[11], str);
             break;
             
         default:
