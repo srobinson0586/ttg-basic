@@ -1,8 +1,8 @@
-# JQR Section 4 (Network Programming) Overview
+# TTG-B Section 4 (Network Programming) Overview
 
 [Back to Master README](../README.md)
 
-This is Section 4 in the NCWDG JQR, where new Computer Network Operations (CNO) developers learn network programming in C and Python. 
+This is Section 4 in the NCWDG TTG-B, where new Computer Network Operations (CNO) developers learn network programming in C and Python. 
 
 ## Table of Contents
 ### 1. Tools

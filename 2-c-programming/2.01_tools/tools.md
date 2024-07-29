@@ -32,7 +32,7 @@ $ gdb --version
 ```
 ### GEF via the install script
 
-GEF is an add-on to GDB that adds a set of commands to assist exploit developers and reverse engineers. We will explore GEF later in the JQR. There are multiple ways you may install GEF:
+GEF is an add-on to GDB that adds a set of commands to assist exploit developers and reverse engineers. We will explore GEF later in the TTG-B. There are multiple ways you may install GEF:
 
 #### using curl
 ```bash

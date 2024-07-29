@@ -12,7 +12,7 @@ For this competency, you will be writing the code needed for the Scores program.
 
 Scores is a program that creates an array of user defined length, fills that array with random integers, and then prints the array's contents as well as the average, highest, and lowest value of the array.
 
-We have given you access to the CS50 library (Courtesy of Harvard University). This will allow you to receive user input since user input will not be taught until later in the JQR due to the complexity. 
+We have given you access to the CS50 library (Courtesy of Harvard University). This will allow you to receive user input since user input will not be taught until later in the TTG-B due to the complexity. 
 
 You will make use of the `get_int()` function in this library to determine how big to make the scores array. You should be familiar with how the `get_int()` function works from the [previous competency](../2.09_competency_1_fizzbuzz/README.md).
 

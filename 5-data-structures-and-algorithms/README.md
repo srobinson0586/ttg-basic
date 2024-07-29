@@ -1,8 +1,8 @@
-# JQR Section 5 (Data Structures & Algorithms) Overview
+# TTG-B Section 5 (Data Structures & Algorithms) Overview
 
 [Back to Master README](../README.md)
 
-This is Section 5 in the NCWDG JQR, where new Computer Network Operations (CNO) developers learn the essentials of Data Structures and Algorithms.
+This is Section 5 in the NCWDG TTG-B, where new Computer Network Operations (CNO) developers learn the essentials of Data Structures and Algorithms.
 
 ## Table of Contents
 ### 1. Data Structures 

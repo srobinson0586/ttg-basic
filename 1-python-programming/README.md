@@ -1,8 +1,8 @@
-# JQR Section 1 (Python) Overview
+# TTG-B Section 1 (Python) Overview
 
 [Back to Master README](../README.md)
 
-This is Section 1 in the NCWDG JQR, where new Computer Network Operations (CNO) developers go from a Python Zero to a Python Hero. The section is structured in a way that first teaches students the basics of a specific topic using Markdown files in every folder, known as a **learning** Module. The learning modules then test students' knowledge by having them complete knowledge checks (`knowledge_check.md`) and python challenges (`application.py`). After several modules, or topics, their combined use is tested in the form of a **competency** module.
+This is Section 1 in the NCWDG TTG-B, where new Computer Network Operations (CNO) developers go from a Python Zero to a Python Hero. The section is structured in a way that first teaches students the basics of a specific topic using Markdown files in every folder, known as a **learning** Module. The learning modules then test students' knowledge by having them complete knowledge checks (`knowledge_check.md`) and python challenges (`application.py`). After several modules, or topics, their combined use is tested in the form of a **competency** module.
 
 There are 8 total competency modules. Each of them attempts to challenge the student more than the basic application challenges in the learning modules preceding it. All coding challenges are graded using the `test_application.py` script in each directory. All the students (and graders) must do to test the code is run `pytest` in the directory. `pytest` setup is covered in [1.01_environment](1.01_environment/environment.md).
 
@@ -46,7 +46,7 @@ There are 8 total competency modules. Each of them attempts to challenge the stu
 | [1.32 Regular Expressions](1.32_regular_expressions/README.md)  |  Introduction to Regular Expressions and their use in Python |
 
 
-If you don't have a Linux Operating System (OS) either as a host, or inside a Virtual Machine (VM), please inform the TRAINO. The Python section of the JQR can be completed in a Windows environment for the most part, but you will need Linux for further sections.
+If you don't have a Linux Operating System (OS) either as a host, or inside a Virtual Machine (VM), please inform the TRAINO. The Python section of the TTG-B can be completed in a Windows environment for the most part, but you will need Linux for further sections.
 
 ## Python Overview
 
@@ -57,7 +57,7 @@ Python is a high-level, interpreted, interactive and object-oriented scripting l
 -   **Python is Object-Oriented** − Python supports Object-Oriented style or technique of programming that encapsulates code within objects.
 -   **Python is a Beginner's Language** − Python is a great language for the beginner-level programmers and supports the development of a wide range of applications from simple text processing to WWW browsers to games.
 
-If you would like more guidance on what the above paragraph really means, and really anything taught in the entire JQR, YouTube videos are highly recommended. If you don't understand it, Google it. Below are two recommendations for inch-deep, mile-wide intros to python:
+If you would like more guidance on what the above paragraph really means, and really anything taught in the entire TTG-B, YouTube videos are highly recommended. If you don't understand it, Google it. Below are two recommendations for inch-deep, mile-wide intros to python:
 - [Python explained in 2 Minutes](https://youtu.be/QoIRX37VZpo)
 - [Python in 100 Seconds](https://www.youtube.com/watch?v=x7X9w_GIm1s)
 

@@ -78,7 +78,7 @@ forms of the instruction, a condition code (`cc`) is associated with each
 instruction to indicate the condition being tested for. Here, the `LOOPcc`
 instruction itself does not affect the state of the `ZF` flag; the `ZF` flag is
 changed by other instructions in the loop [[1]](#sources).
-
+1
 The condition codes are `e` and `ne` so that you can use the `ZF` as another 
 loop terminator (this includes the condition codes `z` and `nz`).
 

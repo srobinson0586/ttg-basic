@@ -4,11 +4,11 @@
 int main(){
     int x = 10;
 
-    //TODO:: Create a pointer that points to x. 
+    //TODO: Create a pointer that points to x. 
     
-    //TODO:: Call the passByValueFunction, giving it x as an argument. Print the value of x after the function returns.
+    //TODO: Call the passByValueFunction, giving it x as an argument. Print the value of x after the function returns.
 
-    //TODO:: Call the passByPtrFunction, giving it the pointer to x as an argument. Print the value of x after the function returns.
+    //TODO: Call the passByPtrFunction, giving it the pointer to x as an argument. Print the value of x after the function returns.
 
 
     return 0;

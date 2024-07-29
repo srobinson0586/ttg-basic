@@ -9,7 +9,7 @@ fi
 
 # Initialize a new repository.
 # (This creates a `.git` directory in the current directory).
-# This will not affect your JQR repo in any way!
+# This will not affect your TTG-B repo in any way!
 # You can remove all effects of this script by running
 # `rm -rf .git` (in the current directory!) afterwards.
 git init

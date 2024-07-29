@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Define a structure for each node in the linked list
+// Defining a structure for each node in the linked list
 struct Node {
     int data;
     struct Node* next;

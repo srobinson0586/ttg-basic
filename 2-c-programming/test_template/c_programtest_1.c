@@ -40,7 +40,7 @@ bool test_2(unsigned int n, bool i)
 //write a function to accepts a char and determines whether it is valid lower case or upper case
 //Return bool true if valid letter except for letter 'X' which is dangerous to the calling
 //program.  Return false for 'X' (upper) and all other ascii values. Do not use any character related 
-//libraries or functions.  Only use operators and conditionals presented in these jqr sections.
+//libraries or functions.  Only use operators and conditionals presented in these TTG-B sections.
 bool test_3(char input)
 {
 
@@ -73,7 +73,7 @@ bool am_i_prime(unsigned num)
   return false;
   } 
   unsigned int max_divisor = num / 2;
-  for (unsigned int i = 2; i < max_divisor; i++) //would be better to limit to sqaure root of num, but not in jqr
+  for (unsigned int i = 2; i < max_divisor; i++) //would be better to limit to sqaure root of num, but not in TTG-B
   {
      if ((num % i) == 0)
      {

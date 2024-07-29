@@ -1,6 +1,6 @@
 # Harvard's CS50 Course for New Programmers
 
-For the first month, we will be doing the first 6 weeks of Harvard's CS50 course. The purpose is to build a great base that will get us to complete the JQR at a much faster pace, but also more confidently. 
+For the first month, we will be doing the first 6 weeks of Harvard's CS50 course. The purpose is to build a great base that will get us to complete the TTG-B at a much faster pace, but also more confidently. 
 
 The link to CS50 is here: https://cs50.harvard.edu/x/2024/
 
@@ -36,4 +36,4 @@ These problem sets are meant to be tough and take several hours. However, strugg
 **After finishing each problem set, please send them to the Training Team for review.**
 
 
-Once you are done, you can *officially* start the JQR.
+Once you are done, you can *officially* start the TTG-B.

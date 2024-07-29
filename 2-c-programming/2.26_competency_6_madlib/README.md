@@ -2,7 +2,7 @@
 
 [Back to Overview](../README.md)
 
-JQR Addressed: Demonstrate low-level software engineering capability by designing and implementing a program to meet customer requirements in C.
+TTG-B Addressed: Demonstrate low-level software engineering capability by designing and implementing a program to meet customer requirements in C.
 
 ## Purpose
 

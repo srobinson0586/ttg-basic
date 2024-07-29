@@ -1,8 +1,8 @@
-# JQR Section 2 (C) Overview
+# TTG-B Section 2 (C) Overview
 
 [Back to Master README](../README.md)
 
-This is Section 2 in the NCWDG JQR, where new Computer Network Operations (CNO) developers are **Forged by the C**.
+This is Section 2 in the NCWDG TTG-B, where new Computer Network Operations (CNO) developers are **Forged by the C**.
 
 ## Table of Contents
 ### 1. Tools

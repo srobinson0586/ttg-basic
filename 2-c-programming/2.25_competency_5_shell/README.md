@@ -2,7 +2,7 @@
 
 [Back to Overview](../README.md)
 
-JQR Addressed: Implement functionality of custom shell in C to demonstrate advanced concepts of C programming that include malloc/calloc, free, data structures, and logical program flow
+TTG-B Addressed: Implement functionality of custom shell in C to demonstrate advanced concepts of C programming that include malloc/calloc, free, data structures, and logical program flow
 
 Platform: Linux
 

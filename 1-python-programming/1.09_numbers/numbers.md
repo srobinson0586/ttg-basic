@@ -12,7 +12,7 @@ As mentioned in [Module 1.03](../1.03_variable_types/variable_types.md), Python 
     
 - **`float` (floating point real values)** − Also called floats, they represent real numbers and are written with a decimal point dividing the integer and fractional parts. Floats may also be in scientific notation, with E or e indicating the power of 10 (2.5e2 = 2.5 x 10^2 = 250).
     
-- **`complex` (complex numbers)** − are of the form `a + bJ`, where `a` and `b` are floats and `J` (or `j`) represents the square root of -1 (which is an imaginary number). The real part of the number is `a`, and the imaginary part is `b`. We will not be using Complex numbers much in the JQR.
+- **`complex` (complex numbers)** − are of the form `a + bJ`, where `a` and `b` are floats and `J` (or `j`) represents the square root of -1 (which is an imaginary number). The real part of the number is `a`, and the imaginary part is `b`. We will not be using Complex numbers much in the TTG-B.
 
 ### Examples
 

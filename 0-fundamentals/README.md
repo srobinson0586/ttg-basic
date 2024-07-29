@@ -1,9 +1,9 @@
-# JQR Section 0 (Fundamentals) Overview
+# TTG-B Section 0 (Fundamentals) Overview
 
 [Back to Master README](../README.md)
 
 ### Introduction
-Welcome to the JQR!  This course will teach you to become a cyber software developer, proficient in Python, C, x86_64 assembly, and networking. This section serves as an introduction to the fundamentals required for the remainder of the course. 
+Welcome to the TTG-B!  This course will teach you to become a cyber software developer, proficient in Python, C, x86_64 assembly, and networking. This section serves as an introduction to the fundamentals required for the remainder of the course. 
 
 # Starting Point
 

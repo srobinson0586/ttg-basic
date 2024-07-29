@@ -4,14 +4,14 @@
 
 This guide will walk you through the step-by-step process of installing Python and configuring Visual Studio Code (VSCode) on your Linux Operating System. 
 
-**The JQR teaches python following Python 3 specifications**. There are 2 versions of Python, Python2 and Python3. There are slight differences between them, and Python 2 is considered deprecated. Therefore, everything in the JQR is to be taken in the context of a Python3 application. For more on the difference between the two, this [Tutorialspoint Article](https://www.tutorialspoint.com/python3/python3_whatisnew.htm) provides a brief overview.
+**The TTG-B teaches python following Python 3 specifications**. There are 2 versions of Python, Python2 and Python3. There are slight differences between them, and Python 2 is considered deprecated. Therefore, everything in the TTG-B is to be taken in the context of a Python3 application. For more on the difference between the two, this [Tutorialspoint Article](https://www.tutorialspoint.com/python3/python3_whatisnew.htm) provides a brief overview.
 
 
 ## Installing Python / Pytest
 
 For Windows, python can be installed from the Microsoft Store. However that version may be out of date. It is recommended to download the latest *stable* release from the [Python Website](https://www.python.org/downloads/windows/). 
 
-Installation on Linux requires more command line work. If you aren't familiar with the Linux command line, inform the TRAINO so that you can be pointed to resources and learn the basics needed to complete the JQR. A strong foundation of linux command line knowledge is required for any good CNO Developer, but its not currently something taught in the JQR. Many JQR students learn about it on their own time.
+Installation on Linux requires more command line work. If you aren't familiar with the Linux command line, inform the TRAINO so that you can be pointed to resources and learn the basics needed to complete the TTG-B. A strong foundation of linux command line knowledge is required for any good CNO Developer, but its not currently something taught in the TTG-B. Many TTG-B students learn about it on their own time.
 
 ### Step 1: Installing Python in Linux
 1. Open a terminal
@@ -61,7 +61,7 @@ The Python standard shell, or REPL (Read-Eval-Print Loop), allows you to run Pyt
 
 As a Python developer, you’ll spend a considerable part of your coding time in a REPL session because this tool allows you to test new ideas, explore and experiment with new tools and libraries, refactor and debug your code, and try out examples.
 
-If you see three greater-than signs (`>>>`) and then python code either in the JQR or online, that means the code was written and ran in a python shell. Below is an example:
+If you see three greater-than signs (`>>>`) and then python code either in the TTG-B or online, that means the code was written and ran in a python shell. Below is an example:
 ```python-repl
 >>> def my_func(): 
 ...     print("Hello")
@@ -75,7 +75,7 @@ Hello
 
 It can be incredibly useful to debug small code snippets, and has some differences to running python code from a file. For a brief overview on it, checkout the quick [Python 101 - The REPL](https://www.youtube.com/watch?v=ucllf6bDgnw) video (note IDLE isn't installed by default, contrary to his claim). For an in-depth overview, read the [RealPython Article](https://realpython.com/python-repl/) on it.
 
-It is **HIGHLY** recommended that you run the small code snippets shown throughout the JQR yourself, not simply take us at our word. You can play around with the variables in the shell to truly understand the concepts.
+It is **HIGHLY** recommended that you run the small code snippets shown throughout the TTG-B yourself, not simply take us at our word. You can play around with the variables in the shell to truly understand the concepts.
 
 > If the Python REPL shell isn't intuitive enough for you, try out the [python `IPython` module](https://pypi.org/project/ipython/)! It has syntax highlighting, tab completion, and many other features (check out the link).
 > You can install it with `pip install ipython`. To run it from the terminal, do `ipython` or `python -m IPython`. To run it from within a script, you can use this one-liner: `import IPython; IPython.embed()`, and you will be able to execute python in the context of your script! This is useful for analyzing values of variables and any actions performed on them.

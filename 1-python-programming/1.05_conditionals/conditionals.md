@@ -127,7 +127,7 @@ else:
 
 In many programming languages, there is a concept of a `switch` statement. A switch statement can replace multiple `if` statement checks. It gives a more descriptive way to compare a value with multiple variants. Often times its used in situations where a variable could hold many different values and the program performs different actions depending on the value. 
 
-Switch statements will be covered in much more detail in the JQR's C programming section, but here is an example of what a C switch statement could look like:
+Switch statements will be covered in much more detail in the TTG-B's C programming section, but here is an example of what a C switch statement could look like:
 ```c
 switch(menuSelection) {
   case 1:  // if (menuSelection === 1)

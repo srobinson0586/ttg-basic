@@ -1,16 +1,16 @@
 [Back to README](README.md)
 
-1. What is the purpose of GDB in software development?  How does GEF support this purpose?
+1. Describe the role of targets in a Makefile. Give an example of a target from a Makefile.
 ```
 ANSWER:
 ```
 
-2. How do you set a breakpoint at a specific line in GDB? Give an example command.
+2. What is the default target in a Makefile, and what is its typical name? Explain its significance.
 ```
 ANSWER:
 ```
 
-3. What command displays information about currently set breakpoints, such as their number, type, and location?
+3. What is the purpose of a cleaning target in a Makefile?
 ```
 ANSWER:
 ```

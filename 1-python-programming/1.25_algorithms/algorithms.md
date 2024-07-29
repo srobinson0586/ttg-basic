@@ -2,7 +2,7 @@
 
 [Back to README](README.md)
 
-> Algorithms are a key concept in computer science that extends beyond a single programming language. In reality, it takes more than a single day to learn about algorithms. Universities typically require a quarter or a semester long class on algorithms as a requirement to graduate with a computer science degree. However, this section aims to familiarize newer developers with the core ideas of algorithms so they can complete the JQR and understand more of what a Google search might yield. There will *always* be more to learn about algorithms and what they have to offer.
+> Algorithms are a key concept in computer science that extends beyond a single programming language. In reality, it takes more than a single day to learn about algorithms. Universities typically require a quarter or a semester long class on algorithms as a requirement to graduate with a computer science degree. However, this section aims to familiarize newer developers with the core ideas of algorithms so they can complete the TTG-B and understand more of what a Google search might yield. There will *always* be more to learn about algorithms and what they have to offer.
 
 As developers, it is our job to write code efficiently and effectively to solve complex problems. We typically accomplish this by analyzing problems to create step-by-step instructions on how to always get our desired output from given input. During the process of creating step-by-step instructions to solve problems, we are formulating an algorithm.
 

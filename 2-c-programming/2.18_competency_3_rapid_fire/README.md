@@ -2,7 +2,7 @@
 
 [Back to OVERVIEW](../../README.md)
 
-JQR Addressed: Implement functionality of specific, predefined C functions to demonstrate knowledge of control flow, variables, calling functions, sanitizing user input, reading from files, creating and using libraries, documenting code, and utilizing man pages
+TTG-B Addressed: Implement functionality of specific, predefined C functions to demonstrate knowledge of control flow, variables, calling functions, sanitizing user input, reading from files, creating and using libraries, documenting code, and utilizing man pages
 
 Platform:  Linux
 

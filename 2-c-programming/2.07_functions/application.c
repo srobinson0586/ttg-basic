@@ -3,7 +3,7 @@
 // Add Function prototypes for greet() and add(). The latter should have two parameters(num1 and num2)
 
 int main() {
-    // Call the greet function
+    // TODO: Call the greet function
 
     // Test the add function
     int result = add(5, 3);

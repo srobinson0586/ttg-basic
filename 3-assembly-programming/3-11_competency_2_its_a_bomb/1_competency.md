@@ -91,7 +91,12 @@ $$
 $$
 
 The `A` circuit is executed, then the `B` circuit, and finally the `C` 
-circuit. The final number passed on the bus is $ A \oplus B \oplus C $ (e.g.,
+circuit. 
+
+This means that when you are done with the `A` circuit, you use the output of that circuit as the `A` parameter for `B` circuit and `C` circuit.
+Same thing would be the case for the `B` circuit, where you would use the output to represent `B` in the `C` circuit.
+
+The final number passed on the bus is $ A \oplus B \oplus C $ (e.g.,
 in Python, `A ^ B ^ C`).
 
 Your function will take the intended `A`, `B`, and `C` codes and return the 

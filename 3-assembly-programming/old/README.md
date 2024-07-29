@@ -1,8 +1,8 @@
-# JQR Section 3 (Assembly) Overview
+# TTG-B Section 3 (Assembly) Overview
 
 [Back to Master README](../README.md)
 
-This is Section 3 in the NCWDG JQR, where new Computer Network Operations (CNO) developers learn x86 Assembly.
+This is Section 3 in the NCWDG TTG-B, where new Computer Network Operations (CNO) developers learn x86 Assembly.
 
 ## Table of Contents
 ### 1. Tools

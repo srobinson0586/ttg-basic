@@ -396,7 +396,7 @@ A quick and very readable way to achieve `find()`-like behavior is to use the `i
 #### Example 1
 
 ```python
-text = "Look at you acing the JQR like an absolute beast"
+text = "Look at you acing the TTG-B like an absolute beast"
 substring = "absolute"
 
 if substring in text:

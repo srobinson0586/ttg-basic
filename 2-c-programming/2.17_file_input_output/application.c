@@ -16,13 +16,11 @@ void readFromFile();
 int main() {
     char inputText[MAX_SIZE];
 
-    // Prompt the user to enter text to be written to the file
+    // TODO: Prompt the user to enter text to be written to the file
 
-    // Call the 'writeToFile' function with the input text
-    // Your code here
+    // TODO: Call the 'writeToFile' function with the input text
 
-    // Call the 'readFromFile' function to read and print the contents of 'PleaseReadMe.txt'
-    // Your code here
+    // TODO: Call the 'readFromFile' function to read and print the contents of 'PleaseReadMe.txt'
 
     return 0;
 }
