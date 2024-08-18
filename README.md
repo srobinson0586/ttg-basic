@@ -8,10 +8,17 @@ As you complete sections of the TTG-B, please reach out to a qualified developer
 
 
 
-# [0: Fundamentals (Work In Progress)](0-fundamentals/README.md)
+# [0: Fundamentals](0-fundamentals/README.md)
 
 | Section | Knowledge                                                           | Initials | Date |
 |---------|---------------------------------------------------------------------|----------|------|
+| CS50 Course (Extra Problems)
+| N/A    | Pointers Practice                                                    |          |      |
+| N/A    | File Analyzer                                                        |          |      |
+| N/A    | Structures Practice                                                  |          |      |
+| N/A    | Students Database                                                    |          |      |
+| N/A    | Bank                                                                 |          |      |
+| N/A    | Taqueria                                                             |          |      |
 | Introduction
 | 0.0    | Basic Foundation (0.00 - 0.09)                                       |          |      |
 | OS Fundamentals
@@ -124,8 +131,8 @@ As you complete sections of the TTG-B, please reach out to a qualified developer
 | Section | Knowledge                                                           | Initials | Date |
 |---------|---------------------------------------------------------------------|----------|------|
 | Tools
-|  4.1.1  | Demonstrate an understanding of the purpose of CNO Networking | 
-|  4.1.2  | Demonstrate an Understanding of Core Socket Concepts | 
+|  4.1.1  | Demonstrate an understanding of the purpose of CNO Networking       |          |      | 
+|  4.1.2  | Demonstrate an Understanding of Core Socket Concepts                |          |      |
 |  4.1.3  | Demonstrate netcat usage                                            |          |      |
 |  4.1.4  | Demonstrate packet filtering using Wireshark                        |          |      |
 |  4.1.5  | Demonstrate Knowledge of Telecom Networks and their Infrastructure  |          |      |
@@ -149,7 +156,12 @@ As you complete sections of the TTG-B, please reach out to a qualified developer
 | Competencies
 |  4.3.1  | Craft and send a raw TCP packet using the RFCs and Python struct    |          |      |
 |  4.3.2  | Implement an echo server and client in C                            |          |      |
-|  4.3.3  | Implement a robust TLS echo client and server in Python                 |          |      |
+|  4.3.3  | Implement a robust TLS echo client and server in Python             |          |      |
+
+
+
+# The below is not required for the ManTech ACTP board that is conducted. However, if you have extra time and would like to learn more, feel free to do the below.
+
 
 # [5: Data Structures and Algorithms](5-data-structures-and-algorithms/README.md)
 | Section | Knowledge                                                           | Initials | Date |
