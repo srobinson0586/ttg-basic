@@ -5,7 +5,7 @@ import decryption
 
 vig_cipher_enc = b'YWxtZ2h4dzQwODc6MWE7Plthc2Q='
 vig_key_enc = b'TEVFVENPREU='
-vig_plain_enc =  b'cGhpbmZqdDQwODc6MXc7Pltwb3o='
+vig_plain_enc =  b'cGhpbmZqdDQwODc6MW07Plt3b2s='
 
 sub_cipher_enc = b'c2FpbG9yX3RpbW15'
 sub_plain_enc  =  b'eHp1YXE5Mit1YmJe'
