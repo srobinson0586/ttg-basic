@@ -20,7 +20,7 @@ For this competency, you will be writing in the code needed for the FizzBuzz pro
 
 FizzBuzz is a program that prints numbers from 1 to a given limit, replacing multiples of 3 with "Fizz," multiples of 5 with "Buzz," and multiples of both 3 and 5 with "FizzBuzz."
 
-You will make use of a variable called `limit` that is already created for you. This variable determines how many numbers will be printed. You should use a loop to iterate from 1 to the given `limit`.
+At the top of your prgram, define a integer called `limit`. This variable determines how many numbers will be printed. You should use a loop to iterate from 1 to the value of `limit`. For final testing and submission, `limit` should be set to `100`.
 
 For each number, the program should check if it's a multiple of both 3 and 5. If so, you should print "FizzBuzz."
 
