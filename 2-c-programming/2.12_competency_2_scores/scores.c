@@ -44,11 +44,11 @@ int main() {
     
 
     // TODO: Call the 'getHighestScore' function with the array of scores and the number of students
-    //       then print the result
+    //       then print the highest score
     
 
     // TODO: Call the 'getLowestScore' function with the array of scores and the number of students
-    //       then print the result
+    //       then print the lowest score
     
 
     return 0;
