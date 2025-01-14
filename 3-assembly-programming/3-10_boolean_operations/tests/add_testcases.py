@@ -124,7 +124,7 @@ def f4(a):
     return 0 - a if a > 0 else abs(a)
 
 def f6(a):
-    return a | 0xdfff
+    return a | 0x3fff
 
 # -----------------------------------------------------------------------------
 
