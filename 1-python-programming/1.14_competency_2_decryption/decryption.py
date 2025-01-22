@@ -85,7 +85,7 @@ def combine_ciphers():
         str: The decrypted string obtained after the combination of ciphers.
     """
     # Vigenere Cipher
-    vigenere_ciphertext = ">*\".0}LzXTuMV<uP+iQK1)^guYt'_&Q-p"
+    vigenere_ciphertext = ">*\".0}AtEWbBP<eZ+yGO1)^nxFi'_&B-p"
     vigenere_key = "NCWDG"
     # TODO: Decrypt Vigenere ciphertext
 
