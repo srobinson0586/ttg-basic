@@ -71,7 +71,7 @@ $$
     + ((C \verb| >> | 3) \verb| <<< | 42 ) + \mathrm {0x20d1ac}
     \\{}
     \\
-    \text {where \verb|<<<| is rotate left and \verb|>>>| is rotate right.}
+    \text {where \verb|<<| is logical shift left and \verb|>>>| is rotate right.}
 $$
 
 And Circuit C executes the following:
