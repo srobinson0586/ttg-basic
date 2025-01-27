@@ -8,14 +8,16 @@
 
 In this tutorial, we will go over the following topics:
 
-- [Introduction to Flow Operations](#introduction-to-flow-operations)
-- [`cmp` Instruction](#cmp-instruction)
-- [`jmp` Instruction](#jmp-instruction)
-- [`jcc` Instruction](#jcc-instruction)
-- [Other `cc` Instructions](#other-cc-instructions)
-- [Sources](#sources)
-- [Required Additional Readings](#required-additional-readings)
-- [Resources](#resources)
+- [⏭️ 3-12 Flow Operations - Knowledge](#️-3-12-flow-operations---knowledge)
+  - [Primer Contents](#primer-contents)
+  - [Introduction to Flow Operations](#introduction-to-flow-operations)
+  - [`cmp` Instruction](#cmp-instruction)
+  - [`jmp` Instruction](#jmp-instruction)
+  - [`jcc` Instruction (Conditional Jumps)](#jcc-instruction-conditional-jumps)
+  - [Other `cc` Instructions](#other-cc-instructions)
+  - [Sources](#sources)
+  - [Required Additional Readings](#required-additional-readings)
+  - [Resources](#resources)
 
 
 ## Introduction to Flow Operations
@@ -215,9 +217,9 @@ following the `Jcc` instruction [[4]](#sources).
     ⚠️ Warning   
 </span><span class="inner">
     If you are comparing numbers that are supposed to be able to be negative,
-    you HAVE to use `jb` and `ja` series NOT `jl` and `jg` series. `jl` and
-    `jg` series treat numbers as unsigned, so `0xff` (`255`) is greater than
-    `0`, but `jb` and `ja` series treat numbers as signed, so `0xff` (`-1`) is
+    you HAVE to use `jl` and `jg` series NOT `jb` and `ja` series. `jb` and
+    `ja` series treat numbers as unsigned, so `0xff` (`255`) is greater than
+    `0`, but `jl` and `jg` series treat numbers as signed, so `0xff` (`-1`) is
     less than `0`.
 </span></span>
 
