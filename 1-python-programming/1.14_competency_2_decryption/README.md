@@ -15,7 +15,7 @@ This competency will help you utilize all the skills and topics you have learned
 - [Dictionaries](../1.13_dictionaries/README.md)
 
 
-## Decryption Implementation Description 
+## Decryption Implementation Description
 
 Your task is to implement three functions that perform decryption/decoding using different ciphers. The provided template functions are `decrypt_vigenere_cipher`, `decrypt_substitution_cipher`, and `decrypt_one_time_pad`. You may refer to their docstrings for more details on requirements, but here is the brief for each:
 
@@ -29,7 +29,7 @@ Your task is to implement three functions that perform decryption/decoding using
 
 ### One-Time Pad
 **`decrypt_one_time_pad`**
-> Decrypts an encrypted string using a one-time pad and the given one-time pad key. You can assume `len(one_time_pad_key) >= len(ciphertext)`
+> Decrypts an encrypted string using a one-time pad and the given one-time pad key.
 
 Additionally, you need to implement the `combine_ciphers` function that combines the decryption process of all three methods.
 
