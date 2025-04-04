@@ -86,20 +86,12 @@ def combine_ciphers():
         str: The decrypted string obtained after the combination of ciphers.
     """
     # Vigenere Cipher
-    vigenere_ciphertext = ">*\".0}AtEWbBP<eZ+yGO1)^nxFi'_&B-p"
-    vigenere_key = "NCWDG"
     # TODO: Decrypt Vigenere ciphertext
 
     # Substitution Cipher using the decrypted vigenere cipher as key
-    substitution_key = {'>': 'k', '*': 'w', '"': '6', '.': 'x', '0': '$', '}': ']', 'Y': ')', 'x': '`', 'B': 'j', 'Q': 'w', 'o': 'h', 'Z': '/', 'T': '%', '<': '!', 'y': 't', 'M': '$', '+': "'", 'c': 'o', 'D': '_', 'I': '8', '1': 'D', ')': 'y', '^': '0', 'k': 't', 'r': 'U', 'S': '0', 'g': '{', "'": "'", '_': 'j', '&': '1', 'O': '@', '-': '/', 't': 'P'}
     # TODO: Decrypt substitution ciphertext (vigenere plaintext)
 
     # One-Time Pad using the decrypted substitution cipher as key
-    otp_ciphertext = '%4a<c&dT9#[]zEGgU6/l-I^+e`HU^ep]-'
     # TODO: Decrypt one-time pad ciphertext using OTP key (substitution plaintext)
 
     # TODO: Return the one-time pad plaintext
-    return None
-
-# You know when you have the correct hidden message
-print("Hidden Message: ", combine_ciphers())

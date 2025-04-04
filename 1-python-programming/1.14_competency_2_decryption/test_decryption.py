@@ -1,39 +1,94 @@
-#!/bin/python
-# Python Competency 2 Decryption - Pytest Suite
-from base64 import b64decode
-import decryption
+import pytest
+from decryption import (
+    decrypt_vigenere_cipher,
+    decrypt_substitution_cipher,
+    decrypt_one_time_pad,
+    combine_ciphers
+)
 
-vig_cipher_enc = b'YWxtZ2h4dzQwODc6MWE7Plthc2Q='
-vig_key_enc = b'TEVFVENPREU='
+
+def test_decrypt_vigenere_cipher():
+    """Test the Vigenere cipher decryption with given example"""
+    ciphertext = 'YGAWI{D4g4aLr}'
+    vigenere_key = 'LEETCODE'
+    expected_output = 'NCWDG{P4d4wAn}'
+
+    result = decrypt_vigenere_cipher(ciphertext, vigenere_key)
+
+    assert result == expected_output, (
+        f"decrypt_vigenere_cipher failed!\n"
+        f"Expected: {expected_output}\n"
+        f"Got: {result}\n"
+        f"With ciphertext: {ciphertext}, key: {vigenere_key}"
+    )
 
 
-sub_cipher_enc = b'c2FpbG9yX3RpbW15'
-sub_plain_enc  =  b'eHp1YXE5Mit1YmJe'
-sub_key_enc    = {b'cw==': 'x',b'YQ==': 'z',b'aQ==': 'u',b'bA==': 'a',b'bw==': 'q',b'cg==': '9',b'Xw==': '2',b'dA==': '+',b'bQ==': 'b',b'eQ==': '^'}
+def test_decrypt_substitution_cipher():
+    """Test the substitution cipher decryption with given example"""
+    ciphertext = "xz1AWY=23=!@Y"
+    substitution_key = {
+        'x': 'p', 'z': 'y', '1': 't', 'A': 'h', 'W': 'o', 'Y': 'n',
+        '=': '_', '2': 'i', '3': 's', '!': 'f', '@': 'u'
+    }
+    expected_output = "python_is_fun"
 
-otp_key_enc = b'MTA0OHhjbWQ7YTMxQF4qQCQrfSJ7'
-otp_plain_enc = b'QlFdVBcRMhBSDF5I'
-otp_cipher_enc = b'TkNXREd7TTRTVDNyX2QzQ3JZcFRpMG5fMFAzcjRUMHJ9'
+    result = decrypt_substitution_cipher(ciphertext, substitution_key)
 
-def test_competency_2_decryption():
-    # Test decrypt_vigenere_cipher
-    vig_key = b64decode(vig_key_enc).decode()
-    vig_cipher = b64decode(vig_cipher_enc).decode()
-    vig_plain = "phinfjt4087:1w;>[poz"
-    assert decryption.decrypt_vigenere_cipher(vig_cipher, vig_key) == vig_plain, f"decrypt_vigenere_cipher(): Incorrect return value. Expected: {vig_plain}\nRecieved: {decryption.decrypt_vigenere_cipher(vig_cipher, vig_key)}"
+    assert result == expected_output, (
+        f"decrypt_substitution_cipher failed!\n"
+        f"Expected: {expected_output}\n"
+        f"Got: {result}\n"
+        f"With ciphertext: {ciphertext}, key: {substitution_key}"
+    )
 
-    # Test decrypt_substitution_cipher
-    sub_cipher = b64decode(sub_cipher_enc).decode()
-    sub_plain = b64decode(sub_plain_enc).decode()
-    sub_key_dec = {}
-    for i in sub_key_enc:
-        sub_key_dec.update({b64decode(i).decode():sub_key_enc[i]})
-    assert decryption.decrypt_substitution_cipher(sub_cipher, sub_key_dec) == sub_plain, f"decrypt_substitution_cipher(): Incorrect return value. Expected: {sub_plain}\nRecieved: {decryption.decrypt_substitution_cipher(sub_cipher, sub_key_dec)}"
 
-    # Test decrypt_one_time_pad
-    otp_key = b64decode(otp_key_enc).decode()
-    otp_plain = b64decode(otp_plain_enc).decode()
-    assert decryption.decrypt_one_time_pad(sub_cipher, otp_key) == otp_plain, f"decrypt_one_time_pad(): Incorrect return value. Expected: {otp_plain}\nRecieved: {decryption.decrypt_one_time_pad(sub_cipher, otp_key)}"
+def test_decrypt_one_time_pad():
+    """Test the one-time pad decryption with given example"""
+    ciphertext_bytes = b'6\x0c\x06G0\x1bQ\n'  # Unprintable characters
+    # Convert to a string where each byte is represented as a character
+    ciphertext = ciphertext_bytes.decode('latin1')  # Using latin1 to preserve byte values
+    one_time_pad_key = 'exg5di4a'
+    expected_output = 'StarTrek'
 
-    # Test combine_ciphers()
-    assert decryption.combine_ciphers() == b64decode(otp_cipher_enc).decode()
+    result = decrypt_one_time_pad(ciphertext, one_time_pad_key)
+
+    assert result == expected_output, (
+        f"decrypt_one_time_pad failed!\n"
+        f"Expected: {expected_output}\n"
+        f"Got: {result}\n"
+        f"With ciphertext: {ciphertext}, key: {one_time_pad_key}"
+    )
+
+
+def test_combine_ciphers():
+    """Test the combination of all three ciphers to reveal the flag"""
+    ciphertext_vigenere = 'YGAWI{D4g4aLr}'
+    ciphertext_sub = "xz1AWY=23=!@Y"
+    ciphertext_otp = b'6\x0c\x06G0\x1bQ\n'  # Unprintable characters
+    vigenere_key = 'LEETCODE'
+    sub_key = {
+        'x': 'p', 'z': 'y', '1': 't', 'A': 'h', 'W': 'o', 'Y': 'n',
+        '=': '_', '2': 'i', '3': 's', '!': 'f', '@': 'u'
+    }
+    otp_key = 'exg5di4a'
+    expected_flag = 'NCWDG{Yahaha!_you_found_me!}'
+
+    result = combine_ciphers(
+        ciphertext_vigenere,
+        ciphertext_sub,
+        ciphertext_otp,
+        vigenere_key,
+        sub_key,
+        otp_key
+    )
+
+    assert result == expected_flag, (
+        f"combine_ciphers failed!\n"
+        f"Expected flag: {expected_flag}\n"
+        f"Got: {result}\n"
+        f"Make sure all your previous decryption functions are working correctly."
+    )
+
+
+if __name__ == "__main__":
+    pytest.main(["-v"])

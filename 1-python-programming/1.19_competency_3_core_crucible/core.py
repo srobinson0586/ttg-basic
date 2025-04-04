@@ -17,7 +17,7 @@ def greet(name):
     E.g.,
      greet('Bob') -> 'Hello Bob!'
      greet('Alice') -> 'Hello Alice!'
-     greet('X') -> 'Hello X!' """    
+     greet('X') -> 'Hello X!' """
     pass
 
 def abba(a, b):
@@ -25,7 +25,7 @@ def abba(a, b):
     them in the order of abba.
 
     E.g.,
-     abba('Hi', 'Bye') -> 'HiByeByeHi' """    
+     abba('Hi', 'Bye') -> 'HiByeByeHi' """
     pass
 
 def split_and_insert(outer, inner):
@@ -35,7 +35,7 @@ def split_and_insert(outer, inner):
 
     E.g.,
      split_and_insert('<<>>', 'stuff') -> '<<stuff>>'
-     split_and_insert('..**', 'hi') -> '..hi**' """    
+     split_and_insert('..**', 'hi') -> '..hi**' """
     pass
 
 def dup_last_2(s, n):
@@ -44,7 +44,7 @@ def dup_last_2(s, n):
 
     E.g.,
      dup_last_2('word', 4) -> 'rdrdrdrd'
-     dup_last_2('mocha', 3) -> 'hahaha' """    
+     dup_last_2('mocha', 3) -> 'hahaha' """
     pass
 
 def short_long_short(s1, s2):
@@ -52,7 +52,7 @@ def short_long_short(s1, s2):
 
     E.g.,
      shortlongshort('a big string', 'hi') -> 'hia big stringhi'
-     shortlongshort('hi', 'a big string') -> 'hia big stringhi' """    
+     shortlongshort('hi', 'a big string') -> 'hia big stringhi' """
     pass
 
 
@@ -62,31 +62,31 @@ def short_long_short(s1, s2):
 
 def adding(a, b):
     """ Return the sum of `a` and `b`, unless `a` and `b` are equal;
-    if they are, return twice their sum. """    
+    if they are, return twice their sum. """
     pass
 
 def abs_diff(n):
     """ Given an int `n`, if `n` is less than or equal to 21, return
     the absolute value of the difference between `n` and 21; if
     `n` is greater than 21, return twice the absolute value of that
-    difference. """    
+    difference. """
     pass
 
 def tens(a, b):
     """ Given 2 integers, return True if one of them is 10, or if their
-    sum is 10; otherwise return False. """    
+    sum is 10; otherwise return False. """
     pass
 
 def hundreds(n):
-    """ Given an integer `n`, return True if its difference from 100
-    is less than or equal to 10. """    
+    """ Given an integer `n`, return True if its absolute difference from 100
+    is less than or equal to 10. """
     pass
 
 def negatives(a, b, negative):
     """ Given 2 integer values `a` and `b` and the boolean `negative`:
      (a) if `negative` is True, return True if both integers are negative.
      (b) if `negative` is False, return True if exactly 1 integer is negative.
-    Otherwise return False in both cases. """    
+    Otherwise return False in both cases. """
     pass
 
 
@@ -104,12 +104,12 @@ def ends_are_the_same(lst):
      ends_are_the_same([1, 2, 3, 4]) -> False
      ends_are_the_same([1, 2, 1]) -> True
      ends_are_the_same([1]) -> False
-     ends_are_the_same([]) -> False """    
+     ends_are_the_same([]) -> False """
     pass
 
 def count_sixes(lst):
     """ Given a list of integers, return the total number of times the
-    value 6 occurs in it. """    
+    value 6 occurs in it. """
     pass
 
 def sum_list(lst):
@@ -117,7 +117,7 @@ def sum_list(lst):
 
     You can do this however you want, but there's a shortcut available.
     Inspect the output of 'dir(__builtins__)' in the Python shell to see
-    all the built-in Python variables. """    
+    all the built-in Python variables. """
     pass
 
 def rotate_2_spaces_left(lst):
@@ -127,7 +127,7 @@ def rotate_2_spaces_left(lst):
      rotate_2_spaces_left([1, 2, 3, 4, 5, 6]) -> [3, 4, 5, 6, 1, 2]
      rotate_2_spaces_left([1, 2, 3, 4]) -> [3, 4, 1, 2]
      rotate_2_spaces_left([5, 6]) -> [5, 6]
-    You may assume the list has at least 2 elements in it. """    
+    You may assume the list has at least 2 elements in it. """
     pass
 
 def append_product_and_sum(lst):
@@ -139,7 +139,7 @@ def append_product_and_sum(lst):
 
     You may assume that the list has at least 3 elements at the beginning.
     E.g.,
-     append_product_and_sum([1, 2, 3]) -> [1, 6, 7] """    
+     append_product_and_sum([1, 2, 3]) -> [1, 6, 7] """
     pass
 
 
@@ -148,26 +148,26 @@ def append_product_and_sum(lst):
 #########################################
 
 def count_trues(a, b, c):
-    """ Given three booleans, return the number of them that are True. """    
+    """ Given three booleans, return the number of them that are True. """
     pass
 
 
 def positive_product(a, b):
     """ Given 2 integers, return True if their product is positive;
-    otherwise return False. """    
+    otherwise return False. """
     pass
 
 
 def has_7_before_6(lst):
     """ Given a list, return True if 7 appears in it before 6. If 6 appears
-    before 7 or if there is no 7, return False. """    
+    before 7 or if there is no 7, return False. """
     pass
 
 
 def greater_than_both(a, b, c):
     """ Given 3 integers `a`, `b`, and `c`, using a SINGLE return statement
     (and no other lines of code) return True if `a` is greater than `b` and
-    `a` is greater than `c`. Otherwise, return False. """    
+    `a` is greater than `c`. Otherwise, return False. """
     pass
 
 
@@ -176,7 +176,7 @@ def close_and_far(a, b, c):
     statement, return True if both:
     (a) `a` or `b` has a difference of less than or equal to 1 from `c`
     (b) `a` or `b` has a difference of 2 or more from the other 2 integers.
-    Otherwise, return False. """    
+    Otherwise, return False. """
     pass
 
 
@@ -191,7 +191,7 @@ def copy_xkcd_to_calvin(lst):
 
     E.g.,
      copy_xkcd_to_calvin(['cow', 'xkcdabc', 'xkcd ball', 'donkey']) ->
-     -> ['cow', 'calvinabc', 'calvin ball', 'donkey'] """    
+     -> ['cow', 'calvinabc', 'calvin ball', 'donkey'] """
     pass
 
 def even_odd_product(lst):
@@ -199,7 +199,7 @@ def even_odd_product(lst):
     the odd numbers, and return the product of the 2 sums.
 
     E.g.,
-     even_odd_product([1, 2, 3, 4, 6]) -> 48 (i.e., (2 + 4 + 6)*(1 + 3)) """    
+     even_odd_product([1, 2, 3, 4, 6]) -> 48 (i.e., (2 + 4 + 6)*(1 + 3)) """
     pass
 
 def pop_while(lst):
@@ -207,7 +207,7 @@ def pop_while(lst):
 
     To experience a different loop pattern, use a while loop whose
     condition is `lst` (i.e., 'while lst:'; this will continue iterating
-    while `lst` is non-empty) and perform a `lst.pop` at each iteration. """    
+    while `lst` is non-empty) and perform a `lst.pop` at each iteration. """
     pass
 
 
@@ -276,4 +276,3 @@ def compare(x, y):
     """ Return -1, 0, or 1 if `x` is less than, equal to, or greater than,
     respectively, `y`. """
     pass
-
