@@ -39,7 +39,7 @@ def decrypt_substitution_cipher(ciphertext, substitution_key):
         - substitution_key: dict; A dictionary representing the substitution key where each key-value pair corresponds to the original character and its substitution character, respectively.
 
     Returns:
-        str: The decrypted string obtained after replacing characters according to the substitution key.
+        str: The decrypted string obtained after replacing characters according to the substitution key. If a character is unmapped, leave it unchanged in the output.
 
     Example:
     >>> ciphertext = "xz1AWY=23=!@Y"
@@ -54,7 +54,7 @@ def decrypt_substitution_cipher(ciphertext, substitution_key):
 def decrypt_one_time_pad(ciphertext, one_time_pad_key):
     """
     Decrypts an encrypted string using a one-time pad and the given one-time pad key.
-    You can assume that len(one_time_pad_key) >= len(ciphertext)
+    If the key is shorter than the ciphertext, you must repeat the key to decrypt the whole string
 
     Parameters:
         - ciphertext: str; The encrypted string to be decrypted.
@@ -73,7 +73,7 @@ def decrypt_one_time_pad(ciphertext, one_time_pad_key):
     # TODO: Implement
     pass
 
-def combine_ciphers():
+def combine_ciphers(vigenere_ciphertext, substitution_ciphertext, otp_encoded, vigenere_key, substitution_key, otp_key):
     """
     Combines the decryption of Vigenere Cipher, Substitution Cipher, and One-Time Pad.
 
@@ -94,4 +94,4 @@ def combine_ciphers():
     # One-Time Pad using the decrypted substitution cipher as key
     # TODO: Decrypt one-time pad ciphertext using OTP key (substitution plaintext)
 
-    # TODO: Return the one-time pad plaintext
+    # TODO: Print then Return the one-time pad plaintext
